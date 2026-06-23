@@ -1,7 +1,7 @@
 # vscode-theme-color-guide-ja
 
 <details>
-<summary><h2>Contrast colors(コントラスト色)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Contrast colors(コントラスト色)</h2></summary>
 
 
 **Contrast colors** は、VSCode のハイコントラストテーマ専用の設定で、UI 全体の要素に追加のボーダー（枠線）を付けることで、近視やディスプレイの発色が悪い環境での作業をサポートする。
@@ -17,7 +17,7 @@
 
 </details>
 <details>
-<summary><h2>Base colors(ベースカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Base colors(ベースカラー)</h2></summary>
 
 
 **Base colors** は、VSCode UI 全体に共通して使われるデフォルトの色設定である。各コンポーネントが独自の色を持たない場合のフォールバックとして機能する。
@@ -42,7 +42,7 @@
 
 </details>
 <details>
-<summary><h2>Window border(ウィンドウボーダー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Window border(ウィンドウボーダー)</h2></summary>
 
 
 **Window border** は、VSCode ウィンドウ自体の境界線の色設定である。アクティブ（フォーカス中）と非アクティブ（フォーカスなし）で色を切り替えられる。
@@ -59,7 +59,7 @@
 
 </details>
 <details>
-<summary><h2>Text colors(テキストカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Text colors(テキストカラー)</h2></summary>
 
 
 **Text colors** は、ウェルカムページなどのテキストドキュメント内で使われる色設定である。
@@ -83,7 +83,7 @@
 
 </details>
 <details>
-<summary><h2>Action colors(アクションカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Action colors(アクションカラー)</h2></summary>
 
 
 **Action colors** は、ワークベンチ全体のアクション操作に関する色設定である。
@@ -105,7 +105,7 @@
 
 </details>
 <details>
-<summary><h2>Button control(ボタンコントロール)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Button control(ボタンコントロール)</h2></summary>
 
 
 **Button control** は、エクスプローラーの「フォルダーを開く」、ソース管理の「リポジトリを初期化する」ボタンなど、ボタンウィジェットに関する色設定である。
@@ -143,7 +143,7 @@
 
 </details>
 <details>
-<summary><h2>Dropdown control(ドロップダウンコントロール)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Dropdown control(ドロップダウンコントロール)</h2></summary>
 
 
 **Dropdown control** は、統合ターミナルや出力パネルなどのドロップダウンウィジェットに関する色設定である。なお、macOS では現在ドロップダウンコントロールは使用されていない。
@@ -162,7 +162,7 @@
 
 </details>
 <details>
-<summary><h2>Input control(インプットコントロール)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Input control(インプットコントロール)</h2></summary>
 
 
 **Input control** は、検索ビューや Find/Replace ダイアログなどの入力フィールドに関する色設定である。
@@ -194,7 +194,7 @@
 
 </details>
 <details>
-<summary><h2>Scrollbar control(スクロールバーコントロール)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Scrollbar control(スクロールバーコントロール)</h2></summary>
 
 
 **Scrollbar control** は、エディターの一番右にあるスクロールバーに関する色設定である。
@@ -214,7 +214,7 @@
 
 </details>
 <details>
-<summary><h2>Badge(バッジ)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Badge(バッジ)</h2></summary>
 
 
 **Badge** は、拡張機能の発行元(例: `ms-vscode`)などを表示する小さなアイコンに関する色設定である。
@@ -231,7 +231,7 @@
 
 </details>
 <details>
-<summary><h2>Progress bar(プログレスバー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Progress bar(プログレスバー)</h2></summary>
 
 
 **Progress bar** は、長時間かかる処理中に表示されるプログレスバーに関する色設定である。
@@ -247,7 +247,7 @@
 
 </details>
 <details>
-<summary><h2>Lists and trees(リストとツリー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Lists and trees(リストとツリー)</h2></summary>
 
 
 **Lists and trees** は、ファイルエクスプローラーなどのリスト・ツリーUIに関する色設定である。アクティブなリスト/ツリーはキーボードフォーカスを持ち、非アクティブなものは持たない。
@@ -294,7 +294,7 @@
 
 </details>
 <details>
-<summary><h2>Activity Bar(アクティビティバー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Activity Bar(アクティビティバー)</h2></summary>
 
 
 **Activity Bar** は、VSCodeの左端（または右端）に縦に並んでいるアイコン群の列であり、サイドバーのビューを素早く切り替えるためのバーに関する色設定である。
@@ -329,7 +329,7 @@
 
 </details>
 <details>
-<summary><h2>Profiles(プロファイル)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Profiles(プロファイル)</h2></summary>
 
 
 **Profiles** は、アクティビティバーの設定（歯車）アイコンの上に表示されるプロファイルバッジに関する色設定である。
@@ -347,7 +347,7 @@
 
 </details>
 <details>
-<summary><h2>Side Bar(サイドバー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Side Bar(サイドバー)</h2></summary>
 
 
 **Side Bar** は、ウィンドウ左側に位置するエクスプローラーや検索などのビューを格納するコンテナに関する色設定である。
@@ -376,7 +376,7 @@
 
 </details>
 <details>
-<summary><h2>Minimap(ミニマップ)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Minimap(ミニマップ)</h2></summary>
 
 
 **Minimap** は、エディタの右側に位置する現在のファイルのズームアウトしたものを表示する機能に関する色設定である。コマンドパレット（`Ctrl`+`Shift`+`P`）を開いて、「Toggle Minimap」と入力して実行することで表示される。
@@ -407,7 +407,7 @@
 
 </details>
 <details>
-<summary><h2>Editor Groups & Tabs(エディターグループとタブ)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Editor Groups & Tabs(エディターグループとタブ)</h2></summary>
 
 
 **Editor Group** はタブ群とエディタを格納する領域で、通常は1つだが画面分割により複数存在できる。
@@ -465,7 +465,7 @@
 
 </details>
 <details>
-<summary><h2>Editor colors(エディターカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Editor colors(エディターカラー)</h2></summary>
 
 
 **Editor colors** は、エディター本体に関する色設定である。ここでは、シンタックスハイライト(言語文法に基づいたエディター内のテキストの色設定)以外のエディター関連の色設定の項目を以下にまとめる。
@@ -824,7 +824,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Diff editor colors(差分エディターカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Diff editor colors(差分エディターカラー)</h2></summary>
 
 
 **Diff editor colors** は、同じファイルの修正前と修正後を左右、あるいは上下に並べて変更点を比較するための専用画面に関する色設定である。挿入・削除されたテキストの色付けには、背景色か境界線の色のどちらか一方のみを使用する（両方同時には使わない）。
@@ -860,7 +860,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Chat colors(チャットカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Chat colors(チャットカラー)</h2></summary>
 
 
 **Chat colors** は、VSCode のチャット機能に関する色設定である。
@@ -890,7 +890,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Inline Chat colors(インラインチャットカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Inline Chat colors(インラインチャットカラー)</h2></summary>
 
 
 **Inline Chat colors** は、エディター内に表示されるインラインチャットウィジェットに関する色設定である。
@@ -916,7 +916,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Panel Chat colors(パネルチャットカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Panel Chat colors(パネルチャットカラー)</h2></summary>
 
 
 **Panel Chat colors** は、インタラクティブなコードセルに関する色設定である。
@@ -933,7 +933,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Editor widget colors(エディターウィジェットカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Editor widget colors(エディターウィジェットカラー)</h2></summary>
 
 
 **Editor widget colors** は、エディターコンテンツの手前に表示されるウィジェットに関する色設定である。Find(`Ctrl`+`F`)/Replace(`Ctrl`+`H`) ダイアログ、サジェストウィジェット(変数名や関数の候補のポップアップ、`Ctrl`+`Space`で表示)、エディターホバー(コード内の関数や変数にカーソルを合わせたときに、その型や使い方を教える吹き出しのポップアップ)などが該当する。
@@ -1036,7 +1036,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Peek view colors(ピークビューカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Peek view colors(ピークビューカラー)</h2></summary>
 
 
 **Peek view colors** は、関数の定義元や参照されている場所をエディター内の現在のコードの行間に表示するビューに関する色設定である。`Alt` + `F12`で表示される。
@@ -1067,7 +1067,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Merge conflicts colors(マージコンフリクトカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Merge conflicts colors(マージコンフリクトカラー)</h2></summary>
 
 
 **Merge conflicts colors** は、エディター内に特殊な差分範囲（マージコンフリクト）があるときに表示される装飾に関する色設定である。
@@ -1123,7 +1123,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Panel colors(パネルカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Panel colors(パネルカラー)</h2></summary>
 
 
 **Panel colors** は、エディター領域の下に表示されるパネルに関する色設定である。問題、出力、デバッグコンソール、ターミナル、ポートなどを含む欄。
@@ -1158,7 +1158,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Status Bar colors(ステータスバーカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Status Bar colors(ステータスバーカラー)</h2></summary>
 
 
 **Status Bar colors** は、ウィンドウ最下部に表示されるステータスバーに関する色設定である。
@@ -1208,7 +1208,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Title Bar colors(タイトルバーカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Title Bar colors(タイトルバーカラー)</h2></summary>
 
 
 **Title Bar colors** は、ウィンドウ最上部に表示されるタイトルバーに関する色設定である。
@@ -1228,7 +1228,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Menu Bar colors(メニューバーカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Menu Bar colors(メニューバーカラー)</h2></summary>
 
 
 **Menu Bar colors** は、ウィンドウ最上部にあるメニューバーとそれを開いたときのメニュー項目に関する色設定である。
@@ -1253,7 +1253,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Command Center colors(コマンドセンターカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Command Center colors(コマンドセンターカラー)</h2></summary>
 
 
 **Command Center colors** は、タイトルバー中央のタイトルをクリックしたときに表示されるコマンドセンターに関する色設定である。
@@ -1277,7 +1277,7 @@ AIなどが次の変更を提案する際に表示される。
 
 </details>
 <details>
-<summary><h2>Notification colors(通知カラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Notification colors(通知カラー)</h2></summary>
 
 
 **Notification colors** は、ワークベンチ右下から表示される通知に関する色設定である。
@@ -1304,7 +1304,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Banner colors(バナーカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Banner colors(バナーカラー)</h2></summary>
 
 
 **Banner colors** は、タイトルバーの下に表示され、ワークベンチの幅いっぱいに広がるバナーに関する色設定である。
@@ -1322,7 +1322,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Extensions colors(拡張機能カラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Extensions colors(拡張機能カラー)</h2></summary>
 
 
 **Extensions colors** は、拡張機能ビューに関する色設定である。
@@ -1353,7 +1353,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Quick picker colors(クイックピッカーカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Quick picker colors(クイックピッカーカラー)</h2></summary>
 
 
 **Quick picker colors** は、コマンドパレット(`Ctrl`+`Shift`+`P`)やカラーテーマ選択ウィンドウなどに使われるクイックピッカー（クイックオープン）UIに関する色設定である。
@@ -1376,7 +1376,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Keybinding label colors(キーバインドラベルカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Keybinding label colors(キーバインドラベルカラー)</h2></summary>
 
 
 **Keybinding label colors** は、コマンドに関連付けられたキーボードショートカットを表示するラベルに関する色設定である。コマンドパレット、キーボードショートカットエディター、キーボードショートカット記録モーダル、拡張機能のマーケットプレイスページの機能紹介セクションなどで使われる。
@@ -1395,7 +1395,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Keyboard shortcut table colors(キーボードショートカットテーブルカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Keyboard shortcut table colors(キーボードショートカットテーブルカラー)</h2></summary>
 
 
 **Keyboard shortcut table colors** は、キーボードショートカットエディターのテーブルに関する色設定である。コマンドパレット（`Ctrl`+`Shift`+`P`）を開いて、「Preferences: Open Keyboard Shortcuts」と入力して実行することで表示される。
@@ -1412,7 +1412,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Integrated Terminal colors(統合ターミナルカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Integrated Terminal colors(統合ターミナルカラー)</h2></summary>
 
 
 **Integrated Terminal colors** は、統合ターミナルに関する色設定である。`terminalSymbolIcon`が出現するターミナルの補完候補はsettings.json に `"terminal.integrated.suggest.enabled": true` を追加することで表示される。
@@ -1488,7 +1488,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Debug colors(デバッグカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Debug colors(デバッグカラー)</h2></summary>
 
 
 **Debug colors** は、デバッグ機能に関する色設定である。`Ctrl`+`Shift`+`D`で「実行とデバッグ」をクリックすることでサイドバーがデバッグツールバーとなる。
@@ -1523,7 +1523,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Testing colors(テストカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Testing colors(テストカラー)</h2></summary>
 
 
 **Testing colors** は、テスト関連機能に関する色設定である。
@@ -1573,7 +1573,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Welcome page colors(ウェルカムページカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Welcome page colors(ウェルカムページカラー)</h2></summary>
 
 
 **Welcome page colors** は、VSCode起動時に表示されるウェルカムページに関する色設定である。
@@ -1596,7 +1596,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Git colors(Gitカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Git colors(Gitカラー)</h2></summary>
 
 
 **Git colors** は、Git関連の装飾に関する色設定である。サイドバーのエクスプローラーやソース管理ビューに使用される。
@@ -1622,7 +1622,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Source Control Graph colors(ソースコントロールグラフカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Source Control Graph colors(ソースコントロールグラフカラー)</h2></summary>
 
 
 **Source Control Graph colors** は、サイドバーのソース管理ビュー(`Ctrl`+`Shift`+`G`)に表示されるコミット履歴グラフ(GRAPH)に関する色設定である。
@@ -1651,7 +1651,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Settings Editor colors(設定エディターカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Settings Editor colors(設定エディターカラー)</h2></summary>
 
 
 **Settings Editor colors** は、コマンドパレットで`Preferences: Open Settings (UI)` で開けるGUI設定エディターに関する色設定である。
@@ -1687,7 +1687,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Breadcrumbs colors(ブレッドクラムカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Breadcrumbs colors(ブレッドクラムカラー)</h2></summary>
 
 
 **Breadcrumbs colors** は、タブとエディタの間にあるどのファイルを開いているかを階層構造で示すブレッドクラムナビゲーションに関する色設定である。
@@ -1707,7 +1707,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Snippets colors(スニペットカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Snippets colors(スニペットカラー)</h2></summary>
 
 
 **Snippets colors** は、入力補完リストに出てくる、スニペット（予め登録していたコード定型文）に関する色設定である。
@@ -1726,7 +1726,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Symbol Icons colors(シンボルアイコンカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Symbol Icons colors(シンボルアイコンカラー)</h2></summary>
 
 
 **Symbol Icons colors** は、サイドバーのエクスプローラーの最下部にあるアウトラインビュー、ブレッドクラムナビゲーション、サジェストウィジェットに表示されるシンボルアイコンに関する色設定である。
@@ -1774,7 +1774,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Debug Icons colors(デバッグアイコンカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Debug Icons colors(デバッグアイコンカラー)</h2></summary>
 
 
 **Debug Icons colors** は、デバッグ関連のアイコンに関する色設定である。
@@ -1809,7 +1809,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Notebook colors(ノートブックカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Notebook colors(ノートブックカラー)</h2></summary>
 
 
 **Notebook colors** は、Jupyter Notebookなどのノートブックエディターに関する色設定である。Notebookは、拡張機能から「Jupyter」をインストールし、ipynbファイルを作成することで表示される。
@@ -1848,7 +1848,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Chart colors(チャートカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Chart colors(チャートカラー)</h2></summary>
 
 
 **Chart colors** は、VSCode内のチャート表示に関する色設定である。
@@ -1874,7 +1874,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Ports colors(ポートカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Ports colors(ポートカラー)</h2></summary>
 
 
 **Ports colors** は、ポート転送機能に関する色設定である。
@@ -1890,7 +1890,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Comments View colors(コメントビューカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Comments View colors(コメントビューカラー)</h2></summary>
 
 
 **Comments View colors** は、コメントビューに関する色設定である。
@@ -1907,7 +1907,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Action Bar colors(アクションバーカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Action Bar colors(アクションバーカラー)</h2></summary>
 
 
 **Action Bar colors** は、アクションバーに関する色設定である。
@@ -1923,7 +1923,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Simple Find Widget colors(シンプル検索ウィジェットカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Simple Find Widget colors(シンプル検索ウィジェットカラー)</h2></summary>
 
 
 **Simple Find Widget colors** は、エディタ上の通常の検索（Ctrl + F）ではなく、「出力（Output）パネル」や「デバッグコンソール（Debug Console）」の文字を検索するときのシンプル検索ウィジェットに関する色設定である。
@@ -1939,7 +1939,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Gauge colors(ゲージカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Gauge colors(ゲージカラー)</h2></summary>
 
 
 **Gauge colors** は、ゲージ表示に関する色設定である。
@@ -1961,7 +1961,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Markdown(マークダウン)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Markdown(マークダウン)</h2></summary>
 
 
 **Markdown** は、Markdownのアラート（注釈ブロック）に関する色設定である。
@@ -1981,7 +1981,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>Agent Session colors(エージェントセッションカラー)</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">Agent Session colors(エージェントセッションカラー)</h2></summary>
 
 
 **Agent Session colors** は、AIエージェントセッションに関する色設定である。
@@ -2001,7 +2001,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 
 </details>
 <details>
-<summary><h2>参考</h2></summary>
+<summary><h2 style="display:inline; font-size: 1.25em; margin:0; padding:0; border:none;">参考</h2></summary>
 
 
 - [VSCode Theme Color Reference](https://code.visualstudio.com/api/references/theme-color)
