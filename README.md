@@ -7,11 +7,27 @@
 **Contrast colors** は、VSCode のハイコントラストテーマ専用の設定で、UI 全体の要素に追加のボーダー（枠線）を付けることで、近視やディスプレイの発色が悪い環境での作業をサポートする。
 `"type": "hc-black"`の時のみ適用され、通常のテーマでは基本的に使用されない。
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `contrastBorder`       | UI 全体の要素の周囲に追加ボーダーを表示し、要素同士の境界をはっきりさせる                 | ウインドウ、ボタン、バッジ                                |
-| `contrastActiveBorder` | 現在フォーカス中・選択中の**アクティブな要素**の周囲に追加のボーダーを表示し、他の要素と区別しやすくする | テキストボックス、タブやリストの項目のクリックによるフォーカス、エディター上の単語を選択 |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>contrastBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">UI 全体の要素の周囲に追加ボーダーを表示し、要素同士の境界をはっきりさせる</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウインドウ、ボタン、バッジ</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>contrastActiveBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在フォーカス中・選択中の**アクティブな要素**の周囲に追加のボーダーを表示し、他の要素と区別しやすくする</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テキストボックス、タブやリストの項目のクリックによるフォーカス、エディター上の単語を選択</td>
+  </tr>
+</tbody>
+</table>
 ---
 
 
@@ -23,19 +39,67 @@
 **Base colors** は、VSCode UI 全体に共通して使われるデフォルトの色設定である。各コンポーネントが独自の色を持たない場合のフォールバックとして機能する。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `focusBorder`          | フォーカスされた要素の全体的な境界線の色。各コンポーネントで上書きされない場合に使用するフォールバック値   | クリックによるフォーカス中のテキストボックス、リストの枠線                |
-| `foreground`           | UI 全体のデフォルト文字色。各コンポーネントで上書きされない場合に使用するフォールバック値         | サイドバーのテキスト、メニュー項目                            |
-| `disabledForeground`   | 無効化された要素の文字色。各コンポーネントで上書きされない場合に使用するフォールバック値           |                                              |
-| `widget.border`        | エディター内ウィジェットの境界線の色                                     | Find(`Ctrl`+`F`)やQuick Pick(`Ctrl`+`Shift`+`P`) ダイアログの枠線 |
-| `widget.shadow`        | エディター内ウィジェットの影の色                                       | Find(`Ctrl`+`F`)やQuick Pick(`Ctrl`+`Shift`+`P`) ダイアログの影 |
-| `selection.background` | ワークベンチ内のテキスト選択時の背景色。エディターやターミナル内の選択には適用されない            |                                              |
-| `descriptionForeground` | 補足情報として表示される説明テキストの文字色                                 |                                              |
-| `errorForeground`      | エラーメッセージ全体の文字色。各コンポーネントで上書きされない場合に使用するフォールバック値         | エディタ上のFind(`Ctrl`+`F`)でヒットしない文字列を検索したときに表示される"結果はありません。" |
-| `icon.foreground`      | ワークベンチ内のアイコンのデフォルトカラー                                  | サイドバーやツールバーのアイコン                             |
-| `sash.hoverBorder`     | ドラッグ可能なサッシュ（ペイン間の境界線）のクリック、ドラッグ時の境界線の色                 | サイドバーとエディター間の境界線をクリックまたはドラッグしたとき(参考: [VS Code tips — The sash hover border](https://www.youtube.com/watch?v=eU0zxM5kpoc)) |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>focusBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカスされた要素の全体的な境界線の色。各コンポーネントで上書きされない場合に使用するフォールバック値</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クリックによるフォーカス中のテキストボックス、リストの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">UI 全体のデフォルト文字色。各コンポーネントで上書きされない場合に使用するフォールバック値</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテキスト、メニュー項目</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>disabledForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">無効化された要素の文字色。各コンポーネントで上書きされない場合に使用するフォールバック値</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>widget.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内ウィジェットの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Find(<code>Ctrl</code>+<code>F</code>)やQuick Pick(<code>Ctrl</code>+<code>Shift</code>+<code>P</code>) ダイアログの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>widget.shadow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内ウィジェットの影の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Find(<code>Ctrl</code>+<code>F</code>)やQuick Pick(<code>Ctrl</code>+<code>Shift</code>+<code>P</code>) ダイアログの影</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>selection.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ワークベンチ内のテキスト選択時の背景色。エディターやターミナル内の選択には適用されない</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>descriptionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">補足情報として表示される説明テキストの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>errorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーメッセージ全体の文字色。各コンポーネントで上書きされない場合に使用するフォールバック値</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディタ上のFind(<code>Ctrl</code>+<code>F</code>)でヒットしない文字列を検索したときに表示される"結果はありません。"</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>icon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ワークベンチ内のアイコンのデフォルトカラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーやツールバーのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sash.hoverBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドラッグ可能なサッシュ（ペイン間の境界線）のクリック、ドラッグ時の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーとエディター間の境界線をクリックまたはドラッグしたとき(参考: [VS Code tips — The sash hover border](https://www.youtube.com/watch?v=eU0zxM5kpoc))</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -48,11 +112,27 @@
 **Window border** は、VSCode ウィンドウ自体の境界線の色設定である。アクティブ（フォーカス中）と非アクティブ（フォーカスなし）で色を切り替えられる。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `window.activeBorder`  | アクティブ（フォーカス中）ウィンドウの境界線の色                               | 現在操作中の VSCode ウィンドウの枠線                       |
-| `window.inactiveBorder` | 非アクティブ（フォーカスなし）ウィンドウの境界線の色                             | 背面にある VSCode ウィンドウの枠線                        |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>window.activeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ（フォーカス中）ウィンドウの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作中の VSCode ウィンドウの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>window.inactiveBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブ（フォーカスなし）ウィンドウの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">背面にある VSCode ウィンドウの枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -65,18 +145,62 @@
 **Text colors** は、ウェルカムページなどのテキストドキュメント内で使われる色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `textBlockQuote.background` | ブロック引用の背景色                                             | ウェルカムページの引用ブロック背景                            |
-| `textBlockQuote.border` | ブロック引用の境界線の色                                           | ウェルカムページの引用ブロック左の縦線                          |
-| `textCodeBlock.background` | コードブロックの背景色                                            | ウェルカムページのインラインコード背景                          |
-| `textLink.activeForeground` | クリック時・ホバー時のリンクの文字色                                     | ウェルカムページのリンクをクリック・ホバーしたとき                    |
-| `textLink.foreground`  | 通常状態のリンクの文字色                                           | ウェルカムページのリンクテキスト                             |
-| `textPreformat.foreground` | 整形済みテキスト（pre）の文字色                                      | ウェルカムページのキーボードショートカット表記                      |
-| `textPreformat.background` | 整形済みテキスト（pre）の背景色                                      | ウェルカムページのキーボードショートカット表記の背景                   |
-| `textPreformat.border` | 整形済みテキスト（pre）の境界線の色                                    | ウェルカムページのキーボードショートカット表記の枠線                   |
-| `textSeparator.foreground` | テキスト区切り線の色                                             | ウェルカムページのセクション間の区切り線                         |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>textBlockQuote.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブロック引用の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページの引用ブロック背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>textBlockQuote.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブロック引用の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページの引用ブロック左の縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>textCodeBlock.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードブロックの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのインラインコード背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>textLink.activeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クリック時・ホバー時のリンクの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのリンクをクリック・ホバーしたとき</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>textLink.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通常状態のリンクの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのリンクテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>textPreformat.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">整形済みテキスト（pre）の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのキーボードショートカット表記</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>textPreformat.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">整形済みテキスト（pre）の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのキーボードショートカット表記の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>textPreformat.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">整形済みテキスト（pre）の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのキーボードショートカット表記の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>textSeparator.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テキスト区切り線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのセクション間の区切り線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -89,16 +213,52 @@
 **Action colors** は、ワークベンチ全体のアクション操作に関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `toolbar.hoverBackground` | ツールバーのアイコンをホバーしたときの背景色                                 | タブの欄の一番右にある"エディターを右に分割"や"その他の操作..."のアイコンにホバーしたとき |
-| `toolbar.hoverOutline` | ツールバーのアイコンをホバーしたときのアウトライン色                             | タブの欄の一番右にある"エディターを右に分割"や"その他の操作..."のアイコンにホバーしたときの枠線 |
-| `toolbar.activeBackground` | ツールバーのアイコンをクリック押下中の背景色                                 | タブの欄の一番右にある"エディターを右に分割"や"その他の操作..."のアイコンをクリックして押し込んでいるとき |
-| `editorActionList.background` | アクションリストの背景色                                           | 間違ったコードを書いたときに出てくるダイアログ("式が必要です。ts(1109)"などが表示されるダイアログ) |
-| `editorActionList.foreground` | アクションリストの文字色                                           | 間違ったコードを書いたときに出てくるダイアログ("式が必要です。ts(1109)"などが表示されるダイアログ) |
-| `editorActionList.focusForeground` | アクションリストのフォーカス中の項目の文字色                                 | 間違ったコードを書いたときに出てくるダイアログ("式が必要です。ts(1109)"などが表示されるダイアログ) |
-| `editorActionList.focusBackground` | アクションリストのフォーカス中の項目の背景色                                 | 間違ったコードを書いたときに出てくるダイアログ("式が必要です。ts(1109)"などが表示されるダイアログ) |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>toolbar.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ツールバーのアイコンをホバーしたときの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブの欄の一番右にある"エディターを右に分割"や"その他の操作..."のアイコンにホバーしたとき</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>toolbar.hoverOutline</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ツールバーのアイコンをホバーしたときのアウトライン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブの欄の一番右にある"エディターを右に分割"や"その他の操作..."のアイコンにホバーしたときの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>toolbar.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ツールバーのアイコンをクリック押下中の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブの欄の一番右にある"エディターを右に分割"や"その他の操作..."のアイコンをクリックして押し込んでいるとき</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorActionList.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクションリストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">間違ったコードを書いたときに出てくるダイアログ("式が必要です。ts(1109)"などが表示されるダイアログ)</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorActionList.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクションリストの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">間違ったコードを書いたときに出てくるダイアログ("式が必要です。ts(1109)"などが表示されるダイアログ)</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorActionList.focusForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクションリストのフォーカス中の項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">間違ったコードを書いたときに出てくるダイアログ("式が必要です。ts(1109)"などが表示されるダイアログ)</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorActionList.focusBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクションリストのフォーカス中の項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">間違ったコードを書いたときに出てくるダイアログ("式が必要です。ts(1109)"などが表示されるダイアログ)</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -111,32 +271,132 @@
 **Button control** は、エクスプローラーの「フォルダーを開く」、ソース管理の「リポジトリを初期化する」ボタンなど、ボタンウィジェットに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `button.background`    | ボタンの背景色                                                | 「フォルダーを開く」や「リポジトリを初期化する」ボタンの背景               |
-| `button.foreground`    | ボタンの文字色                                                | 「フォルダーを開く」や「リポジトリを初期化する」ボタンのテキスト             |
-| `button.border`        | ボタンの境界線の色                                              | 「フォルダーを開く」や「リポジトリを初期化する」ボタンの枠線               |
-| `button.separator`     | ドロップダウン付きボタンの区切り線の色                                    | 拡張機能の詳細画面の「アンインストール」ボタンの区切り線                 |
-| `button.hoverBackground` | ホバー時のボタンの背景色                                           | 「フォルダーを開く」や「リポジトリを初期化する」ボタンにホバーしたときの背景       |
-| `button.secondaryForeground` | セカンダリボタンの文字色                                           | キャンセルなどの補助的なボタンのテキスト                         |
-| `button.secondaryBackground` | セカンダリボタンの背景色                                           | キャンセルなどの補助的なボタンの背景                           |
-| `button.secondaryHoverBackground` | ホバー時のセカンダリボタンの背景色                                      | セカンダリボタンにホバーしたときの背景                          |
-| `button.secondaryBorder` | セカンダリボタンの境界線の色                                         | セカンダリボタンの枠線                                  |
-| `checkbox.background`  | チェックボックスの背景色                                           | 拡張機能の詳細画面の「自動更新」のチェックボックスの背景                 |
-| `checkbox.foreground`  | チェックボックスのマーク                                           | 拡張機能の詳細画面の「自動更新」のチェックボックスのチェックマーク            |
-| `checkbox.disabled.background` | 無効化されたチェックボックスの背景色                                     | グレーアウトされたチェックボックスの背景                         |
-| `checkbox.disabled.foreground` | 無効化されたチェックボックスのマーク                                     | グレーアウトされたチェックボックスのチェックマーク                    |
-| `checkbox.border`      | チェックボックスの境界線の色                                         | 拡張機能の詳細画面の「自動更新」のチェックボックスの枠線                 |
-| `checkbox.selectBackground` | 選択中の要素内にあるチェックボックスの背景色                                 | 設定画面(`Ctrl`+`,`)でリスト項目が選択されているときのチェックボックス背景  |
-| `checkbox.selectBorder` | 選択中の要素内にあるチェックボックスの境界線の色                               | 設定画面(`Ctrl`+`,`)でリスト項目が選択されているときのチェックボックス枠線  |
-| `radio.activeForeground` | アクティブなラジオボタンの文字色                                       |                                              |
-| `radio.activeBackground` | アクティブなラジオボタンの背景色                                       |                                              |
-| `radio.activeBorder`   | アクティブなラジオボタンの境界線の色                                     |                                              |
-| `radio.inactiveForeground` | 非アクティブなラジオボタンの文字色                                      |                                              |
-| `radio.inactiveBackground` | 非アクティブなラジオボタンの背景色                                      |                                              |
-| `radio.inactiveBorder` | 非アクティブなラジオボタンの境界線の色                                    |                                              |
-| `radio.inactiveHoverBackground` | 非アクティブなラジオボタンのホバー時の背景色                                 |                                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>button.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「フォルダーを開く」や「リポジトリを初期化する」ボタンの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>button.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ボタンの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「フォルダーを開く」や「リポジトリを初期化する」ボタンのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>button.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ボタンの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「フォルダーを開く」や「リポジトリを初期化する」ボタンの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>button.separator</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウン付きボタンの区切り線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の詳細画面の「アンインストール」ボタンの区切り線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>button.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「フォルダーを開く」や「リポジトリを初期化する」ボタンにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>button.secondaryForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セカンダリボタンの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キャンセルなどの補助的なボタンのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>button.secondaryBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セカンダリボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キャンセルなどの補助的なボタンの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>button.secondaryHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のセカンダリボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セカンダリボタンにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>button.secondaryBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セカンダリボタンの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セカンダリボタンの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>checkbox.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チェックボックスの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の詳細画面の「自動更新」のチェックボックスの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>checkbox.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チェックボックスのマーク</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の詳細画面の「自動更新」のチェックボックスのチェックマーク</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>checkbox.disabled.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">無効化されたチェックボックスの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グレーアウトされたチェックボックスの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>checkbox.disabled.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">無効化されたチェックボックスのマーク</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グレーアウトされたチェックボックスのチェックマーク</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>checkbox.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チェックボックスの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の詳細画面の「自動更新」のチェックボックスの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>checkbox.selectBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中の要素内にあるチェックボックスの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面(<code>Ctrl</code>+<code>,</code>)でリスト項目が選択されているときのチェックボックス背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>checkbox.selectBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中の要素内にあるチェックボックスの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面(<code>Ctrl</code>+<code>,</code>)でリスト項目が選択されているときのチェックボックス枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>radio.activeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなラジオボタンの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>radio.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなラジオボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>radio.activeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなラジオボタンの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>radio.inactiveForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなラジオボタンの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>radio.inactiveBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなラジオボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>radio.inactiveBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなラジオボタンの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>radio.inactiveHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなラジオボタンのホバー時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -149,13 +409,37 @@
 **Dropdown control** は、統合ターミナルや出力パネルなどのドロップダウンウィジェットに関する色設定である。なお、macOS では現在ドロップダウンコントロールは使用されていない。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `dropdown.background`  | ドロップダウンの背景色                                            | 設定画面(`Ctrl`+`,`)の`window.titleBarStyle`や出力(`Ctrl`+`Shift`+`U`)のドロップダウンの選択欄の背景 |
-| `dropdown.listBackground` | ドロップダウンリストの背景色                                         | 設定画面(`Ctrl`+`,`)の`window.titleBarStyle`や出力(`Ctrl`+`Shift`+`U`)のドロップダウンを開いたときの選択肢リストの背景 |
-| `dropdown.border`      | ドロップダウンの境界線の色                                          | 設定画面(`Ctrl`+`,`)の`window.titleBarStyle`や出力(`Ctrl`+`Shift`+`U`)のドロップダウンの枠線 |
-| `dropdown.foreground`  | ドロップダウンの文字色                                            | 設定画面(`Ctrl`+`,`)の`window.titleBarStyle`や出力(`Ctrl`+`Shift`+`U`)のドロップダウンの選択中の項目のテキスト |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>dropdown.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面(<code>Ctrl</code>+<code>,</code>)の<code>window.titleBarStyle</code>や出力(<code>Ctrl</code>+<code>Shift</code>+<code>U</code>)のドロップダウンの選択欄の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>dropdown.listBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンリストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面(<code>Ctrl</code>+<code>,</code>)の<code>window.titleBarStyle</code>や出力(<code>Ctrl</code>+<code>Shift</code>+<code>U</code>)のドロップダウンを開いたときの選択肢リストの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>dropdown.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面(<code>Ctrl</code>+<code>,</code>)の<code>window.titleBarStyle</code>や出力(<code>Ctrl</code>+<code>Shift</code>+<code>U</code>)のドロップダウンの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>dropdown.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面(<code>Ctrl</code>+<code>,</code>)の<code>window.titleBarStyle</code>や出力(<code>Ctrl</code>+<code>Shift</code>+<code>U</code>)のドロップダウンの選択中の項目のテキスト</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -168,26 +452,102 @@
 **Input control** は、検索ビューや Find/Replace ダイアログなどの入力フィールドに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `input.background`     | 入力ボックスの背景色                                             | 検索ビューの入力フィールド背景                              |
-| `input.border`         | 入力ボックスの境界線の色                                           | 検索ビューの入力フィールドの枠線                             |
-| `input.foreground`     | 入力ボックスの文字色                                             | 検索ビューの入力テキスト                                 |
-| `input.placeholderForeground` | 入力ボックスのプレースホルダーの文字色                                    | 検索ビューの「検索(Find)」などのヒントテキスト                   |
-| `inputOption.activeBackground` | 入力フィールドのアクティブなオプションの背景色                                | 検索ビューの「大文字と小文字を区別」ボタンのオン時の背景                 |
-| `inputOption.activeBorder` | 入力フィールドのアクティブなオプションの境界線の色                              | 検索ビューの「大文字と小文字を区別」ボタンのオン時の枠線                 |
-| `inputOption.activeForeground` | 入力フィールドのアクティブなオプションの文字色                                | 検索ビューの「大文字と小文字を区別」ボタンのオン時のテキスト               |
-| `inputOption.hoverBackground` | 入力フィールドのオプションのホバー時の背景色                                 | 検索ビューの「大文字と小文字を区別」ボタンにホバーしたときの背景             |
-| `inputValidation.errorBackground` | エラー時のバリデーションメッセージの背景色                                  | 正規表現を使用して`sdd\`を検索したときのエラーメッセージの背景           |
-| `inputValidation.errorForeground` | エラー時のバリデーションメッセージの文字色                                  | 正規表現を使用して`sdd\`を検索したときのエラーメッセージのテキスト         |
-| `inputValidation.errorBorder` | エラー時のバリデーションメッセージの境界線の色                                | 正規表現を使用して`sdd\`を検索したときのエラーメッセージの枠線           |
-| `inputValidation.infoBackground` | 情報レベルのバリデーションメッセージの背景色                                 |                                              |
-| `inputValidation.infoForeground` | 情報レベルのバリデーションメッセージの文字色                                 |                                              |
-| `inputValidation.infoBorder` | 情報レベルのバリデーションメッセージの境界線の色                               |                                              |
-| `inputValidation.warningBackground` | 警告レベルのバリデーションメッセージの背景色                                 |                                              |
-| `inputValidation.warningForeground` | 警告レベルのバリデーションメッセージの文字色                                 |                                              |
-| `inputValidation.warningBorder` | 警告レベルのバリデーションメッセージの境界線の色                               |                                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>input.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">入力ボックスの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ビューの入力フィールド背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>input.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">入力ボックスの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ビューの入力フィールドの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>input.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">入力ボックスの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ビューの入力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>input.placeholderForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">入力ボックスのプレースホルダーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ビューの「検索(Find)」などのヒントテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputOption.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">入力フィールドのアクティブなオプションの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ビューの「大文字と小文字を区別」ボタンのオン時の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputOption.activeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">入力フィールドのアクティブなオプションの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ビューの「大文字と小文字を区別」ボタンのオン時の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputOption.activeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">入力フィールドのアクティブなオプションの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ビューの「大文字と小文字を区別」ボタンのオン時のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputOption.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">入力フィールドのオプションのホバー時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ビューの「大文字と小文字を区別」ボタンにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputValidation.errorBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー時のバリデーションメッセージの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">正規表現を使用して<code>sdd\</code>を検索したときのエラーメッセージの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputValidation.errorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー時のバリデーションメッセージの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">正規表現を使用して<code>sdd\</code>を検索したときのエラーメッセージのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputValidation.errorBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー時のバリデーションメッセージの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">正規表現を使用して<code>sdd\</code>を検索したときのエラーメッセージの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputValidation.infoBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報レベルのバリデーションメッセージの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputValidation.infoForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報レベルのバリデーションメッセージの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputValidation.infoBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報レベルのバリデーションメッセージの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputValidation.warningBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告レベルのバリデーションメッセージの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputValidation.warningForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告レベルのバリデーションメッセージの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inputValidation.warningBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告レベルのバリデーションメッセージの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -200,14 +560,42 @@
 **Scrollbar control** は、エディターの一番右にあるスクロールバーに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `scrollbar.background` | スクロールバーの可動領域のトラック（レール部分）の背景色                           | エディターのスクロールバー背景                              |
-| `scrollbar.shadow`     | スクロール中であることを示すスライダーの影の色                                | スクロール位置がトップ以外のときのエディター上部の影                   |
-| `scrollbarSlider.activeBackground` | クリック押下中のスクロールバースライダーの背景色                               | スクロールバーにあるスライダーをクリックして押し込んでいるときの背景           |
-| `scrollbarSlider.background` | スクロールバースライダーの背景色                                       | スクロールバーにあるスライダーの背景                           |
-| `scrollbarSlider.hoverBackground` | ホバー時のスクロールバースライダーの背景色                                  | スクロールバーにあるスライダーにホバーしたときの背景                   |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scrollbar.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロールバーの可動領域のトラック（レール部分）の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターのスクロールバー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scrollbar.shadow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール中であることを示すスライダーの影の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール位置がトップ以外のときのエディター上部の影</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scrollbarSlider.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クリック押下中のスクロールバースライダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロールバーにあるスライダーをクリックして押し込んでいるときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scrollbarSlider.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロールバースライダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロールバーにあるスライダーの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scrollbarSlider.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のスクロールバースライダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロールバーにあるスライダーにホバーしたときの背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -220,11 +608,27 @@
 **Badge** は、拡張機能の発行元(例: `ms-vscode`)などを表示する小さなアイコンに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `badge.foreground`     | バッジの文字色                                                | 拡張機能の発行元(例: `ms-vscode`)のバッジのチェックマーク         |
-| `badge.background`     | バッジの背景色                                                | 拡張機能の発行元(例: `ms-vscode`)のバッジの背景              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>badge.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">バッジの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の発行元(例: <code>ms-vscode</code>)のバッジのチェックマーク</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>badge.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">バッジの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の発行元(例: <code>ms-vscode</code>)のバッジの背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -236,10 +640,22 @@
 
 **Progress bar** は、長時間かかる処理中に表示されるプログレスバーに関する色設定である。
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `progressBar.background` | プログレスバーの背景色                                            | 拡張機能インストール中やファイル読み込み中のプログレスバー                |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>progressBar.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プログレスバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能インストール中やファイル読み込み中のプログレスバー</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -252,41 +668,177 @@
 **Lists and trees** は、ファイルエクスプローラーなどのリスト・ツリーUIに関する色設定である。アクティブなリスト/ツリーはキーボードフォーカスを持ち、非アクティブなものは持たない。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `list.activeSelectionBackground` | アクティブ時の選択中の項目の背景色                                      | サイドバーのエクスプローラーでフォーカスされた選択中のファイルの背景           |
-| `list.activeSelectionForeground` | アクティブ時の選択中の項目の文字色                                      | サイドバーのエクスプローラーでフォーカスされた選択中のファイル名のテキスト        |
-| `list.activeSelectionIconForeground` | アクティブ時の選択中の項目のアイコン色                                    | サイドバーのエクスプローラーでフォーカスされた選択中のファイルアイコン          |
-| `list.dropBackground`  | ドラッグ&ドロップ中の背景色                                         | サイドバーのエクスプローラーでファイルをドラッグして移動中の背景             |
-| `list.focusBackground` | アクティブ時のフォーカス中の項目の背景色                                   | サイドバーのエクスプローラーでキーボード操作によりフォーカスされたファイルの背景     |
-| `list.focusForeground` | アクティブ時のフォーカス中の項目の文字色                                   | サイドバーのエクスプローラーでキーボード操作によりフォーカスされたファイルのテキスト   |
-| `list.focusHighlightForeground` | アクティブ時のフォーカス中の項目の検索マッチハイライトの文字色                        | リスト内検索でフォーカス中の項目のマッチ部分のテキスト                  |
-| `list.focusOutline`    | アクティブ時のフォーカス中の項目のアウトライン色                               | サイドバーのエクスプローラーでキーボード操作によりフォーカスされたファイルの枠線     |
-| `list.focusAndSelectionOutline` | アクティブ時のフォーカスかつ選択中の項目のアウトライン色                           | サイドバーのエクスプローラーでキーボード操作によるフォーカスと選択が重なった項目の枠線  |
-| `list.highlightForeground` | リスト内検索のマッチハイライトの文字色                                    | サイドバーの検索でマッチした文字のテキスト色                       |
-| `list.hoverBackground` | ホバー時の項目の背景色                                            | サイドバーのエクスプローラーのファイルにホバーしたときの背景               |
-| `list.hoverForeground` | ホバー時の項目の文字色                                            | サイドバーのエクスプローラーのファイルにホバーしたときのテキスト             |
-| `list.inactiveSelectionBackground` | 非アクティブ時の選択中の項目の背景色                                     | サイドバーのエクスプローラーで非アクティブ(別ウィンドウ操作中)かつ選択中のファイルの背景 |
-| `list.inactiveSelectionForeground` | 非アクティブ時の選択中の項目の文字色                                     | サイドバーのエクスプローラーで非アクティブ(別ウィンドウ操作中)かつ選択中のファイル名のテキスト |
-| `list.inactiveSelectionIconForeground` | 非アクティブ時の選択中の項目のアイコン色                                   | サイドバーのエクスプローラーで非アクティブ(別ウィンドウ操作中)かつ選択中のファイルアイコン |
-| `list.inactiveFocusBackground` | 非アクティブ時のフォーカス中の項目の背景色（リストのみ対応）                         | サイドバーのエクスプローラーで非アクティブ(別ウィンドウ操作中)かつフォーカスされた項目の背景 |
-| `list.inactiveFocusOutline` | サイドバーのエクスプローラーで非アクティブ時のフォーカス中の項目のアウトライン色               | リスト/ツリーで非アクティブ(別ウィンドウ操作中)かつフォーカスされた項目の枠線     |
-| `list.invalidItemForeground` | 無効な項目の文字色                                              | エクスプローラーで未解決のルートフォルダーのテキスト                   |
-| `list.errorForeground` | エラーを含む項目の文字色                                           | エラーのあるファイル・フォルダー名のテキスト                       |
-| `list.warningForeground` | 警告を含む項目の文字色                                            | 警告のあるファイル・フォルダー名のテキスト                        |
-| `listFilterWidget.background` | リスト内検索ウィジェットの入力テキストの背景色                                |                                              |
-| `listFilterWidget.outline` | リスト内検索ウィジェットの入力テキストのアウトライン色                            |                                              |
-| `listFilterWidget.noMatchesOutline` | リスト内検索ウィジェットでマッチなし時のアウトライン色                            |                                              |
-| `listFilterWidget.shadow` | リスト内検索ウィジェットの影の色                                       |                                              |
-| `list.filterMatchBackground` | フィルタリングされたマッチ項目の背景色                                    |                                              |
-| `list.filterMatchBorder` | フィルタリングされたマッチ項目の境界線の色                                  |                                              |
-| `list.deemphasizedForeground` | 非強調項目の文字色                                              |                                              |
-| `list.dropBetweenBackground` | 項目間へのドラッグ&ドロップ時の境界線の色                                  | ファイルを項目と項目の間にドロップするときの境界線                    |
-| `tree.indentGuidesStroke` | ツリーのアクティブなインデントガイドの色                                   | エクスプローラーのフォルダー階層を示すアクティブな縦線                  |
-| `tree.inactiveIndentGuidesStroke` | ツリーの非アクティブなインデントガイドの色                                  | エクスプローラーのフォルダー階層を示す非アクティブな縦線                 |
-| `tree.tableColumnsBorder` | ツリーのテーブルカラムの境界線の色                                      |                                              |
-| `tree.tableOddRowsBackground` | テーブルの奇数行の背景色                                           |                                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.activeSelectionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時の選択中の項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーでフォーカスされた選択中のファイルの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.activeSelectionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時の選択中の項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーでフォーカスされた選択中のファイル名のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.activeSelectionIconForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時の選択中の項目のアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーでフォーカスされた選択中のファイルアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.dropBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドラッグ&ドロップ中の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーでファイルをドラッグして移動中の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.focusBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時のフォーカス中の項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーでキーボード操作によりフォーカスされたファイルの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.focusForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時のフォーカス中の項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーでキーボード操作によりフォーカスされたファイルのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.focusHighlightForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時のフォーカス中の項目の検索マッチハイライトの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リスト内検索でフォーカス中の項目のマッチ部分のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.focusOutline</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時のフォーカス中の項目のアウトライン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーでキーボード操作によりフォーカスされたファイルの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.focusAndSelectionOutline</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時のフォーカスかつ選択中の項目のアウトライン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーでキーボード操作によるフォーカスと選択が重なった項目の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.highlightForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リスト内検索のマッチハイライトの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーの検索でマッチした文字のテキスト色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時の項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーのファイルにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.hoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時の項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーのファイルにホバーしたときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.inactiveSelectionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブ時の選択中の項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーで非アクティブ(別ウィンドウ操作中)かつ選択中のファイルの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.inactiveSelectionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブ時の選択中の項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーで非アクティブ(別ウィンドウ操作中)かつ選択中のファイル名のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.inactiveSelectionIconForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブ時の選択中の項目のアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーで非アクティブ(別ウィンドウ操作中)かつ選択中のファイルアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.inactiveFocusBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブ時のフォーカス中の項目の背景色（リストのみ対応）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーで非アクティブ(別ウィンドウ操作中)かつフォーカスされた項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.inactiveFocusOutline</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーで非アクティブ時のフォーカス中の項目のアウトライン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リスト/ツリーで非アクティブ(別ウィンドウ操作中)かつフォーカスされた項目の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.invalidItemForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">無効な項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラーで未解決のルートフォルダーのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.errorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーを含む項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーのあるファイル・フォルダー名のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.warningForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告を含む項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告のあるファイル・フォルダー名のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>listFilterWidget.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リスト内検索ウィジェットの入力テキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>listFilterWidget.outline</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リスト内検索ウィジェットの入力テキストのアウトライン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>listFilterWidget.noMatchesOutline</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リスト内検索ウィジェットでマッチなし時のアウトライン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>listFilterWidget.shadow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リスト内検索ウィジェットの影の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.filterMatchBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フィルタリングされたマッチ項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.filterMatchBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フィルタリングされたマッチ項目の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.deemphasizedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非強調項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>list.dropBetweenBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">項目間へのドラッグ&ドロップ時の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルを項目と項目の間にドロップするときの境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tree.indentGuidesStroke</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ツリーのアクティブなインデントガイドの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラーのフォルダー階層を示すアクティブな縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tree.inactiveIndentGuidesStroke</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ツリーの非アクティブなインデントガイドの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラーのフォルダー階層を示す非アクティブな縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tree.tableColumnsBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ツリーのテーブルカラムの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tree.tableOddRowsBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テーブルの奇数行の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -299,29 +851,117 @@
 **Activity Bar** は、VSCodeの左端（または右端）に縦に並んでいるアイコン群の列であり、サイドバーのビューを素早く切り替えるためのバーに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `activityBar.background` | アクティビティバー全体の背景色                                        |                                              |
-| `activityBar.dropBorder` | アクティビティバーへのドラッグ&ドロップ時の境界線の色                            |                                              |
-| `activityBar.foreground` | アクティビティバーのアイコンの色                                       |                                              |
-| `activityBar.inactiveForeground` | アクティビティバーの非アクティブなアイコンの色                                | 未選択のビューアイコン                                  |
-| `activityBar.border`   | アクティビティバーとサイドバーの境界線の色                                  | 左端のアクティビティバーとサイドバーの間の縦線                      |
-| `activityBarBadge.background` | アクティビティバーの通知バッジの背景色                                    | アクティビティバーのアイコン右下にある通知数を示す丸いバッジの背景            |
-| `activityBarBadge.foreground` | アクティビティバーの通知バッジの文字色                                    | アクティビティバーのアイコン右下にある通知数を示す丸いバッジのテキスト          |
-| `activityBar.activeBorder` | アクティブなアイテムのインジケーターの縦線の色                                | 選択中のビューアイコンの横のアクティブな縦線                       |
-| `activityBar.activeBackground` | アクティブなアイテムのオプション背景色                                    | 選択中のビューアイコンの背景                               |
-| `activityBar.activeFocusBorder` | アクティブなアイテムのフォーカス時の境界線の色                                |                                              |
-| `activityBarTop.foreground` | 上部配置時のアクティブなアイテムの文字・アイコン色                              | アクティビティバーを上部に配置したときの選択中のアイコン                 |
-| `activityBarTop.activeBorder` | 上部配置時のアクティブなアイテムのフォーカス境界線の色                            | アクティビティバーを上部に配置したときの選択中アイコンの枠線               |
-| `activityBarTop.inactiveForeground` | 上部配置時の非アクティブなアイテムの文字・アイコン色                             | アクティビティバーを上部に配置したときの未選択のアイコン                 |
-| `activityBarTop.dropBorder` | 上部配置時のドラッグ&ドロップ時の境界線の色                                 | アクティビティバーを上部に配置してアイコンをドラッグするときの境界線           |
-| `activityBarTop.background` | 上部・下部配置時のアクティビティバーの背景色                                 | アクティビティバーを上部または下部に配置したときの背景                  |
-| `activityBarTop.activeBackground` | 上部・下部配置時のアクティブなアイテムの背景色                                | アクティビティバーを上部または下部に配置したときの選択中アイコンの背景          |
-| `activityWarningBadge.foreground` | 警告アクティビティバッジの文字色                                       |                                              |
-| `activityWarningBadge.background` | 警告アクティビティバッジの背景色                                       |                                              |
-| `activityErrorBadge.foreground` | エラーアクティビティバッジの文字色                                      |                                              |
-| `activityErrorBadge.background` | エラーアクティビティバッジの背景色                                      |                                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBar.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバー全体の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBar.dropBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーへのドラッグ&ドロップ時の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBar.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーのアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBar.inactiveForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーの非アクティブなアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未選択のビューアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBar.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーとサイドバーの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">左端のアクティビティバーとサイドバーの間の縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBarBadge.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーの通知バッジの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーのアイコン右下にある通知数を示す丸いバッジの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBarBadge.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーの通知バッジの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーのアイコン右下にある通知数を示す丸いバッジのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBar.activeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなアイテムのインジケーターの縦線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のビューアイコンの横のアクティブな縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBar.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなアイテムのオプション背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のビューアイコンの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBar.activeFocusBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなアイテムのフォーカス時の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBarTop.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">上部配置時のアクティブなアイテムの文字・アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーを上部に配置したときの選択中のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBarTop.activeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">上部配置時のアクティブなアイテムのフォーカス境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーを上部に配置したときの選択中アイコンの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBarTop.inactiveForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">上部配置時の非アクティブなアイテムの文字・アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーを上部に配置したときの未選択のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBarTop.dropBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">上部配置時のドラッグ&ドロップ時の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーを上部に配置してアイコンをドラッグするときの境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBarTop.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">上部・下部配置時のアクティビティバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーを上部または下部に配置したときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityBarTop.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">上部・下部配置時のアクティブなアイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーを上部または下部に配置したときの選択中アイコンの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityWarningBadge.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告アクティビティバッジの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityWarningBadge.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告アクティビティバッジの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityErrorBadge.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーアクティビティバッジの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>activityErrorBadge.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーアクティビティバッジの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -334,12 +974,32 @@
 **Profiles** は、アクティビティバーの設定（歯車）アイコンの上に表示されるプロファイルバッジに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `profileBadge.background` | プロファイルバッジの背景色                                          | 設定アイコン上に表示されるプロファイルバッジの背景                    |
-| `profileBadge.foreground` | プロファイルバッジの文字色                                          | 設定アイコン上に表示されるプロファイルバッジのテキスト                  |
-| `profiles.sashBorder`  | プロファイルエディターの分割ビューのサッシュ（境界線）の色                          | プロファイルエディターの2分割表示の間の境界線                      |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>profileBadge.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プロファイルバッジの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定アイコン上に表示されるプロファイルバッジの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>profileBadge.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プロファイルバッジの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定アイコン上に表示されるプロファイルバッジのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>profiles.sashBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プロファイルエディターの分割ビューのサッシュ（境界線）の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プロファイルエディターの2分割表示の間の境界線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -352,23 +1012,87 @@
 **Side Bar** は、ウィンドウ左側に位置するエクスプローラーや検索などのビューを格納するコンテナに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `sideBar.background`   | サイドバーの背景色                                              | サイドバー全体の背景                                   |
-| `sideBar.foreground`   | サイドバーの文字色                                              | サイドバー内のテキスト                                  |
-| `sideBar.border`       | サイドバーとエディターを区切る境界線の色                                   | サイドバーとエディターの間の縦線                             |
-| `sideBar.dropBackground` | サイドバーセクションへのドラッグ&ドロップ時の背景色                             | サイドバーにファイルをドラッグしているときの背景（透過色）                |
-| `sideBarTitle.foreground` | サイドバーのタイトルの文字色                                         | サイドバーの上部にある「エクスプローラー」などのタイトルテキスト             |
-| `sideBarSectionHeader.background` | サイドバーのセクションヘッダーの背景色                                    | エクスプローラー内の「アウトライン」や「タイムライン」などのセクション見出しの背景    |
-| `sideBarSectionHeader.foreground` | サイドバーのセクションヘッダーの文字色                                    | エクスプローラー内の「アウトライン」や「タイムライン」などのセクション見出しのテキスト  |
-| `sideBarSectionHeader.border` | サイドバーのセクションヘッダーの境界線の色                                  | エクスプローラー内の「アウトライン」や「タイムライン」などのセクション見出しの枠線    |
-| `sideBarActivityBarTop.border` | 上部配置したアクティビティバーとビューの間の境界線の色                            | アクティビティバーを上部に配置したときのビューとの境界線                 |
-| `sideBarTitle.background` | サイドバーのタイトルの背景色                                         | サイドバーの上部にある「エクスプローラー」などのタイトル部分の背景            |
-| `sideBarTitle.border`  | サイドバーのタイトル下部の境界線の色                                     | サイドバーの上部にある「エクスプローラー」などのタイトルとビューを区切る下部の線     |
-| `sideBarStickyScroll.background` | サイドバーのスティッキースクロールの背景色                                  | エクスプローラーでフォルダーをスクロールしたときに上部に固定される現在見ている場所の親フォルダーの背景 |
-| `sideBarStickyScroll.border` | サイドバーのスティッキースクロールの境界線の色                                | エクスプローラーでフォルダーをスクロールしたときに上部に固定される現在見ている場所の親フォルダー部分の枠線 |
-| `sideBarStickyScroll.shadow` | サイドバーのスティッキースクロールの影の色                                  | エクスプローラーでフォルダーをスクロールしたときに上部に固定される現在見ている場所の親フォルダー部分の影 |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBar.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバー全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBar.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバー内のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBar.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーとエディターを区切る境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーとエディターの間の縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBar.dropBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーセクションへのドラッグ&ドロップ時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーにファイルをドラッグしているときの背景（透過色）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarTitle.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのタイトルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーの上部にある「エクスプローラー」などのタイトルテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarSectionHeader.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのセクションヘッダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラー内の「アウトライン」や「タイムライン」などのセクション見出しの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarSectionHeader.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのセクションヘッダーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラー内の「アウトライン」や「タイムライン」などのセクション見出しのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarSectionHeader.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのセクションヘッダーの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラー内の「アウトライン」や「タイムライン」などのセクション見出しの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarActivityBarTop.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">上部配置したアクティビティバーとビューの間の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティビティバーを上部に配置したときのビューとの境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarTitle.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのタイトルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーの上部にある「エクスプローラー」などのタイトル部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarTitle.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのタイトル下部の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーの上部にある「エクスプローラー」などのタイトルとビューを区切る下部の線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarStickyScroll.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのスティッキースクロールの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラーでフォルダーをスクロールしたときに上部に固定される現在見ている場所の親フォルダーの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarStickyScroll.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのスティッキースクロールの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラーでフォルダーをスクロールしたときに上部に固定される現在見ている場所の親フォルダー部分の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBarStickyScroll.shadow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのスティッキースクロールの影の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラーでフォルダーをスクロールしたときに上部に固定される現在見ている場所の親フォルダー部分の影</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -381,25 +1105,97 @@
 **Minimap** は、エディタの右側に位置する現在のファイルのズームアウトしたものを表示する機能に関する色設定である。コマンドパレット（`Ctrl`+`Shift`+`P`）を開いて、「Toggle Minimap」と入力して実行することで表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `minimap.findMatchHighlight` | ファイル内検索のマッチ箇所のハイライト色                                   | ミニマップ上で検索ワードと一致した箇所のマーカー                     |
-| `minimap.selectionHighlight` | エディター上の選択範囲のハイライト色                                     | ミニマップ上の現在選択中のテキスト範囲のマーカー                     |
-| `minimap.errorHighlight` | エディター上のエラー箇所のハイライト色                                    | エラーがある行のミニマップ上のマーカー                          |
-| `minimap.warningHighlight` | エディター上の警告箇所のハイライト色                                     | 警告がある行のミニマップ上のマーカー                           |
-| `minimap.background`   | ミニマップの背景色                                              | ミニマップ全体の背景                                   |
-| `minimap.selectionOccurrenceHighlight` | 選択中の文字列と同じ語が繰り返し出現する箇所のマーカー色                           | ミニマップ上の選択中の単語と一致する箇所のマーカー                    |
-| `minimap.foregroundOpacity` | ミニマップ内に描画される前景要素の不透明度                                  | ミニマップに表示されるコードの縮小テキストの濃さ                     |
-| `minimap.infoHighlight` | 情報レベルのマーカー色                                            | ミニマップ上の情報通知がある行のマーカー                         |
-| `minimap.chatEditHighlight` | 保留中の編集領域の色                                             | AI等のインライン編集で未確定の変更箇所のハイライト                   |
-| `minimapSlider.background` | ミニマップスライダーの背景色                                         | ミニマップ上の現在の表示範囲を示すものの背景                       |
-| `minimapSlider.hoverBackground` | ホバー時のミニマップスライダーの背景色                                    | ミニマップの表示範囲枠にホバーしたときの背景                       |
-| `minimapSlider.activeBackground` | クリック押下時のミニマップスライダーの背景色                                 | ミニマップの表示範囲枠をクリックして押し込んでいるときの背景               |
-| `minimapGutter.addedBackground` | 追加された内容を示すミニマップガターの色                                   | Git差分で追加された行のミニマップ左端のマーカー                    |
-| `minimapGutter.modifiedBackground` | 変更された内容を示すミニマップガターの色                                   | Git差分で変更された行のミニマップ左端のマーカー                    |
-| `minimapGutter.deletedBackground` | 削除された内容を示すミニマップガターの色                                   | Git差分で削除された行のミニマップ左端のマーカー                    |
-| `editorMinimap.inlineChatInserted` | インラインチャットで挿入されたコンテンツのマーカー色                             | AIによって挿入されたコードのミニマップ上のマーカー                   |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimap.findMatchHighlight</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイル内検索のマッチ箇所のハイライト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップ上で検索ワードと一致した箇所のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimap.selectionHighlight</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター上の選択範囲のハイライト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップ上の現在選択中のテキスト範囲のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimap.errorHighlight</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター上のエラー箇所のハイライト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーがある行のミニマップ上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimap.warningHighlight</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター上の警告箇所のハイライト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告がある行のミニマップ上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimap.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップ全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimap.selectionOccurrenceHighlight</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中の文字列と同じ語が繰り返し出現する箇所のマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップ上の選択中の単語と一致する箇所のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimap.foregroundOpacity</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップ内に描画される前景要素の不透明度</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップに表示されるコードの縮小テキストの濃さ</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimap.infoHighlight</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報レベルのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップ上の情報通知がある行のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimap.chatEditHighlight</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">保留中の編集領域の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AI等のインライン編集で未確定の変更箇所のハイライト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimapSlider.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップスライダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップ上の現在の表示範囲を示すものの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimapSlider.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のミニマップスライダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップの表示範囲枠にホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimapSlider.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クリック押下時のミニマップスライダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ミニマップの表示範囲枠をクリックして押し込んでいるときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimapGutter.addedBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">追加された内容を示すミニマップガターの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Git差分で追加された行のミニマップ左端のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimapGutter.modifiedBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更された内容を示すミニマップガターの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Git差分で変更された行のミニマップ左端のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>minimapGutter.deletedBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除された内容を示すミニマップガターの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Git差分で削除された行のミニマップ左端のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMinimap.inlineChatInserted</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャットで挿入されたコンテンツのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AIによって挿入されたコードのミニマップ上のマーカー</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -413,51 +1209,227 @@
 **Tab** はエディタ上に開かれたファイルを表す横並びの見出しで、エディタの上部に位置している。1つの Editor Group 内に複数の Tab を開いて切り替えることができる。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorGroup.border`   | 複数のエディターグループを区切る境界線の色                                  | 画面分割した場合の複数のエディター間の境界線                       |
-| `editorGroup.dropBackground` | エディターをドラッグ中の背景色                                        | 画面分割した場合のタブをドラッグしてエディタへ移動しているときのエディタの背景      |
-| `editorGroupHeader.noTabsBackground` | シングルタブ表示時のエディターグループタイトルヘッダーの背景色（`"workbench.editor.showTabs": "single"` 設定時） |                                              |
-| `editorGroupHeader.tabsBackground` | タブコンテナの背景色                                             |                                              |
-| `editorGroupHeader.tabsBorder` | タブ有効時のタブコントロール下の境界線の色                                  |                                              |
-| `editorGroupHeader.border` | エディターグループヘッダーとエディターの間の境界線の色（ブレッドクラム有効時はその下）            |                                              |
-| `editorGroup.emptyBackground` | 空のエディターグループの背景色                                        | ファイルを開いていない空のエディターグループの背景                    |
-| `editorGroup.focusedEmptyBorder` | フォーカス中の空のエディターグループの境界線の色                               | フォーカスされている空のエディターグループの枠線                     |
-| `editorGroup.dropIntoPromptForeground` | ファイルドラッグ中に表示される案内テキストの文字色                              | ファイルをエディター上にドラッグ・ドロップしようとするときに表示される「Shiftをホールドしてエディターにドロップする」という案内文のテキスト |
-| `editorGroup.dropIntoPromptBackground` | ファイルドラッグ中に表示される案内テキストの背景色                              | ファイルをエディター上にドラッグ・ドロップしようとするときに表示される「Shiftをホールドしてエディターにドロップする」という案内文の背景 |
-| `editorGroup.dropIntoPromptBorder` | ファイルドラッグ中に表示される案内テキストの境界線の色                            | ファイルをエディター上にドラッグ・ドロップしようとするときに表示される「Shiftをホールドしてエディターにドロップする」という案内文の枠線 |
-| `tab.activeBackground` | アクティブなグループ内のアクティブタブの背景色                                | 現在操作しているエディターグループで開いているタブの背景                 |
-| `tab.unfocusedActiveBackground` | 非アクティブなグループ内のアクティブタブの背景色                               | 現在操作していないエディターグループで開いているタブの背景                |
-| `tab.activeForeground` | アクティブなグループ内のアクティブタブの文字色                                | 現在操作しているエディターグループで開いているタブのテキスト               |
-| `tab.border`           | タブ同士を区切る境界線の色                                          | 隣り合うタブの間の縦線                                  |
-| `tab.activeBorder`     | アクティブタブの下部境界線の色                                        | 現在操作しているエディターグループで開いているタブの下線                 |
-| `tab.selectedBorderTop` | 選択中タブの上部境界線の色                                          | 選択中のタブの上側に表示される線                             |
-| `tab.selectedBackground` | 選択中のタブの背景色                                             | `Shift`や`Ctrl`で複数選択したタブの背景                   |
-| `tab.selectedForeground` | 選択中のタブの文字色                                             | `Shift`や`Ctrl`で複数選択したタブののテキスト                |
-| `tab.dragAndDropBorder` | タブ間に挿入可能であることを示す境界線の色                                  | タブをドラッグして別タブの間に挿入できることを示す横線                  |
-| `tab.unfocusedActiveBorder` | 非アクティブなグループ内のアクティブタブの下部境界線の色                           | 現在操作していないエディターグループで開いているタブの下線                |
-| `tab.activeBorderTop`  | アクティブタブの上部境界線の色                                        | 現在操作しているエディターグループで開いているタブの上に表示される線           |
-| `tab.unfocusedActiveBorderTop` | 非アクティブなグループ内のアクティブタブの上部境界線の色                           | 現在操作していないエディターグループで開いているタブの上線                |
-| `tab.lastPinnedBorder` | 最後にピン留めされたタブの右側の境界線の色                                  | ピン留めタブと未ピン留めタブを区切る縦線                         |
-| `tab.inactiveBackground` | 非アクティブタブの背景色                                           | 現在操作しているエディターグループで開いていないタブの背景                |
-| `tab.unfocusedInactiveBackground` | 非フォーカスグループ内の非アクティブタブの背景色                               | 現在操作していないエディターグループで開いていないタブの背景               |
-| `tab.inactiveForeground` | アクティブなグループ内の非アクティブタブの文字色                               | 現在操作しているエディターグループで開いていないタブのテキスト              |
-| `tab.unfocusedActiveForeground` | 非アクティブなグループ内のアクティブタブの文字色                               | 現在操作していないエディターグループで開いているタブのテキスト              |
-| `tab.unfocusedInactiveForeground` | 非アクティブなグループ内の非アクティブタブの文字色                              | 現在操作していないエディターグループで開いていないタブのテキスト             |
-| `tab.hoverBackground`  | ホバー時のタブの背景色                                            | タブにホバーしたときの背景                                |
-| `tab.unfocusedHoverBackground` | 非フォーカスグループでホバー時のタブの背景色                                 | 現在操作していないエディターグループのタブにホバーしたときの背景             |
-| `tab.hoverForeground`  | ホバー時のタブの文字色                                            | タブにホバーしたときのテキスト                              |
-| `tab.unfocusedHoverForeground` | 非フォーカスグループでホバー時のタブの文字色                                 | 現在操作していないエディターグループのタブにホバーしたときのテキスト           |
-| `tab.hoverBorder`      | ホバー時のタブを強調する境界線の色                                      | タブにホバーしたときに表示される枠線                           |
-| `tab.unfocusedHoverBorder` | 非フォーカスグループでホバー時のタブを強調する境界線の色                           | 現在操作していないエディターグループのタブにホバーしたときの枠線             |
-| `tab.activeModifiedBorder` | アクティブグループ内の変更済み（未保存）アクティブタブの上部境界線の色                    | 未保存の変更があり、現在操作しているタブの上部に表示される線               |
-| `tab.inactiveModifiedBorder` | アクティブグループ内の変更済み（未保存）非アクティブタブの上部境界線の色                   | 未保存の変更があり、現在操作していないタブの上部に表示される線              |
-| `tab.unfocusedActiveModifiedBorder` | 非フォーカスグループ内の変更済み（未保存）アクティブタブの上部境界線の色                   | 未保存の変更があり、現在操作していないエディターグループの開いているタブの上部に表示される線 |
-| `tab.unfocusedInactiveModifiedBorder` | 非フォーカスグループ内の変更済み（未保存）非アクティブタブの上部境界線の色                  | 未保存の変更があり、現在操作していないエディターグループの開いていないタブの上部に表示される線 |
-| `editorPane.background` | 中央レイアウト時、エディターの左右に見えるエディターペインの背景色                      | エディターを中央寄せ表示にしたときの左右の余白部分の背景                 |
-| `sideBySideEditor.horizontalBorder` | エディターグループ内で上下に並べて表示する2つのエディターを区切る色                     | 縦に分割した2つのエディター間の境界線                          |
-| `sideBySideEditor.verticalBorder` | エディターグループ内で左右に並べて表示する2つのエディターを区切る色                     | 横に分割した2つのエディター間の境界線                          |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroup.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数のエディターグループを区切る境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">画面分割した場合の複数のエディター間の境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroup.dropBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターをドラッグ中の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">画面分割した場合のタブをドラッグしてエディタへ移動しているときのエディタの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroupHeader.noTabsBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シングルタブ表示時のエディターグループタイトルヘッダーの背景色（<code>"workbench.editor.showTabs": "single"</code> 設定時）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroupHeader.tabsBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブコンテナの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroupHeader.tabsBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブ有効時のタブコントロール下の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroupHeader.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターグループヘッダーとエディターの間の境界線の色（ブレッドクラム有効時はその下）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroup.emptyBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">空のエディターグループの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルを開いていない空のエディターグループの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroup.focusedEmptyBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中の空のエディターグループの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカスされている空のエディターグループの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroup.dropIntoPromptForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルドラッグ中に表示される案内テキストの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルをエディター上にドラッグ・ドロップしようとするときに表示される「Shiftをホールドしてエディターにドロップする」という案内文のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroup.dropIntoPromptBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルドラッグ中に表示される案内テキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルをエディター上にドラッグ・ドロップしようとするときに表示される「Shiftをホールドしてエディターにドロップする」という案内文の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGroup.dropIntoPromptBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルドラッグ中に表示される案内テキストの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルをエディター上にドラッグ・ドロップしようとするときに表示される「Shiftをホールドしてエディターにドロップする」という案内文の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなグループ内のアクティブタブの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作しているエディターグループで開いているタブの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedActiveBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなグループ内のアクティブタブの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループで開いているタブの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.activeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなグループ内のアクティブタブの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作しているエディターグループで開いているタブのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブ同士を区切る境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">隣り合うタブの間の縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.activeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブタブの下部境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作しているエディターグループで開いているタブの下線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.selectedBorderTop</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中タブの上部境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のタブの上側に表示される線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.selectedBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のタブの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>Shift</code>や<code>Ctrl</code>で複数選択したタブの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.selectedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のタブの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>Shift</code>や<code>Ctrl</code>で複数選択したタブののテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.dragAndDropBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブ間に挿入可能であることを示す境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブをドラッグして別タブの間に挿入できることを示す横線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedActiveBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなグループ内のアクティブタブの下部境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループで開いているタブの下線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.activeBorderTop</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブタブの上部境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作しているエディターグループで開いているタブの上に表示される線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedActiveBorderTop</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなグループ内のアクティブタブの上部境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループで開いているタブの上線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.lastPinnedBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">最後にピン留めされたタブの右側の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピン留めタブと未ピン留めタブを区切る縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.inactiveBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブタブの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作しているエディターグループで開いていないタブの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedInactiveBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非フォーカスグループ内の非アクティブタブの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループで開いていないタブの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.inactiveForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなグループ内の非アクティブタブの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作しているエディターグループで開いていないタブのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedActiveForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなグループ内のアクティブタブの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループで開いているタブのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedInactiveForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなグループ内の非アクティブタブの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループで開いていないタブのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のタブの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非フォーカスグループでホバー時のタブの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループのタブにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.hoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のタブの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブにホバーしたときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedHoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非フォーカスグループでホバー時のタブの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループのタブにホバーしたときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.hoverBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のタブを強調する境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タブにホバーしたときに表示される枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedHoverBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非フォーカスグループでホバー時のタブを強調する境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループのタブにホバーしたときの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.activeModifiedBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブグループ内の変更済み（未保存）アクティブタブの上部境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未保存の変更があり、現在操作しているタブの上部に表示される線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.inactiveModifiedBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブグループ内の変更済み（未保存）非アクティブタブの上部境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未保存の変更があり、現在操作していないタブの上部に表示される線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedActiveModifiedBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非フォーカスグループ内の変更済み（未保存）アクティブタブの上部境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未保存の変更があり、現在操作していないエディターグループの開いているタブの上部に表示される線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>tab.unfocusedInactiveModifiedBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非フォーカスグループ内の変更済み（未保存）非アクティブタブの上部境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未保存の変更があり、現在操作していないエディターグループの開いていないタブの上部に表示される線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorPane.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">中央レイアウト時、エディターの左右に見えるエディターペインの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターを中央寄せ表示にしたときの左右の余白部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBySideEditor.horizontalBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターグループ内で上下に並べて表示する2つのエディターを区切る色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">縦に分割した2つのエディター間の境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>sideBySideEditor.verticalBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターグループ内で左右に並べて表示する2つのエディターを区切る色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">横に分割した2つのエディター間の境界線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -472,351 +1444,1135 @@
 ### 基本
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.background`    | エディターの背景色                                              | エディター全体の背景                                   |
-| `editor.foreground`    | エディターのデフォルト文字色                                         | エディターのデフォルトテキスト                              |
-| `editorLineNumber.foreground` | 行番号の文字色                                                | エディター左端の行番号                                  |
-| `editorLineNumber.activeForeground` | カーソルがある行の行番号の文字色                                       | エディター左端の選択中の行番号                              |
-| `editorLineNumber.dimmedForeground` | `editor.renderFinalNewline` が `dimmed` のときの最終行の色       | ファイル末尾の空行の行番号                                |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターのデフォルト文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターのデフォルトテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorLineNumber.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">行番号の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター左端の行番号</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorLineNumber.activeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルがある行の行番号の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター左端の選択中の行番号</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorLineNumber.dimmedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.renderFinalNewline</code> が <code>dimmed</code> のときの最終行の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイル末尾の空行の行番号</td>
+  </tr>
+</tbody>
+</table>
 
 ### カーソル
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorCursor.background` | カーソルに重なった文字の背景色（ブロックカーソル時）                             | ブロックカーソルが文字に重なったときの文字色                       |
-| `editorCursor.foreground` | カーソルの色                                                 | エディター上の点滅するカーソル                              |
-| `editorMultiCursor.primary.foreground` | 複数カーソル使用時のメインカーソルの色                                    | マルチカーソル編集時の元から置いていたカーソル                      |
-| `editorMultiCursor.primary.background` | 複数カーソル使用時のメインカーソルに重なる文字の背景色                            | 文字に重なったときの元から置いていたマルチカーソル(ブロックカーソル時)の文字色     |
-| `editorMultiCursor.secondary.foreground` | 複数カーソル使用時のサブカーソルの色                                     | マルチカーソル編集時の後から追加されたカーソル                      |
-| `editorMultiCursor.secondary.background` | 複数カーソル使用時のサブカーソルに重なる文字の背景色                             | マルチカーソル編集時の後から追加されたカーソル(ブロックカーソル時)の文字色       |
-| `editor.placeholder.foreground` | プレースホルダーテキストの文字色                                       | 空のエディターに表示される案内のテキスト                         |
-| `editor.compositionBorder` | IME入力中の境界線の色                                           | 日本語入力中の変換候補のアンダーライン                          |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorCursor.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルに重なった文字の背景色（ブロックカーソル時）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブロックカーソルが文字に重なったときの文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorCursor.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター上の点滅するカーソル</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMultiCursor.primary.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数カーソル使用時のメインカーソルの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マルチカーソル編集時の元から置いていたカーソル</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMultiCursor.primary.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数カーソル使用時のメインカーソルに重なる文字の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">文字に重なったときの元から置いていたマルチカーソル(ブロックカーソル時)の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMultiCursor.secondary.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数カーソル使用時のサブカーソルの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マルチカーソル編集時の後から追加されたカーソル</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMultiCursor.secondary.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数カーソル使用時のサブカーソルに重なる文字の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マルチカーソル編集時の後から追加されたカーソル(ブロックカーソル時)の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.placeholder.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プレースホルダーテキストの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">空のエディターに表示される案内のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.compositionBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">IME入力中の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">日本語入力中の変換候補のアンダーライン</td>
+  </tr>
+</tbody>
+</table>
 
 ### 選択範囲
 
 選択範囲の色は、1文字以上を選択したときに表示される。選択箇所に加え、同じ内容を持つ範囲もハイライトされる。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.selectionBackground` | 選択範囲の背景色                                               | テキストをドラッグして選択したときの背景                         |
-| `editor.selectionForeground` | ハイコントラスト時の選択テキストの文字色                                   | キストをドラッグして選択したときの文字色                         |
-| `editor.inactiveSelectionBackground` | 非アクティブなエディターでの選択範囲の背景色                                 | 現在操作していないエディターグループで選択中のテキストの背景               |
-| `editor.selectionHighlightBackground` | 選択中と同じ内容を持つ範囲の背景色                                      | 選択した単語と同じ文字列がある箇所の背景                         |
-| `editor.selectionHighlightBorder` | 選択中と同じ内容を持つ範囲の境界線の色                                    | 選択した単語と同じ文字列がある箇所の枠線                         |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.selectionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択範囲の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テキストをドラッグして選択したときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.selectionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ハイコントラスト時の選択テキストの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キストをドラッグして選択したときの文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.inactiveSelectionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなエディターでの選択範囲の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループで選択中のテキストの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.selectionHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中と同じ内容を持つ範囲の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択した単語と同じ文字列がある箇所の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.selectionHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中と同じ内容を持つ範囲の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択した単語と同じ文字列がある箇所の枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ### ワードハイライト
 
 カーソルがシンボルや単語の上にあるとき表示される。言語サポートがあれば参照・宣言箇所がハイライトされ、読み取り/書き込みアクセスで異なる色になる。言語サポートがない場合は単語単位のハイライトにフォールバックする。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.wordHighlightBackground` | シンボルの読み取りアクセス時の背景色                                     | その変数を使用している箇所の背景（半透明）                        |
-| `editor.wordHighlightBorder` | シンボルの読み取りアクセス時の境界線の色                                   | その変数を使用している箇所の枠線                             |
-| `editor.wordHighlightStrongBackground` | シンボルの書き込みアクセス時の背景色                                     | その変数に値を代入している箇所の背景（半透明）                      |
-| `editor.wordHighlightStrongBorder` | シンボルの書き込みアクセス時の境界線の色                                   | その変数に値を代入している箇所の枠線                           |
-| `editor.wordHighlightTextBackground` | シンボルのテキスト一致箇所の背景色                                      | 言語サポートがない場合の同一単語の背景（半透明）                     |
-| `editor.wordHighlightTextBorder` | シンボルのテキスト一致箇所の境界線の色                                    | 言語サポートがない場合の同一単語の枠線                          |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.wordHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンボルの読み取りアクセス時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">その変数を使用している箇所の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.wordHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンボルの読み取りアクセス時の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">その変数を使用している箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.wordHighlightStrongBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンボルの書き込みアクセス時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">その変数に値を代入している箇所の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.wordHighlightStrongBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンボルの書き込みアクセス時の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">その変数に値を代入している箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.wordHighlightTextBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンボルのテキスト一致箇所の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">言語サポートがない場合の同一単語の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.wordHighlightTextBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンボルのテキスト一致箇所の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">言語サポートがない場合の同一単語の枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ### 検索（Find）
 
 Find/Replace ダイアログの検索文字列に応じて表示される色。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.findMatchBackground` | 現在の検索マッチの背景色                                           | 検索語句にマッチし、現在選択している箇所の背景                      |
-| `editor.findMatchForeground` | 現在の検索マッチの文字色                                           | 検索語句にマッチし、現在選択している箇所のテキスト                    |
-| `editor.findMatchHighlightForeground` | その他の検索マッチの文字色                                          | 検索語句にマッチしているが、現在選択していない箇所のテキスト               |
-| `editor.findMatchHighlightBackground` | その他の検索マッチの背景色                                          | 検索語句にマッチしているが、現在選択していない箇所の背景（半透明）            |
-| `editor.findRangeHighlightBackground` | 検索範囲を限定するハイライトの背景色（Find widgetの「選択範囲内で検索」有効時）          | 「選択範囲内で検索」を有効化したときの対象範囲の背景（半透明）              |
-| `editor.findMatchBorder` | 現在の検索マッチの境界線の色                                         | 検索語句にマッチし、現在選択している箇所の枠線                      |
-| `editor.findMatchHighlightBorder` | 検索語句にマッチしているが、現在選択していない箇所の枠線                           |                                              |
-| `editor.findRangeHighlightBorder` | 検索範囲を限定するハイライトの境界線の色                                   | 「選択範囲内で検索」を有効化したときの対象範囲の枠線                   |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.findMatchBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在の検索マッチの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索語句にマッチし、現在選択している箇所の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.findMatchForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在の検索マッチの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索語句にマッチし、現在選択している箇所のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.findMatchHighlightForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">その他の検索マッチの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索語句にマッチしているが、現在選択していない箇所のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.findMatchHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">その他の検索マッチの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索語句にマッチしているが、現在選択していない箇所の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.findRangeHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索範囲を限定するハイライトの背景色（Find widgetの「選択範囲内で検索」有効時）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「選択範囲内で検索」を有効化したときの対象範囲の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.findMatchBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在の検索マッチの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索語句にマッチし、現在選択している箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.findMatchHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索語句にマッチしているが、現在選択していない箇所の枠線</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.findRangeHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索範囲を限定するハイライトの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「選択範囲内で検索」を有効化したときの対象範囲の枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ### 検索ビューレット / Search Editor
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `search.resultsInfoForeground` | 検索ビューレットの完了メッセージの文字色                                   | サイドバーで検索したときに表示される`y 個のファイルに x 件の結果(x results in y files)`というテキストの文字色 |
-| `searchEditor.findMatchBackground` | Search Editor の検索結果の背景色                                | サイドバーで検索したときのマッチした箇所の背景                      |
-| `searchEditor.findMatchBorder` | Search Editor の検索結果の境界線の色                              | サイドバーで検索したときのマッチした箇所の枠線                      |
-| `searchEditor.textInputBorder` | Search Editor のテキスト入力欄の境界線の色                           | サイドバーの検索ボックスの枠線                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>search.resultsInfoForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ビューレットの完了メッセージの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーで検索したときに表示される<code>y 個のファイルに x 件の結果(x results in y files)</code>というテキストの文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>searchEditor.findMatchBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Search Editor の検索結果の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーで検索したときのマッチした箇所の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>searchEditor.findMatchBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Search Editor の検索結果の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーで検索したときのマッチした箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>searchEditor.textInputBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Search Editor のテキスト入力欄の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーの検索ボックスの枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ### ホバーハイライト
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.hoverHighlightBackground` | ホバー表示中の単語の下に表示されるハイライト色                                | ホバーしたときの型情報の小さいポップアップの背景（半透明）                |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.hoverHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー表示中の単語の下に表示されるハイライト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバーしたときの型情報の小さいポップアップの背景（半透明）</td>
+  </tr>
+</tbody>
+</table>
 
 ### 現在行のハイライト
 
 現在行は背景ハイライトまたはボーダーのどちらかで表示されるのが一般的（両方同時には使われない）。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.lineHighlightBackground` | カーソル位置の行のハイライト背景色                                      | カーソルが位置している(=選択している)行全体の背景                   |
-| `editor.inactiveLineHighlightBackground` | エディターが非フォーカス時のカーソル位置行のハイライト背景色                         | 現在操作していないエディターグループでのカーソルが位置している(=選択している)行全体の背景 |
-| `editor.lineHighlightBorder` | カーソル位置の行の境界線の色                                         | カーソルが位置している(=選択している)行全体を囲む枠線                 |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.lineHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソル位置の行のハイライト背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルが位置している(=選択している)行全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.inactiveLineHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターが非フォーカス時のカーソル位置行のハイライト背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないエディターグループでのカーソルが位置している(=選択している)行全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.lineHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソル位置の行の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルが位置している(=選択している)行全体を囲む枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ### Unicodeハイライト
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorUnicodeHighlight.border` | Unicode文字をハイライトする境界線の色                                 | 全角スペースなど特殊なUnicode文字を囲む枠線                    |
-| `editorUnicodeHighlight.background` | Unicode文字をハイライトする背景色                                   | 全角スペースなど特殊なUnicode文字の背景                      |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorUnicodeHighlight.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Unicode文字をハイライトする境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">全角スペースなど特殊なUnicode文字を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorUnicodeHighlight.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Unicode文字をハイライトする背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">全角スペースなど特殊なUnicode文字の背景</td>
+  </tr>
+</tbody>
+</table>
 
 ### リンク
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorLink.activeForeground` | アクティブなリンクの色                                            | Ctrlキーを押しながらホバーしたリンクの文字色                     |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorLink.activeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなリンクの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Ctrlキーを押しながらホバーしたリンクの文字色</td>
+  </tr>
+</tbody>
+</table>
 
 ### 範囲ハイライト（Range Highlight）
 
 検索結果を選択したときに表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.rangeHighlightBackground` | ハイライトされた範囲の背景色（Quick Open、Symbol in File、Find機能で使用）    | 検索語句にマッチし、現在選択している箇所の行全体の背景（半透明）             |
-| `editor.rangeHighlightBorder` | ハイライトされた範囲の境界線の色                                       | 索語句にマッチし、現在選択している箇所の行全体の枠線                   |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.rangeHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ハイライトされた範囲の背景色（Quick Open、Symbol in File、Find機能で使用）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索語句にマッチし、現在選択している箇所の行全体の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.rangeHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ハイライトされた範囲の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">索語句にマッチし、現在選択している箇所の行全体の枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ### シンボルハイライト
 
 「定義へ移動」などのコマンドでシンボルへ移動したときに表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.symbolHighlightBackground` | ハイライトされたシンボルの背景色                                       | 関数、クラス、変数の定義元へ移動した直後に対象シンボルにつく背景（半透明）        |
-| `editor.symbolHighlightBorder` | ハイライトされたシンボルの境界線の色                                     | 関数、クラス、変数の定義元へ移動した直後に対象シンボルにつく枠線             |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.symbolHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ハイライトされたシンボルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">関数、クラス、変数の定義元へ移動した直後に対象シンボルにつく背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.symbolHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ハイライトされたシンボルの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">関数、クラス、変数の定義元へ移動した直後に対象シンボルにつく枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ### 空白文字
 
 `Toggle Render Whitespace` を有効にすると表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorWhitespace.foreground` | 空白文字の色                                                 | 選択したテキストに含まれるスペースやタブを示す点の色                   |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorWhitespace.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">空白文字の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択したテキストに含まれるスペースやタブを示す点の色</td>
+  </tr>
+</tbody>
+</table>
 
 ### インデントガイド
 
 `"editor.guides.indentation": true` と `"editor.guides.highlightActiveIndentation": true` を設定すると表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorIndentGuide.background` | インデントガイドの色                                             | コードのインデントを示す縦線                               |
-| `editorIndentGuide.background1`〜`background6` | インデントガイドの色（深さ1〜6段階）                                    | ネストの深さごとに色分けされた縦線                            |
-| `editorIndentGuide.activeBackground` | アクティブなインデントガイドの色                                       | カーソルがある階層のインデント縦線                            |
-| `editorIndentGuide.activeBackground1`〜`activeBackground6` | アクティブなインデントガイドの色（深さ1〜6段階）                              | カーソルがある階層の縦線（深さごとに色分け）                       |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorIndentGuide.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インデントガイドの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードのインデントを示す縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorIndentGuide.background1</code>〜<code>background6</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インデントガイドの色（深さ1〜6段階）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ネストの深さごとに色分けされた縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorIndentGuide.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなインデントガイドの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルがある階層のインデント縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorIndentGuide.activeBackground1</code>〜<code>activeBackground6</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなインデントガイドの色（深さ1〜6段階）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルがある階層の縦線（深さごとに色分け）</td>
+  </tr>
+</tbody>
+</table>
 
 ### インレイヒント
 
 `"editor.inlineSuggest.enabled": true` を設定すると表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorInlayHint.background` | インラインヒントの背景色                                           | 関数の戻り値や変数の型などのインラインヒントの背景                    |
-| `editorInlayHint.foreground` | インラインヒントの文字色                                           | 関数の戻り値や変数の型などのインラインヒントのテキスト                  |
-| `editorInlayHint.typeForeground` | 型ヒントの文字色                                               | 変数の推論された型を示すヒントのテキスト                         |
-| `editorInlayHint.typeBackground` | 型ヒントの背景色                                               | 変数の推論された型を示すヒントの背景                           |
-| `editorInlayHint.parameterForeground` | パラメータヒントの文字色                                           | 関数呼び出し時の引数名ヒントのテキスト                          |
-| `editorInlayHint.parameterBackground` | パラメータヒントの背景色                                           | 関数呼び出し時の引数名ヒントの背景                            |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorInlayHint.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインヒントの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">関数の戻り値や変数の型などのインラインヒントの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorInlayHint.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインヒントの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">関数の戻り値や変数の型などのインラインヒントのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorInlayHint.typeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">型ヒントの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数の推論された型を示すヒントのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorInlayHint.typeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">型ヒントの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数の推論された型を示すヒントの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorInlayHint.parameterForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パラメータヒントの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">関数呼び出し時の引数名ヒントのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorInlayHint.parameterBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パラメータヒントの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">関数呼び出し時の引数名ヒントの背景</td>
+  </tr>
+</tbody>
+</table>
 
 ### ルーラー・リンク付き編集
 
 settings.jsonにて例えば`"editor.rulers": [80, 120],`と入力することでルーラー（縦線）を80文字目と120文字目に表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorRuler.foreground` | エディタールーラーの色（`"editor.rulers"` で位置指定）                   | 一定文字数の位置に表示される縦線                             |
-| `editor.linkedEditingBackground` | リンク付き編集モード時の背景色                                        |                                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorRuler.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディタールーラーの色（<code>"editor.rulers"</code> で位置指定）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">一定文字数の位置に表示される縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.linkedEditingBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リンク付き編集モード時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+</tbody>
+</table>
 
 ### CodeLens / Lightbulb
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorCodeLens.foreground` | CodeLensの文字色                                           | 関数の上に表示される「1 reference」などのテキスト               |
-| `editorLightBulb.foreground` | 通常のクイックフィックスのアイコンの色                                    | コードアクションを示す電球アイコン                            |
-| `editorLightBulbAutoFix.foreground` | 自動修正のクイックフィックスのアイコンの色                                  | 自動修正可能なときの電球アイコン                             |
-| `editorLightBulbAi.foreground` | AI機能のクイックフィックスのアイコンの色                                  | AI提案を示す電球アイコン                                |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorCodeLens.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">CodeLensの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">関数の上に表示される「1 reference」などのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorLightBulb.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通常のクイックフィックスのアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードアクションを示す電球アイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorLightBulbAutoFix.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">自動修正のクイックフィックスのアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">自動修正可能なときの電球アイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorLightBulbAi.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AI機能のクイックフィックスのアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AI提案を示す電球アイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ### 括弧（Bracket）
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorBracketMatch.background` | マッチする括弧の背景色                                            | カーソルに位置している括弧とそれに対応する括弧同士の背景                 |
-| `editorBracketMatch.border` | マッチする括弧のボックスの境界線の色                                     | カーソルに位置している括弧とそれに対応する括弧同士を囲む枠線               |
-| `editorBracketMatch.foreground` | マッチする括弧の文字色                                            | カーソルに位置している括弧とそれに対応する括弧同士のテキスト色              |
-| `editorBracketHighlight.foreground1`〜`foreground6` | 括弧ペアの色分け（深さ1〜6段階、Bracket Pair Colorization有効時）         | ネストした括弧をネストの深さごとに色分け表示                       |
-| `editorBracketHighlight.unexpectedBracket.foreground` | 想定外（不一致）の括弧の文字色                                        | 閉じ括弧が足りない・余分なときの色                            |
-| `editorBracketPairGuide.activeBackground1`〜`activeBackground6` | アクティブな括弧ペアガイドの背景色（深さ1〜6段階、Bracket Pair Guide有効時）       | カーソルが位置している場所の括弧ペアを結ぶ下線のガイドの色                |
-| `editorBracketPairGuide.background1`〜`background6` | 非アクティブな括弧ペアガイドの背景色（深さ1〜6段階）                            | カーソルが位置している場所以外の括弧ペアを結ぶ下線のガイドの色              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorBracketMatch.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マッチする括弧の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルに位置している括弧とそれに対応する括弧同士の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorBracketMatch.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マッチする括弧のボックスの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルに位置している括弧とそれに対応する括弧同士を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorBracketMatch.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マッチする括弧の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルに位置している括弧とそれに対応する括弧同士のテキスト色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorBracketHighlight.foreground1</code>〜<code>foreground6</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">括弧ペアの色分け（深さ1〜6段階、Bracket Pair Colorization有効時）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ネストした括弧をネストの深さごとに色分け表示</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorBracketHighlight.unexpectedBracket.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">想定外（不一致）の括弧の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">閉じ括弧が足りない・余分なときの色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorBracketPairGuide.activeBackground1</code>〜<code>activeBackground6</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブな括弧ペアガイドの背景色（深さ1〜6段階、Bracket Pair Guide有効時）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルが位置している場所の括弧ペアを結ぶ下線のガイドの色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorBracketPairGuide.background1</code>〜<code>background6</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブな括弧ペアガイドの背景色（深さ1〜6段階）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルが位置している場所以外の括弧ペアを結ぶ下線のガイドの色</td>
+  </tr>
+</tbody>
+</table>
 
 ### 折り畳み（Folding）
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.foldBackground` | 折り畳まれた範囲の背景色                                           | コードの行の左にあるアイコンをクリックしてコードを折り畳んだ行の背景（半透明）      |
-| `editor.foldPlaceholderForeground` | 折り畳み範囲の最初の行以降に表示される省略テキストの色                            | 折り畳まれたコードを示す「...」の文字色                        |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.foldBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">折り畳まれた範囲の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードの行の左にあるアイコンをクリックしてコードを折り畳んだ行の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.foldPlaceholderForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">折り畳み範囲の最初の行以降に表示される省略テキストの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">折り畳まれたコードを示す「...」の文字色</td>
+  </tr>
+</tbody>
+</table>
 
 ### Overview ruler（概要ルーラー）
 
 エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorOverviewRuler.background` | 概要ルーラーの背景色（ミニマップ有効かつ右側配置時のみ使用）                         | 概要ルーラー部分の背景                                  |
-| `editorOverviewRuler.border` | 概要ルーラーの境界線の色                                           | 概要ルーラーの左端の枠線                                 |
-| `editorOverviewRuler.findMatchForeground` | 検索マッチのマーカー色                                            | 検索ワードと一致した箇所を示す概要ルーラー上のマーカー                  |
-| `editorOverviewRuler.rangeHighlightForeground` | ハイライト範囲（Quick Open等）のマーカー色                             |                                              |
-| `editorOverviewRuler.selectionHighlightForeground` | 選択ハイライトのマーカー色                                          | 選択した単語と同じ文字列がある箇所を示す概要ルーラー上のマーカー             |
-| `editorOverviewRuler.wordHighlightForeground` | シンボルハイライトのマーカー色                                        | その変数を使用している箇所を示す概要ルーラー上のマーカー                 |
-| `editorOverviewRuler.wordHighlightStrongForeground` | 書き込みアクセスのシンボルハイライトのマーカー色                               | その変数へ代入している箇所を示す概要ルーラー上のマーカー                 |
-| `editorOverviewRuler.wordHighlightTextForeground` | テキスト一致のマーカー色                                           | 言語サポートがない場合の同一単語箇所を示す概要ルーラー上のマーカー            |
-| `editorOverviewRuler.modifiedForeground` | 変更された内容のマーカー色                                          | Git差分で変更された行を示す概要ルーラー上のマーカー                  |
-| `editorOverviewRuler.addedForeground` | 追加された内容のマーカー色                                          | Git差分で追加された行を示す概要ルーラー上のマーカー                  |
-| `editorOverviewRuler.deletedForeground` | 削除された内容のマーカー色                                          | Git差分で削除された行を示す概要ルーラー上のマーカー                  |
-| `editorOverviewRuler.errorForeground` | エラーのマーカー色                                              | エラーがある行を示す概要ルーラー上のマーカー                       |
-| `editorOverviewRuler.warningForeground` | 警告のマーカー色                                               | 警告がある行を示す概要ルーラー上のマーカー                        |
-| `editorOverviewRuler.infoForeground` | 情報のマーカー色                                               | 情報通知がある行を示す概要ルーラー上のマーカー                      |
-| `editorOverviewRuler.bracketMatchForeground` | マッチする括弧のマーカー色                                          | カーソルに位置している括弧とそれに対応する括弧同士を示すマーカー             |
-| `editorOverviewRuler.inlineChatInserted` | インラインチャットで挿入されたコンテンツのマーカー色                             | AIによって挿入されたコードがある行を示すマーカー                    |
-| `editorOverviewRuler.inlineChatRemoved` | インラインチャットで削除されたコンテンツのマーカー色                             | AIによって削除されたコードがある行を示すマーカー                    |
-| `editorOverviewRuler.commentDraftForeground` | ドラフトコメントを含むコメントスレッドの装飾色（不透明）                           | レビュー中の未送信コメントがある行を示すマーカー                     |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">概要ルーラーの背景色（ミニマップ有効かつ右側配置時のみ使用）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">概要ルーラー部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">概要ルーラーの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">概要ルーラーの左端の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.findMatchForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索マッチのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">検索ワードと一致した箇所を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.rangeHighlightForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ハイライト範囲（Quick Open等）のマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.selectionHighlightForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択ハイライトのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択した単語と同じ文字列がある箇所を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.wordHighlightForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンボルハイライトのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">その変数を使用している箇所を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.wordHighlightStrongForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">書き込みアクセスのシンボルハイライトのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">その変数へ代入している箇所を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.wordHighlightTextForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テキスト一致のマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">言語サポートがない場合の同一単語箇所を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.modifiedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更された内容のマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Git差分で変更された行を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.addedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">追加された内容のマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Git差分で追加された行を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.deletedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除された内容のマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Git差分で削除された行を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.errorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーがある行を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.warningForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告のマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告がある行を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.infoForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報のマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報通知がある行を示す概要ルーラー上のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.bracketMatchForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マッチする括弧のマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カーソルに位置している括弧とそれに対応する括弧同士を示すマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.inlineChatInserted</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャットで挿入されたコンテンツのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AIによって挿入されたコードがある行を示すマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.inlineChatRemoved</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャットで削除されたコンテンツのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AIによって削除されたコードがある行を示すマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.commentDraftForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドラフトコメントを含むコメントスレッドの装飾色（不透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">レビュー中の未送信コメントがある行を示すマーカー</td>
+  </tr>
+</tbody>
+</table>
 
 ### エラーと警告
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorError.foreground` | エラーの波線の色                                               | コードのエラー箇所に表示される赤い波線                          |
-| `editorError.border`   | エラーボックスの境界線の色                                          | エラー箇所を囲む枠線                                   |
-| `editorError.background` | エラーテキストの背景色                                            | エラー箇所のテキスト背景（半透明）                            |
-| `editorWarning.foreground` | 警告の波線の色                                                | コードの警告箇所に表示される黄色い波線                          |
-| `editorWarning.border` | 警告ボックスの境界線の色                                           | 警告箇所を囲む枠線                                    |
-| `editorWarning.background` | 警告テキストの背景色                                             | 警告箇所のテキスト背景（半透明）                             |
-| `editorInfo.foreground` | 情報の波線の色                                                |                                              |
-| `editorInfo.border`    | 情報ボックスの境界線の色                                           |                                              |
-| `editorInfo.background` | 情報テキストの背景色                                             |                                              |
-| `editorHint.foreground` | ヒントの文字色                                                |                                              |
-| `editorHint.border`    | ヒントボックスの境界線の色                                          |                                              |
-| `problemsErrorIcon.foreground` | 問題パネルのエラーアイコンの色                                        | エディターより下部にある「問題」パネル(`Ctrl`+`Shift`+`M`)のエラー項目のアイコン |
-| `problemsWarningIcon.foreground` | 問題パネルの警告アイコンの色                                         | エディターより下部にある「問題」パネル(`Ctrl`+`Shift`+`M`)の警告項目のアイコン |
-| `problemsInfoIcon.foreground` | 問題パネルの情報アイコンの色                                         | エディターより下部にある「問題」パネル(`Ctrl`+`Shift`+`M`)の情報項目のアイコン |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorError.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーの波線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードのエラー箇所に表示される赤い波線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorError.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーボックスの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー箇所を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorError.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーテキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー箇所のテキスト背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorWarning.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告の波線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードの警告箇所に表示される黄色い波線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorWarning.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告ボックスの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告箇所を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorWarning.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告テキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告箇所のテキスト背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorInfo.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報の波線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorInfo.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報ボックスの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorInfo.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報テキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorHint.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ヒントの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorHint.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ヒントボックスの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>problemsErrorIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">問題パネルのエラーアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターより下部にある「問題」パネル(<code>Ctrl</code>+<code>Shift</code>+<code>M</code>)のエラー項目のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>problemsWarningIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">問題パネルの警告アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターより下部にある「問題」パネル(<code>Ctrl</code>+<code>Shift</code>+<code>M</code>)の警告項目のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>problemsInfoIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">問題パネルの情報アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターより下部にある「問題」パネル(<code>Ctrl</code>+<code>Shift</code>+<code>M</code>)の情報項目のアイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ### 未使用コード
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorUnnecessaryCode.border` | 未使用コードの境界線の色                                           | 使われていない変数やインポートを示す枠線                         |
-| `editorUnnecessaryCode.opacity` | 未使用コードの不透明度                                            | 使われていないコードを薄く表示する際の濃さ（ハイコントラストテーマでは枠線表示が推奨）  |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorUnnecessaryCode.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未使用コードの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">使われていない変数やインポートを示す枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorUnnecessaryCode.opacity</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未使用コードの不透明度</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">使われていないコードを薄く表示する際の濃さ（ハイコントラストテーマでは枠線表示が推奨）</td>
+  </tr>
+</tbody>
+</table>
 
 ### ガター（行番号・グリフマージン）
 
 ガターには行番号とグリフマージン（アイコン表示領域）が含まれる。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorGutter.background` | ガターの背景色                                                | 行番号やアイコンが表示されるエディターの左端領域の背景                  |
-| `editorGutter.modifiedBackground` | 変更された行のガター背景色                                          | エディターの左端領域のGit差分で変更された行のマーカー背景               |
-| `editorGutter.modifiedSecondaryBackground` | 変更された行のガターのセカンダリ背景色                                    | エディターの左端領域のGit差分の変更行のマーカーの補助色                |
-| `editorGutter.addedBackground` | 追加された行のガター背景色                                          | エディターの左端領域のGit差分で追加された行のマーカー背景               |
-| `editorGutter.addedSecondaryBackground` | 追加された行のガターのセカンダリ背景色                                    | エディターの左端領域のGit差分の追加行のマーカーの補助色                |
-| `editorGutter.deletedBackground` | 削除された行のガター背景色                                          | エディターの左端領域のGit差分で削除された行のマーカー背景               |
-| `editorGutter.deletedSecondaryBackground` | 削除された行のガターのセカンダリ背景色                                    | エディターの左端領域のGit差分の削除行のマーカーの補助色                |
-| `editorGutter.commentRangeForeground` | コメント可能範囲のガター装飾色                                        | エディターの左端領域のプルリクエストレビューでコメント可能な行に表示されるアイコン    |
-| `editorGutter.commentGlyphForeground` | コメントグリフのガター装飾色                                         | エディターの左端領域のコメントが付いている行のアイコン                  |
-| `editorGutter.commentUnresolvedGlyphForeground` | 未解決コメントスレッドのグリフ色                                       | エディターの左端領域の未解決のレビューコメントがある行のアイコン             |
-| `editorGutter.foldingControlForeground` | 折り畳みコントロールの色                                           | エディターの左端領域の行番号の右横に表示される折り畳み用の矢印アイコン          |
-| `editorGutter.itemGlyphForeground` | ガターアイテムのグリフ色                                           | エディターの左端領域のデバッグのブレークポイントなどのアイコン色             |
-| `editorGutter.itemBackground` | ガターアイテムの背景色（不透明）                                       | エディターの左端領域のデバッグのブレークポイントなどのアイコン背景            |
-| `editorGutter.commentDraftGlyphForeground` | ドラフトコメントスレッドのグリフ色                                      | エディターの左端領域の未送信のコメントがある行のアイコン                 |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ガターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">行番号やアイコンが表示されるエディターの左端領域の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.modifiedBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更された行のガター背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のGit差分で変更された行のマーカー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.modifiedSecondaryBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更された行のガターのセカンダリ背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のGit差分の変更行のマーカーの補助色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.addedBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">追加された行のガター背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のGit差分で追加された行のマーカー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.addedSecondaryBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">追加された行のガターのセカンダリ背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のGit差分の追加行のマーカーの補助色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.deletedBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除された行のガター背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のGit差分で削除された行のマーカー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.deletedSecondaryBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除された行のガターのセカンダリ背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のGit差分の削除行のマーカーの補助色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.commentRangeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コメント可能範囲のガター装飾色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のプルリクエストレビューでコメント可能な行に表示されるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.commentGlyphForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コメントグリフのガター装飾色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のコメントが付いている行のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.commentUnresolvedGlyphForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未解決コメントスレッドのグリフ色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の未解決のレビューコメントがある行のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.foldingControlForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">折り畳みコントロールの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の行番号の右横に表示される折り畳み用の矢印アイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.itemGlyphForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ガターアイテムのグリフ色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のデバッグのブレークポイントなどのアイコン色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.itemBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ガターアイテムの背景色（不透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のデバッグのブレークポイントなどのアイコン背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGutter.commentDraftGlyphForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドラフトコメントスレッドのグリフ色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の未送信のコメントがある行のアイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ### コメントウィジェット
 
 プルリクエストのレビュー時に表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorCommentsWidget.resolvedBorder` | 解決済みコメントの枠線・矢印の色                                       | レビューで解決済みとされたコメントの枠線                         |
-| `editorCommentsWidget.unresolvedBorder` | 未解決コメントの枠線・矢印の色                                        | レビューで未解決のコメントの枠線                             |
-| `editorCommentsWidget.rangeBackground` | コメント対象範囲の背景色                                           | コメントが付けられたコード範囲の背景                           |
-| `editorCommentsWidget.rangeActiveBackground` | 選択中・ホバー中のコメント対象範囲の背景色                                  | 現在開いているコメントが対象とするコード範囲の背景                    |
-| `editorCommentsWidget.replyInputBackground` | コメント返信入力欄の背景色                                          | コメントへの返信を入力するテキストボックスの背景                     |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorCommentsWidget.resolvedBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">解決済みコメントの枠線・矢印の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">レビューで解決済みとされたコメントの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorCommentsWidget.unresolvedBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未解決コメントの枠線・矢印の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">レビューで未解決のコメントの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorCommentsWidget.rangeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コメント対象範囲の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コメントが付けられたコード範囲の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorCommentsWidget.rangeActiveBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中・ホバー中のコメント対象範囲の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在開いているコメントが対象とするコード範囲の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorCommentsWidget.replyInputBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コメント返信入力欄の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コメントへの返信を入力するテキストボックスの背景</td>
+  </tr>
+</tbody>
+</table>
 
 ### インライン編集（Inline Edit）
 
 AIなどが次の変更を提案する際に表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `inlineEdit.gutterIndicator.primaryBorder` | メインのインライン編集インジケーターの境界線の色                               | エディターの左端領域のAI提案の表示の枠線                        |
-| `inlineEdit.gutterIndicator.primaryForeground` | メインのインライン編集インジケーターの文字色                                 | エディターの左端領域のAI提案の表示のテキスト・アイコン色                |
-| `inlineEdit.gutterIndicator.primaryBackground` | メインのインライン編集インジケーターの背景色                                 | エディターの左端領域のAI提案の表示の背景                        |
-| `inlineEdit.gutterIndicator.secondaryBorder` | サブのインライン編集インジケーターの境界線の色                                | エディターの左端領域の複数が提案がある場合の2つ目以降の表示の枠線            |
-| `inlineEdit.gutterIndicator.secondaryForeground` | サブのインライン編集インジケーターの文字色                                  | エディターの左端領域の複数が提案がある場合の2つ目以降の表示のテキスト・アイコン色    |
-| `inlineEdit.gutterIndicator.secondaryBackground` | サブのインライン編集インジケーターの背景色                                  | エディターの左端領域の複数が提案がある場合の2つ目以降の表示の背景            |
-| `inlineEdit.gutterIndicator.successfulBorder` | 提案が成功したときのインジケーターの境界線の色                                | エディターの左端領域の提案を適用したときの表示の枠線                   |
-| `inlineEdit.gutterIndicator.successfulForeground` | 提案が成功したときのインジケーターの文字色                                  | エディターの左端領域の提案を適用したときの表示のテキスト・アイコン色           |
-| `inlineEdit.gutterIndicator.successfulBackground` | 提案が成功したときのインジケーターの背景色                                  | エディターの左端領域の提案を適用したときの表示の背景                   |
-| `inlineEdit.gutterIndicator.background` | インライン編集インジケーターの背景色                                     | エディターの左端領域の表示全体のデフォルト背景                      |
-| `inlineEdit.originalBackground` | 変更前テキストの背景色                                            | AI提案の変更前部分の背景                                |
-| `inlineEdit.modifiedBackground` | 変更後テキストの背景色                                            | AI提案の変更後部分の背景                                |
-| `inlineEdit.originalChangedLineBackground` | 変更前テキストの変更行の背景色                                        | 変更前のコードで変更対象となった行の背景                         |
-| `inlineEdit.originalChangedTextBackground` | 変更前テキストの変更箇所のオーバーレイ色                                   | 変更前のコードで変更対象となった文字列の背景                       |
-| `inlineEdit.modifiedChangedLineBackground` | 変更後テキストの変更行の背景色                                        | 変更後のコードで変更された行の背景                            |
-| `inlineEdit.modifiedChangedTextBackground` | 変更後テキストの変更箇所のオーバーレイ色                                   | 変更後のコードで変更された文字列の背景                          |
-| `inlineEdit.originalBorder` | 変更前テキストの境界線の色                                          | AI提案の変更前部分を囲む枠線                              |
-| `inlineEdit.modifiedBorder` | 変更後テキストの境界線の色                                          | AI提案の変更後部分を囲む枠線                              |
-| `inlineEdit.tabWillAcceptModifiedBorder` | Tabキーで適用される際の変更後テキストの境界線の色                             | Tabキーで提案を確定できる状態の変更後部分の枠線                    |
-| `inlineEdit.tabWillAcceptOriginalBorder` | Tabキーで適用される際の変更前テキストの境界線の色                             | Tabキーで提案を確定できる状態の変更前部分の枠線                    |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.primaryBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メインのインライン編集インジケーターの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のAI提案の表示の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.primaryForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メインのインライン編集インジケーターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のAI提案の表示のテキスト・アイコン色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.primaryBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メインのインライン編集インジケーターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域のAI提案の表示の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.secondaryBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サブのインライン編集インジケーターの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の複数が提案がある場合の2つ目以降の表示の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.secondaryForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サブのインライン編集インジケーターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の複数が提案がある場合の2つ目以降の表示のテキスト・アイコン色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.secondaryBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サブのインライン編集インジケーターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の複数が提案がある場合の2つ目以降の表示の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.successfulBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">提案が成功したときのインジケーターの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の提案を適用したときの表示の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.successfulForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">提案が成功したときのインジケーターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の提案を適用したときの表示のテキスト・アイコン色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.successfulBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">提案が成功したときのインジケーターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の提案を適用したときの表示の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.gutterIndicator.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インライン編集インジケーターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の表示全体のデフォルト背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.originalBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更前テキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AI提案の変更前部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.modifiedBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更後テキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AI提案の変更後部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.originalChangedLineBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更前テキストの変更行の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更前のコードで変更対象となった行の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.originalChangedTextBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更前テキストの変更箇所のオーバーレイ色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更前のコードで変更対象となった文字列の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.modifiedChangedLineBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更後テキストの変更行の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更後のコードで変更された行の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.modifiedChangedTextBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更後テキストの変更箇所のオーバーレイ色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更後のコードで変更された文字列の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.originalBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更前テキストの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AI提案の変更前部分を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.modifiedBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更後テキストの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AI提案の変更後部分を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.tabWillAcceptModifiedBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Tabキーで適用される際の変更後テキストの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Tabキーで提案を確定できる状態の変更後部分の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineEdit.tabWillAcceptOriginalBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Tabキーで適用される際の変更前テキストの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Tabキーで提案を確定できる状態の変更前部分の枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -829,30 +2585,122 @@ AIなどが次の変更を提案する際に表示される。
 **Diff editor colors** は、同じファイルの修正前と修正後を左右、あるいは上下に並べて変更点を比較するための専用画面に関する色設定である。挿入・削除されたテキストの色付けには、背景色か境界線の色のどちらか一方のみを使用する（両方同時には使わない）。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `diffEditor.insertedTextBackground` | 挿入されたテキストの背景色（半透明）                                     | 追加された文字列の背景                                  |
-| `diffEditor.insertedTextBorder` | 挿入されたテキストのアウトライン色                                      | 追加された文字列を囲む枠線                                |
-| `diffEditor.removedTextBackground` | 削除されたテキストの背景色（半透明）                                     | 削除された文字列の背景                                  |
-| `diffEditor.removedTextBorder` | 削除されたテキストのアウトライン色                                      | 削除された文字列を囲む枠線                                |
-| `diffEditor.border`    | 2つのエディター間の境界線の色                                        | 並んでいる差分エディターの境界線                             |
-| `diffEditor.diagonalFill` | 差分エディターの斜線塗りつぶしの色                                      | 対応する変更がない領域の斜線                               |
-| `diffEditor.insertedLineBackground` | 挿入された行の背景色（半透明）                                        | 追加された行全体の背景                                  |
-| `diffEditor.removedLineBackground` | 削除された行の背景色（半透明）                                        | 削除された行全体の背景                                  |
-| `diffEditorGutter.insertedLineBackground` | 挿入された行のガター（余白）の背景色                                     | エディターの左端領域の行番号左端の追加された行のマーカー背景               |
-| `diffEditorGutter.removedLineBackground` | 削除された行のガター（余白）の背景色                                     | エディターの左端領域の行番号左端の削除された行のマーカー背景               |
-| `diffEditorOverview.insertedForeground` | 差分概要ルーラーの挿入コンテンツの色                                     | 差分エディター右端の概要ルーラーの追加箇所マーカー                    |
-| `diffEditorOverview.removedForeground` | 差分概要ルーラーの削除コンテンツの色                                     | 差分エディター右端の概要ルーラーの削除箇所マーカー                    |
-| `diffEditor.unchangedRegionBackground` | 変更のない折り畳まれた範囲のブロックの背景色                                 | 差分がない折り畳まれた領域のブロック背景                         |
-| `diffEditor.unchangedRegionForeground` | 変更のない折り畳まれた範囲のブロックの文字色                                 | 差分がない折り畳まれた領域のブロックテキスト                       |
-| `diffEditor.unchangedRegionShadow` | 変更のない範囲ウィジェット周囲の影の色                                    | 折り畳まれた変更なし領域の周囲の影                            |
-| `diffEditor.unchangedCodeBackground` | 変更のないコードの背景色                                           | 差分エディターで変更がないコード部分の背景                        |
-| `diffEditor.move.border` | 移動されたテキストの境界線の色                                        | 別の場所に移動されたコードブロックの枠線                         |
-| `diffEditor.moveActive.border` | アクティブな移動テキストの境界線の色                                     | 現在選択中の移動されたコードブロックの枠線                        |
-| `multiDiffEditor.headerBackground` | マルチファイル差分エディターのヘッダー背景色                                 | 複数ファイルの差分表示時の各ファイルヘッダーの背景                    |
-| `multiDiffEditor.background` | マルチファイル差分エディターの背景色                                     | 複数ファイルの差分表示全体の背景                             |
-| `multiDiffEditor.border` | マルチファイル差分エディターの境界線の色                                   | 複数ファイルの差分表示での各ファイル間の境界線                      |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.insertedTextBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">挿入されたテキストの背景色（半透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">追加された文字列の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.insertedTextBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">挿入されたテキストのアウトライン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">追加された文字列を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.removedTextBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除されたテキストの背景色（半透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除された文字列の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.removedTextBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除されたテキストのアウトライン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除された文字列を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">2つのエディター間の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">並んでいる差分エディターの境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.diagonalFill</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">差分エディターの斜線塗りつぶしの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">対応する変更がない領域の斜線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.insertedLineBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">挿入された行の背景色（半透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">追加された行全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.removedLineBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除された行の背景色（半透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除された行全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditorGutter.insertedLineBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">挿入された行のガター（余白）の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の行番号左端の追加された行のマーカー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditorGutter.removedLineBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除された行のガター（余白）の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの左端領域の行番号左端の削除された行のマーカー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditorOverview.insertedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">差分概要ルーラーの挿入コンテンツの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">差分エディター右端の概要ルーラーの追加箇所マーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditorOverview.removedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">差分概要ルーラーの削除コンテンツの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">差分エディター右端の概要ルーラーの削除箇所マーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.unchangedRegionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更のない折り畳まれた範囲のブロックの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">差分がない折り畳まれた領域のブロック背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.unchangedRegionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更のない折り畳まれた範囲のブロックの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">差分がない折り畳まれた領域のブロックテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.unchangedRegionShadow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更のない範囲ウィジェット周囲の影の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">折り畳まれた変更なし領域の周囲の影</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.unchangedCodeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更のないコードの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">差分エディターで変更がないコード部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.move.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">移動されたテキストの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">別の場所に移動されたコードブロックの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>diffEditor.moveActive.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブな移動テキストの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在選択中の移動されたコードブロックの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>multiDiffEditor.headerBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マルチファイル差分エディターのヘッダー背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数ファイルの差分表示時の各ファイルヘッダーの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>multiDiffEditor.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マルチファイル差分エディターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数ファイルの差分表示全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>multiDiffEditor.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マルチファイル差分エディターの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数ファイルの差分表示での各ファイル間の境界線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -865,24 +2713,92 @@ AIなどが次の変更を提案する際に表示される。
 **Chat colors** は、VSCode のチャット機能に関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `chat.requestBorder`   | チャットリクエストの境界線の色                                        | チャットパネルのユーザー入力欄の枠線                           |
-| `chat.requestBackground` | チャットリクエストの背景色                                          | チャットパネルのユーザー入力欄の背景                           |
-| `chat.slashCommandBackground` | スラッシュコマンドの背景色                                          | チャットに入力された `/explain` などのスラッシュコマンドの背景        |
-| `chat.slashCommandForeground` | スラッシュコマンドの文字色                                          | チャットに入力された `/explain` などのスラッシュコマンドのテキスト      |
-| `chat.avatarBackground` | チャットアバターの背景色                                           | ユーザーやAIのアイコン部分の背景                            |
-| `chat.avatarForeground` | チャットアバターの文字色                                           | ユーザーやAIのアイコン部分のテキスト・アイコン色                    |
-| `chat.editedFileForeground` | 編集済みファイルリストのファイル名の文字色                                  | チャットで編集されたファイルの一覧に表示されるファイル名                 |
-| `chat.linesAddedForeground` | コードブロックピルの追加行数の文字色                                     | コードブロック内の「+N lines」の文字色                      |
-| `chat.linesRemovedForeground` | コードブロックピルの削除行数の文字色                                     | コードブロック内の「-N lines」の文字色                      |
-| `chat.requestCodeBorder` | チャットリクエストバブル内のコードブロックの境界線の色                            |                                              |
-| `chat.requestBubbleBackground` | チャットリクエストバブルの背景色                                       |                                              |
-| `chat.requestBubbleHoverBackground` | ホバー時のチャットリクエストバブルの背景色                                  |                                              |
-| `chat.checkpointSeparator` | チャットチェックポイントの区切り線の色                                    |                                              |
-| `chat.thinkingShimmer` | 思考中・処理中ラベルのシマーハイライト色                                   | AIが回答を生成中に表示される「Thinking...」などのアニメーション色      |
-| `chatManagement.sashBorder` | Chat Managementエディターの分割ビューのサッシュ（境界線）の色                 | チャット画面とエディター間の境界線をクリックまたはドラッグしたときの境界線        |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.requestBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットリクエストの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットパネルのユーザー入力欄の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.requestBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットリクエストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットパネルのユーザー入力欄の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.slashCommandBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スラッシュコマンドの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットに入力された <code>/explain</code> などのスラッシュコマンドの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.slashCommandForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スラッシュコマンドの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットに入力された <code>/explain</code> などのスラッシュコマンドのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.avatarBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットアバターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ユーザーやAIのアイコン部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.avatarForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットアバターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ユーザーやAIのアイコン部分のテキスト・アイコン色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.editedFileForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">編集済みファイルリストのファイル名の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットで編集されたファイルの一覧に表示されるファイル名</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.linesAddedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードブロックピルの追加行数の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードブロック内の「+N lines」の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.linesRemovedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードブロックピルの削除行数の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コードブロック内の「-N lines」の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.requestCodeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットリクエストバブル内のコードブロックの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.requestBubbleBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットリクエストバブルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.requestBubbleHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のチャットリクエストバブルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.checkpointSeparator</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャットチェックポイントの区切り線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chat.thinkingShimmer</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">思考中・処理中ラベルのシマーハイライト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AIが回答を生成中に表示される「Thinking...」などのアニメーション色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chatManagement.sashBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Chat Managementエディターの分割ビューのサッシュ（境界線）の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャット画面とエディター間の境界線をクリックまたはドラッグしたときの境界線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -896,19 +2812,67 @@ AIなどが次の変更を提案する際に表示される。
 (参考: [Inline chat](https://code.visualstudio.com/docs/chat/inline-chat))
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `inlineChat.background` | インラインチャットウィジェットの背景色                                    | エディター内に表示されるAIのチャットのウィジェットの背景                |
-| `inlineChat.foreground` | インラインチャットウィジェットの文字色                                    | エディター内に表示されるAIチャットのウィジェットのテキスト               |
-| `inlineChat.border`    | インラインチャットウィジェットの境界線の色                                  | エディター内に表示されるAIチャットのウィジェットの枠線                 |
-| `inlineChat.shadow`    | インラインチャットウィジェットの影の色                                    | エディター内に表示されるAIチャットのウィジェットの影                  |
-| `inlineChatInput.border` | インラインチャット入力欄の境界線の色                                     | エディター内に表示されるAIチャットのテキスト入力フィールドの枠線            |
-| `inlineChatInput.focusBorder` | フォーカス時のインラインチャット入力欄の境界線の色                              | エディター内に表示されるAIチャットの入力フィールドを選択したときの枠線         |
-| `inlineChatInput.placeholderForeground` | インラインチャット入力欄のプレースホルダーの文字色                              | エディター内に表示されるAIチャットの入力フィールド内の「Ask Copilot」などのヒントテキストの色 |
-| `inlineChatInput.background` | インラインチャット入力欄の背景色                                       | エディター内に表示されるAIチャットの入力フィールドの背景                |
-| `inlineChatDiff.inserted` | インラインチャット入力欄の挿入テキストの背景色                                | エディター内に表示されるAIチャットが提案したコードの追加部分の背景           |
-| `inlineChatDiff.removed` | インラインチャット入力欄の削除テキストの背景色                                | エディター内に表示されるAIチャットが提案したコードの削除部分の背景           |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChat.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャットウィジェットの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIのチャットのウィジェットの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChat.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャットウィジェットの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIチャットのウィジェットのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChat.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャットウィジェットの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIチャットのウィジェットの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChat.shadow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャットウィジェットの影の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIチャットのウィジェットの影</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChatInput.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャット入力欄の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIチャットのテキスト入力フィールドの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChatInput.focusBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス時のインラインチャット入力欄の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIチャットの入力フィールドを選択したときの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChatInput.placeholderForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャット入力欄のプレースホルダーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIチャットの入力フィールド内の「Ask Copilot」などのヒントテキストの色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChatInput.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャット入力欄の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIチャットの入力フィールドの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChatDiff.inserted</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャット入力欄の挿入テキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIチャットが提案したコードの追加部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>inlineChatDiff.removed</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インラインチャット入力欄の削除テキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内に表示されるAIチャットが提案したコードの削除部分の背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -921,11 +2885,27 @@ AIなどが次の変更を提案する際に表示される。
 **Panel Chat colors** は、インタラクティブなコードセルに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `interactive.activeCodeBorder` | フォーカス中のインタラクティブコードセルの境界線の色                             |                                              |
-| `interactive.inactiveCodeBorder` | 非フォーカス時のインタラクティブコードセルの境界線の色                            |                                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>interactive.activeCodeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中のインタラクティブコードセルの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>interactive.inactiveCodeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非フォーカス時のインタラクティブコードセルの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -940,51 +2920,167 @@ AIなどが次の変更を提案する際に表示される。
 ### 基本ウィジェット
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorWidget.foreground` | エディターウィジェットの文字色                                        | Find/Replace ダイアログのテキスト                      |
-| `editorWidget.background` | エディターウィジェットの背景色                                        | Find/Replace ダイアログの背景                        |
-| `editorWidget.border`  | エディターウィジェットの境界線の色（ウィジェット固有の色がない場合に使用）                  | Find/Replace ダイアログの枠線                        |
-| `editorWidget.resizeBorder` | エディターウィジェットのリサイズバーの境界線の色                               | ウィジェットの下端にあるドラッグしてサイズ変更するための線                |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorWidget.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターウィジェットの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Find/Replace ダイアログのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorWidget.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターウィジェットの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Find/Replace ダイアログの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorWidget.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターウィジェットの境界線の色（ウィジェット固有の色がない場合に使用）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Find/Replace ダイアログの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorWidget.resizeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターウィジェットのリサイズバーの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウィジェットの下端にあるドラッグしてサイズ変更するための線</td>
+  </tr>
+</tbody>
+</table>
 
 ### サジェストウィジェット
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorSuggestWidget.background` | サジェストウィジェットの背景色                                        | 変数名や関数の候補のポップアップの背景                          |
-| `editorSuggestWidget.border` | サジェストウィジェットの境界線の色                                      | 変数名や関数の候補のポップアップの枠線                          |
-| `editorSuggestWidget.foreground` | サジェストウィジェットの文字色                                        | 変数名や関数の候補のポップアップのテキスト                        |
-| `editorSuggestWidget.focusHighlightForeground` | フォーカス中の項目のマッチハイライト色                                    | 変数名や関数の候補のポップアップの現在選択している候補内の入力文字に一致する部分の色   |
-| `editorSuggestWidget.highlightForeground` | マッチハイライトの文字色                                           | 変数名や関数の候補のポップアップの候補内の入力文字に一致する部分の色           |
-| `editorSuggestWidget.selectedBackground` | 選択中の項目の背景色                                             | 変数名や関数の候補のポップアップで選択中の項目の背景                   |
-| `editorSuggestWidget.selectedForeground` | 選択中の項目の文字色                                             | 変数名や関数の候補のポップアップで選択中の項目のテキスト                 |
-| `editorSuggestWidget.selectedIconForeground` | 選択中の項目のアイコン色                                           | 変数名や関数の候補のポップアップで選択中の項目の種別アイコン               |
-| `editorSuggestWidgetStatus.foreground` | サジェストウィジェットのステータスの文字色                                  | 変数名や関数の候補のポップアップ内のリスト下部に表示されるステータステキスト       |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorSuggestWidget.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数名や関数の候補のポップアップの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorSuggestWidget.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数名や関数の候補のポップアップの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorSuggestWidget.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数名や関数の候補のポップアップのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorSuggestWidget.focusHighlightForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中の項目のマッチハイライト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数名や関数の候補のポップアップの現在選択している候補内の入力文字に一致する部分の色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorSuggestWidget.highlightForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マッチハイライトの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数名や関数の候補のポップアップの候補内の入力文字に一致する部分の色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorSuggestWidget.selectedBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中の項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数名や関数の候補のポップアップで選択中の項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorSuggestWidget.selectedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中の項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数名や関数の候補のポップアップで選択中の項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorSuggestWidget.selectedIconForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中の項目のアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数名や関数の候補のポップアップで選択中の項目の種別アイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorSuggestWidgetStatus.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットのステータスの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数名や関数の候補のポップアップ内のリスト下部に表示されるステータステキスト</td>
+  </tr>
+</tbody>
+</table>
 
 ### ホバーウィジェット
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorHoverWidget.foreground` | エディターホバーの文字色                                           | コード内の関数や変数にカーソルを合わせたときに、その型や使い方を教える吹き出しのポップアップのテキスト |
-| `editorHoverWidget.background` | エディターホバーの背景色                                           | コード内の関数や変数にカーソルを合わせたときに、その型や使い方を教える吹き出しのポップアップの背景 |
-| `editorHoverWidget.border` | エディターホバーの境界線の色                                         | コード内の関数や変数にカーソルを合わせたときに、その型や使い方を教える吹き出しのポップアップの枠線 |
-| `editorHoverWidget.highlightForeground` | パラメータヒントのアクティブな項目の文字色                                  | 関数の引数のヒントで現在入力中の引数のテキスト                      |
-| `editorHoverWidget.statusBarBackground` | エディターホバーのステータスバーの背景色                                   | コード内の関数や変数にカーソルを合わせたときに、その型や使い方を教える吹き出しのポップアップ下部のステータスバー背景 |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorHoverWidget.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターホバーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コード内の関数や変数にカーソルを合わせたときに、その型や使い方を教える吹き出しのポップアップのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorHoverWidget.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターホバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コード内の関数や変数にカーソルを合わせたときに、その型や使い方を教える吹き出しのポップアップの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorHoverWidget.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターホバーの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コード内の関数や変数にカーソルを合わせたときに、その型や使い方を教える吹き出しのポップアップの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorHoverWidget.highlightForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パラメータヒントのアクティブな項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">関数の引数のヒントで現在入力中の引数のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorHoverWidget.statusBarBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターホバーのステータスバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コード内の関数や変数にカーソルを合わせたときに、その型や使い方を教える吹き出しのポップアップ下部のステータスバー背景</td>
+  </tr>
+</tbody>
+</table>
 
 ### ゴーストテキスト
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorGhostText.border` | ゴーストテキストの境界線の色                                         | AIが自動で補完するテキスト領域の枠線                          |
-| `editorGhostText.background` | ゴーストテキストの背景色                                           | AIが自動で補完するテキスト領域の背景                          |
-| `editorGhostText.foreground` | ゴーストテキストの文字色                                           | AIが自動で補完するテキスト                               |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGhostText.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゴーストテキストの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AIが自動で補完するテキスト領域の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGhostText.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゴーストテキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AIが自動で補完するテキスト領域の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorGhostText.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゴーストテキストの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AIが自動で補完するテキスト</td>
+  </tr>
+</tbody>
+</table>
 
 ### スティッキースクロール
 
@@ -992,14 +3088,42 @@ AIなどが次の変更を提案する際に表示される。
 `"editor.stickyScroll.enabled": true`とすることで表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorStickyScroll.background` | エディターのスティッキースクロールの背景色                                  | スクロール時にエディター上部に固定表示されるスコープ（クラス名・関数名など）の背景    |
-| `editorStickyScroll.border` | エディターのスティッキースクロールの境界線の色                                | スクロール時にエディター上部に固定表示されるスコープ部分の枠線              |
-| `editorStickyScroll.shadow` | エディターのスティッキースクロールの影の色                                  | スクロール時にエディター上部に固定表示されるスコープ部分とエディター本体の間の影     |
-| `editorStickyScrollGutter.background` | スティッキースクロールのガター部分の背景色                                  | スクロール時にエディター上部に固定表示されるスコープの行番号領域の背景          |
-| `editorStickyScrollHover.background` | ホバー時のスティッキースクロールの背景色                                   | スクロール時にエディター上部に固定表示されるスコープにホバーしたときの背景        |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorStickyScroll.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターのスティッキースクロールの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール時にエディター上部に固定表示されるスコープ（クラス名・関数名など）の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorStickyScroll.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターのスティッキースクロールの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール時にエディター上部に固定表示されるスコープ部分の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorStickyScroll.shadow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターのスティッキースクロールの影の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール時にエディター上部に固定表示されるスコープ部分とエディター本体の間の影</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorStickyScrollGutter.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スティッキースクロールのガター部分の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール時にエディター上部に固定表示されるスコープの行番号領域の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorStickyScrollHover.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のスティッキースクロールの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール時にエディター上部に固定表示されるスコープにホバーしたときの背景</td>
+  </tr>
+</tbody>
+</table>
 
 ### デバッグ例外ウィジェット
 
@@ -1008,27 +3132,79 @@ AIなどが次の変更を提案する際に表示される。
 )
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `debugExceptionWidget.background` | 例外ウィジェットの背景色                                           | デバッグ中に例外が発生したときのポップアップ背景                     |
-| `debugExceptionWidget.border` | 例外ウィジェットの境界線の色                                         | デバッグ中に例外が発生したときのポップアップ枠線                     |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugExceptionWidget.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">例外ウィジェットの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中に例外が発生したときのポップアップ背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugExceptionWidget.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">例外ウィジェットの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中に例外が発生したときのポップアップ枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ### エディターマーカーナビゲーション
 
 「次のエラーまたは警告へ移動(`F8`)」を実行した際に、コードのすぐ下に出現するエラーメッセージ表示用の専用ウィジェット（ダイアログボックス）です。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editorMarkerNavigation.background` | マーカーナビゲーションウィジェットの背景色                                  | エラー・警告ナビゲーションポップアップの背景                       |
-| `editorMarkerNavigationError.background` | マーカーナビゲーションのエラー色                                       | エラー箇所に移動したときのポップアップのエラー表示の背景                 |
-| `editorMarkerNavigationWarning.background` | マーカーナビゲーションの警告色                                        | 警告箇所に移動したときのポップアップの警告表示の背景                   |
-| `editorMarkerNavigationInfo.background` | マーカーナビゲーションの情報色                                        | 情報箇所に移動したときのポップアップの情報表示の背景                   |
-| `editorMarkerNavigationError.headerBackground` | マーカーナビゲーションのエラーヘッダーの背景色                                | エラーナビゲーションポップアップのヘッダー背景                      |
-| `editorMarkerNavigationWarning.headerBackground` | マーカーナビゲーションの警告ヘッダーの背景色                                 | 警告ナビゲーションポップアップのヘッダー背景                       |
-| `editorMarkerNavigationInfo.headerBackground` | マーカーナビゲーションの情報ヘッダーの背景色                                 | 情報ナビゲーションポップアップのヘッダー背景                       |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMarkerNavigation.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マーカーナビゲーションウィジェットの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー・警告ナビゲーションポップアップの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMarkerNavigationError.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マーカーナビゲーションのエラー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー箇所に移動したときのポップアップのエラー表示の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMarkerNavigationWarning.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マーカーナビゲーションの警告色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告箇所に移動したときのポップアップの警告表示の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMarkerNavigationInfo.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マーカーナビゲーションの情報色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報箇所に移動したときのポップアップの情報表示の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMarkerNavigationError.headerBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マーカーナビゲーションのエラーヘッダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーナビゲーションポップアップのヘッダー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMarkerNavigationWarning.headerBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マーカーナビゲーションの警告ヘッダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告ナビゲーションポップアップのヘッダー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorMarkerNavigationInfo.headerBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マーカーナビゲーションの情報ヘッダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報ナビゲーションポップアップのヘッダー背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1041,25 +3217,97 @@ AIなどが次の変更を提案する際に表示される。
 **Peek view colors** は、関数の定義元や参照されている場所をエディター内の現在のコードの行間に表示するビューに関する色設定である。`Alt` + `F12`で表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `peekView.border`      | ピークビューの境界線の色                                           |                                              |
-| `peekViewEditor.background` | ピークビューエディターの背景色                                        | ピークビュー内のコード表示部分の背景                           |
-| `peekViewEditorGutter.background` | ピークビューエディターのガターの背景色                                    | ピークビュー内の行番号領域の背景                             |
-| `peekViewEditor.matchHighlightBackground` | ピークビューエディター内のマッチハイライトの背景色                              | ピークビュー内で検索文字列に一致する箇所の背景                      |
-| `peekViewEditor.matchHighlightBorder` | ピークビューエディター内のマッチハイライトの境界線の色                            | ピークビュー内で検索文字列に一致する箇所の枠線                      |
-| `peekViewResult.background` | ピークビュー結果リストの背景色                                        | ピークビュー右側に表示される参照箇所一覧の背景                      |
-| `peekViewResult.fileForeground` | ピークビュー結果リストのファイルノードの文字色                                | ピークビュー右側に表示される参照箇所一覧に表示されるファイル名のテキスト         |
-| `peekViewResult.lineForeground` | ピークビュー結果リストの行ノードの文字色                                   | ピークビュー右側に表示される参照箇所一覧に表示される`peekViewResult.fileForeground`以外のテキスト |
-| `peekViewResult.matchHighlightBackground` | ピークビュー結果リストのマッチハイライトの背景色                               | ピークビュー右側に表示される参照箇所一覧で検索文字列に一致する箇所の背景         |
-| `peekViewResult.selectionBackground` | ピークビュー結果リストの選択中項目の背景色                                  | ピークビュー右側に表示される参照箇所一覧で選択中の(ピークビューに現在表示させている)項目の背景 |
-| `peekViewResult.selectionForeground` | ピークビュー結果リストの選択中項目の文字色                                  | ピークビュー右側に表示される参照箇所一覧で選択中の(ピークビューに現在表示させている)項目のテキスト |
-| `peekViewTitle.background` | ピークビュータイトル領域の背景色                                       | ピークビュー上部のタイトルバーの背景                           |
-| `peekViewTitleDescription.foreground` | ピークビュータイトルの補足情報の色                                      | タイトルバーのタイトルの右に表示されるディレクトリ場所の表記などの補足テキスト      |
-| `peekViewTitleLabel.foreground` | ピークビュータイトルの色                                           | タイトルバーに表示されるファイル名(タイトル)のテキスト                 |
-| `peekViewEditorStickyScroll.background` | ピークビューエディターのスティッキースクロールの背景色                            | ピークビュー内でスクロール時に固定表示されるスコープの背景                |
-| `peekViewEditorStickyScrollGutter.background` | ピークビューエディターのスティッキースクロールのガター部分の背景色                      | ピークビュー内で固定表示されるスコープの行番号領域の背景                 |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekView.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビューの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewEditor.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビューエディターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー内のコード表示部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewEditorGutter.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビューエディターのガターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー内の行番号領域の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewEditor.matchHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビューエディター内のマッチハイライトの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー内で検索文字列に一致する箇所の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewEditor.matchHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビューエディター内のマッチハイライトの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー内で検索文字列に一致する箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewResult.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー結果リストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー右側に表示される参照箇所一覧の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewResult.fileForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー結果リストのファイルノードの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー右側に表示される参照箇所一覧に表示されるファイル名のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewResult.lineForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー結果リストの行ノードの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー右側に表示される参照箇所一覧に表示される<code>peekViewResult.fileForeground</code>以外のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewResult.matchHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー結果リストのマッチハイライトの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー右側に表示される参照箇所一覧で検索文字列に一致する箇所の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewResult.selectionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー結果リストの選択中項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー右側に表示される参照箇所一覧で選択中の(ピークビューに現在表示させている)項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewResult.selectionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー結果リストの選択中項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー右側に表示される参照箇所一覧で選択中の(ピークビューに現在表示させている)項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewTitle.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュータイトル領域の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー上部のタイトルバーの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewTitleDescription.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュータイトルの補足情報の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タイトルバーのタイトルの右に表示されるディレクトリ場所の表記などの補足テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewTitleLabel.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュータイトルの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タイトルバーに表示されるファイル名(タイトル)のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewEditorStickyScroll.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビューエディターのスティッキースクロールの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー内でスクロール時に固定表示されるスコープの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>peekViewEditorStickyScrollGutter.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビューエディターのスティッキースクロールのガター部分の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビュー内で固定表示されるスコープの行番号領域の背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1074,21 +3322,77 @@ AIなどが次の変更を提案する際に表示される。
 ### インラインマージコンフリクト
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `merge.currentHeaderBackground` | 現在の変更（Current）のヘッダー背景色                                 | `<<<<<<< HEAD` のヘッダー部分の背景（半透明）               |
-| `merge.currentContentBackground` | 現在の変更（Current）のコンテンツ背景色                                | `<<<<<<< HEAD` のコード部分の背景（半透明）                |
-| `merge.incomingHeaderBackground` | 取り込む変更（Incoming）のヘッダー背景色                               | `<<<<<<< somebranch` のヘッダー部分の背景（半透明）         |
-| `merge.incomingContentBackground` | 取り込む変更（Incoming）のコンテンツ背景色                              | `<<<<<<< somebranch` のコード部分の背景（半透明）          |
-| `merge.border`         | ヘッダーと区切り線の境界線の色                                        | コンフリクト各セクションのヘッダーや区切り線の枠線                    |
-| `merge.commonContentBackground` | 共通の祖先（Common ancestor）のコンテンツ背景色                        | 3-way diffでの`<<<<<<< common`のコード部分の背景（半透明）   |
-| `merge.commonHeaderBackground` | 共通の祖先（Common ancestor）のヘッダー背景色                         | 3-way diffでの`<<<<<<< common`ののヘッダー部分の背景（半透明） |
-| `editorOverviewRuler.currentContentForeground` | 現在の変更（Current）の概要ルーラーのマーカー色                            | エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、現在の変更部分（Current）を示すマーカー |
-| `editorOverviewRuler.incomingContentForeground` | 取り込む変更（Incoming）の概要ルーラーのマーカー色                          | エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、取り込む変更部分を示すマーカー |
-| `editorOverviewRuler.commonContentForeground` | 共通の祖先（Common ancestor）の概要ルーラーのマーカー色                    | エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、共通部分を示すマーカー |
-| `editorOverviewRuler.commentForeground` | 解決済みコメントの概要ルーラー装飾色（不透明）                                | エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、解決済みコメントを示すマーカー |
-| `editorOverviewRuler.commentUnresolvedForeground` | 未解決コメントの概要ルーラー装飾色（不透明）                                 | エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、未解決のコメントを示すマーカー |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>merge.currentHeaderBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在の変更（Current）のヘッダー背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">`<<<<<<< HEAD` のヘッダー部分の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>merge.currentContentBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在の変更（Current）のコンテンツ背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">`<<<<<<< HEAD` のコード部分の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>merge.incomingHeaderBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">取り込む変更（Incoming）のヘッダー背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">`<<<<<<< somebranch` のヘッダー部分の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>merge.incomingContentBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">取り込む変更（Incoming）のコンテンツ背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">`<<<<<<< somebranch` のコード部分の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>merge.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ヘッダーと区切り線の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コンフリクト各セクションのヘッダーや区切り線の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>merge.commonContentBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">共通の祖先（Common ancestor）のコンテンツ背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">3-way diffでの`<<<<<<< common`のコード部分の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>merge.commonHeaderBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">共通の祖先（Common ancestor）のヘッダー背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">3-way diffでの`<<<<<<< common`ののヘッダー部分の背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.currentContentForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在の変更（Current）の概要ルーラーのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、現在の変更部分（Current）を示すマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.incomingContentForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">取り込む変更（Incoming）の概要ルーラーのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、取り込む変更部分を示すマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.commonContentForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">共通の祖先（Common ancestor）の概要ルーラーのマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、共通部分を示すマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.commentForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">解決済みコメントの概要ルーラー装飾色（不透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、解決済みコメントを示すマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editorOverviewRuler.commentUnresolvedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未解決コメントの概要ルーラー装飾色（不透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター右端のスクロールバーの下に重なっている、エディター内の装飾の概要を示す欄で、未解決のコメントを示すマーカー</td>
+  </tr>
+</tbody>
+</table>
 
 ### マージエディター（3-wayマージ）
 
@@ -1100,22 +3404,82 @@ AIなどが次の変更を提案する際に表示される。
 タブの欄の一番右にある"その他の操作..."から「ベースの表示（Show Base）」を押すとIncomingやCurrentに書き換えられる前の、元々のコード(Base)が出現する。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `mergeEditor.change.background` | 変更箇所の背景色                                               | マージエディターで変更がある行の背景                           |
-| `mergeEditor.change.word.background` | 単語単位の変更箇所の背景色                                          | マージエディターで変更された単語部分の背景                        |
-| `mergeEditor.conflict.unhandledUnfocused.border` | 未処理・非フォーカス時のコンフリクトの境界線の色                               | まだ解決していない、選択していないコンフリクト箇所の枠線                 |
-| `mergeEditor.conflict.unhandledFocused.border` | 未処理・フォーカス時のコンフリクトの境界線の色                                | まだ解決していない、現在選択中のコンフリクト箇所の枠線                  |
-| `mergeEditor.conflict.handledUnfocused.border` | 処理済み・非フォーカス時のコンフリクトの境界線の色                              | 解決済みで、選択していないコンフリクト箇所の枠線                     |
-| `mergeEditor.conflict.handledFocused.border` | 処理済み・フォーカス時のコンフリクトの境界線の色                               | 解決済みで、現在選択中のコンフリクト箇所の枠線                      |
-| `mergeEditor.conflict.handled.minimapOverViewRuler` | 処理済みコンフリクトのミニマップ／概要ルーラー上の色                             | 右側のファイルのズームアウトを示すミニマップ上の解決済みコンフリクトのマーカー      |
-| `mergeEditor.conflict.unhandled.minimapOverViewRuler` | 未処理コンフリクトのミニマップ／概要ルーラー上の色                              | 右側のファイルのズームアウトを示すミニマップ上の未解決コンフリクトのマーカー       |
-| `mergeEditor.conflictingLines.background` | 「Conflicting Lines」テキストの背景色                            | コンフリクトがある行数を示すメッセージの背景                       |
-| `mergeEditor.changeBase.background` | ベース（Base）側の変更箇所の背景色                                    | 3-way diffでの元々のコードにおける変更された行の背景              |
-| `mergeEditor.changeBase.word.background` | ベース（Base）側の単語単位の変更箇所の背景色                               | 3-way diffでの元々のコードにおける変更された単語部分の背景           |
-| `mergeEditor.conflict.input1.background` | Input1側の装飾の背景色                                         | 3-way diffでの自分側（Current, Input1）コードの背景       |
-| `mergeEditor.conflict.input2.background` | Input2側の装飾の背景色                                         | 3-way diffでのマージ元側（Incoming, Input2）コードの背景    |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.change.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更箇所の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マージエディターで変更がある行の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.change.word.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">単語単位の変更箇所の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マージエディターで変更された単語部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.conflict.unhandledUnfocused.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未処理・非フォーカス時のコンフリクトの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">まだ解決していない、選択していないコンフリクト箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.conflict.unhandledFocused.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未処理・フォーカス時のコンフリクトの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">まだ解決していない、現在選択中のコンフリクト箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.conflict.handledUnfocused.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">処理済み・非フォーカス時のコンフリクトの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">解決済みで、選択していないコンフリクト箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.conflict.handledFocused.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">処理済み・フォーカス時のコンフリクトの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">解決済みで、現在選択中のコンフリクト箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.conflict.handled.minimapOverViewRuler</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">処理済みコンフリクトのミニマップ／概要ルーラー上の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">右側のファイルのズームアウトを示すミニマップ上の解決済みコンフリクトのマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.conflict.unhandled.minimapOverViewRuler</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未処理コンフリクトのミニマップ／概要ルーラー上の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">右側のファイルのズームアウトを示すミニマップ上の未解決コンフリクトのマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.conflictingLines.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「Conflicting Lines」テキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コンフリクトがある行数を示すメッセージの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.changeBase.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ベース（Base）側の変更箇所の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">3-way diffでの元々のコードにおける変更された行の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.changeBase.word.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ベース（Base）側の単語単位の変更箇所の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">3-way diffでの元々のコードにおける変更された単語部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.conflict.input1.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Input1側の装飾の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">3-way diffでの自分側（Current, Input1）コードの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mergeEditor.conflict.input2.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Input2側の装飾の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">3-way diffでのマージ元側（Incoming, Input2）コードの背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1127,29 +3491,117 @@ AIなどが次の変更を提案する際に表示される。
 
 **Panel colors** は、エディター領域の下に表示されるパネルに関する色設定である。問題、出力、デバッグコンソール、ターミナル、ポートなどを含む欄。
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `panel.background`     | パネルの背景色                                                | パネル全体の背景                                     |
-| `panel.border`         | パネルとエディターを区切る境界線の色                                     | パネルとエディター領域の間の境界線                            |
-| `panel.dropBorder`     | パネルタイトルへのドラッグ&ドロップ時の境界線の色                              | パネル上部のタブ(タイトル)をドラッグして並び替えるときのタブ間の境界線         |
-| `panelTitle.activeBorder` | アクティブなパネルタイトルの境界線の色                                    | 選択中のパネルタブ（「ターミナル」など）の下に表示される線                |
-| `panelTitle.activeForeground` | アクティブなパネルのタイトル色                                        | 選択中のパネルタブ（「ターミナル」など）のテキスト                    |
-| `panelTitle.inactiveForeground` | 非アクティブなパネルのタイトル色                                       | 未選択のパネルタブのテキスト                               |
-| `panelTitle.border`    | パネルタイトル下部の境界線の色                                        | パネルタイトルとビュー(本体)を区切る下線                        |
-| `panelTitleBadge.background` | パネルタイトルバッジの背景色                                         | 「問題」タブの件数表示バッジの背景                            |
-| `panelTitleBadge.foreground` | パネルタイトルバッジの文字色                                         | 「問題」タブの件数表示バッジのテキスト                          |
-| `panelInput.border`    | パネル内の入力ボックスの境界線の色                                      | デバッグコンソールの入力欄の枠線                             |
-| `panelSection.border`  | 複数ビューが横に並んでいるときのパネルセクションの境界線の色                         | パネルを横分割して複数表示したときの境界線                        |
-| `panelSection.dropBackground` | パネルセクションへのドラッグ&ドロップ時の背景色                               | パネル内でビューをドラッグしているときの背景（半透明）                  |
-| `panelSectionHeader.background` | パネルセクションヘッダーの背景色                                       | パネル内の各セクション見出しの背景                            |
-| `panelSectionHeader.foreground` | パネルセクションヘッダーの文字色                                       | パネル内の各セクション見出しのテキスト                          |
-| `panelStickyScroll.background` | パネルのスティッキースクロールの背景色                                    | パネル内でスクロール時に上部に固定表示される親要素の背景                 |
-| `panelStickyScroll.border` | パネルのスティッキースクロールの境界線の色                                  | パネル内でスクロール時に上部に固定表示される親要素の枠線                 |
-| `panelStickyScroll.shadow` | パネルのスティッキースクロールの影の色                                    | パネル内でスクロール時に上部に固定表示される親要素の影                  |
-| `panelSectionHeader.border` | 複数ビューが縦に並んでいるときのパネルセクションヘッダーの境界線の色                     | パネルを縦分割して複数表示したときのセクション見出しの境界線               |
-| `outputView.background` | 出力ビューの背景色                                              | 「出力」パネルの背景                                   |
-| `outputViewStickyScroll.background` | 出力ビューのスティッキースクロールの背景色                                  | 「出力」パネルでスクロール時に固定表示される部分の背景                  |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panel.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panel.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルとエディターを区切る境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルとエディター領域の間の境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panel.dropBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルタイトルへのドラッグ&ドロップ時の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル上部のタブ(タイトル)をドラッグして並び替えるときのタブ間の境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelTitle.activeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなパネルタイトルの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のパネルタブ（「ターミナル」など）の下に表示される線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelTitle.activeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブなパネルのタイトル色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のパネルタブ（「ターミナル」など）のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelTitle.inactiveForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非アクティブなパネルのタイトル色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未選択のパネルタブのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelTitle.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルタイトル下部の境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルタイトルとビュー(本体)を区切る下線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelTitleBadge.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルタイトルバッジの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「問題」タブの件数表示バッジの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelTitleBadge.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルタイトルバッジの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「問題」タブの件数表示バッジのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelInput.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル内の入力ボックスの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグコンソールの入力欄の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelSection.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数ビューが横に並んでいるときのパネルセクションの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルを横分割して複数表示したときの境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelSection.dropBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルセクションへのドラッグ&ドロップ時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル内でビューをドラッグしているときの背景（半透明）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelSectionHeader.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルセクションヘッダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル内の各セクション見出しの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelSectionHeader.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルセクションヘッダーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル内の各セクション見出しのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelStickyScroll.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルのスティッキースクロールの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル内でスクロール時に上部に固定表示される親要素の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelStickyScroll.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルのスティッキースクロールの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル内でスクロール時に上部に固定表示される親要素の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelStickyScroll.shadow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルのスティッキースクロールの影の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル内でスクロール時に上部に固定表示される親要素の影</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>panelSectionHeader.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数ビューが縦に並んでいるときのパネルセクションヘッダーの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネルを縦分割して複数表示したときのセクション見出しの境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>outputView.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">出力ビューの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「出力」パネルの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>outputViewStickyScroll.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">出力ビューのスティッキースクロールの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「出力」パネルでスクロール時に固定表示される部分の背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1162,44 +3614,192 @@ AIなどが次の変更を提案する際に表示される。
 **Status Bar colors** は、ウィンドウ最下部に表示されるステータスバーに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `statusBar.background` | 標準時のステータスバーの背景色                                        | ステータスバー全体の背景                                 |
-| `statusBar.foreground` | ステータスバーの文字色                                            | ステータスバーに表示されるテキスト                            |
-| `statusBar.border`     | ステータスバーとエディターを区切る境界線の色                                 | ステータスバー上部の境界線                                |
-| `statusBar.debuggingBackground` | デバッグ中のステータスバーの背景色                                      | プログラムをデバッグ実行中のステータスバー背景（通常オレンジ系）             |
-| `statusBar.debuggingForeground` | デバッグ中のステータスバーの文字色                                      | デバッグ実行中のステータスバーのテキスト                         |
-| `statusBar.debuggingBorder` | デバッグ中のステータスバーとエディターを区切る境界線の色                           | デバッグ実行中のステータスバーとエディターを区切る境界線                 |
-| `statusBar.noFolderForeground` | フォルダーを開いていないときのステータスバーの文字色                             | フォルダー未オープン時のステータスバーのテキスト                     |
-| `statusBar.noFolderBackground` | フォルダーを開いていないときのステータスバーの背景色                             | フォルダー未オープン時のステータスバー背景（通常紫系）                  |
-| `statusBar.noFolderBorder` | フォルダーを開いていないときのステータスバーとエディターを区切る境界線の色                  | フォルダー未オープン時のステータスバーとエディターを区切る境界線             |
-| `statusBarItem.activeBackground` | クリック時のステータスバーアイテムの背景色                                  | ステータスバーの項目をクリックして押し込んでいるときの背景                |
-| `statusBarItem.hoverForeground` | ホバー時のステータスバーアイテムの文字色                                   | ステータスバーの項目にホバーしたときのテキスト                      |
-| `statusBarItem.hoverBackground` | ホバー時のステータスバーアイテムの背景色                                   | ステータスバーの項目にホバーしたときの背景                        |
-| `statusBarItem.prominentForeground` | 強調アイテムの文字色                                             | 拡張機能の Live Server を使ってローカルサーバーを起動したときにステータスバーの右側に表示される「Port: 5500（停止ボタン）」の強調表示項目のテキスト |
-| `statusBarItem.prominentBackground` | 強調アイテムの背景色                                             | 拡張機能の Live Server を使ってローカルサーバーを起動したときにステータスバーの右側に表示される「Port: 5500（停止ボタン）」の強調表示項目の背景 |
-| `statusBarItem.prominentHoverForeground` | ホバー時の強調アイテムの文字色                                        | 拡張機能の Live Server を使ってローカルサーバーを起動したときにステータスバーの右側に表示される「Port: 5500（停止ボタン）」の強調表示項目にホバーしたときのテキスト |
-| `statusBarItem.prominentHoverBackground` | ホバー時の強調アイテムの背景色                                        | 拡張機能の Live Server を使ってローカルサーバーを起動したときにステータスバーの右側に表示される「Port: 5500（停止ボタン）」の強調表示項目にホバーしたときの背景 |
-| `statusBarItem.remoteBackground` | リモートインジケーターの背景色                                        | 「リモート接続中」を示す左下のアイコン部分の背景                     |
-| `statusBarItem.remoteForeground` | リモートインジケーターの文字色                                        | 「リモート接続中」を示す左下のアイコン部分のテキスト                   |
-| `statusBarItem.remoteHoverBackground` | ホバー時のリモートインジケーターの背景色                                   | 「リモート接続中」を示す左下のアイコン部分にホバーしたときの背景             |
-| `statusBarItem.remoteHoverForeground` | ホバー時のリモートインジケーターの文字色                                   | 「リモート接続中」を示す左下のアイコン部分にホバーしたときのテキスト           |
-| `statusBarItem.errorBackground` | エラーアイテムの背景色                                            | エラー状態を示すステータスバーの項目の背景                        |
-| `statusBarItem.errorForeground` | エラーアイテムの文字色                                            | エラー状態を示すステータスバーの項目のテキスト                      |
-| `statusBarItem.errorHoverBackground` | ホバー時のエラーアイテムの背景色                                       | エラー状態のステータスバーの項目にホバーしたときの背景                  |
-| `statusBarItem.errorHoverForeground` | ホバー時のエラーアイテムの文字色                                       | エラー状態のステータスバーの項目にホバーしたときのテキスト                |
-| `statusBarItem.warningBackground` | 警告アイテムの背景色                                             | 警告状態を示すステータスバーの項目の背景                         |
-| `statusBarItem.warningForeground` | 警告アイテムの文字色                                             | 警告状態を示すステータスバーの項目のテキスト                       |
-| `statusBarItem.warningHoverBackground` | ホバー時の警告アイテムの背景色                                        | 警告状態のステータスバーの項目にホバーしたときの背景                   |
-| `statusBarItem.warningHoverForeground` | ホバー時の警告アイテムの文字色                                        | 警告状態のステータスバーの項目にホバーしたときのテキスト                 |
-| `statusBarItem.compactHoverBackground` | 2つのホバー情報を持つ項目にホバーしたときの背景色                              |                                              |
-| `statusBarItem.focusBorder` | キーボード操作でフォーカス時のステータスバーアイテムの境界線の色                       | コマンドパレット(`Ctrl`+`Shift`+`P`)から「View: Focus Status Bar」を選択し、左右の矢印キー(←, →)で項目を移動したときに表示されるターゲットの枠線 |
-| `statusBar.focusBorder` | キーボード操作でフォーカス時のステータスバーの境界線の色                           | コマンドパレット(`Ctrl`+`Shift`+`P`)から「View: Focus Status Bar」を選択し、ステータスバー自体にフォーカスしたときの枠線 |
-| `statusBarItem.offlineBackground` | ワークベンチがオフライン時のアイテムの背景色                                 | ネットワーク未接続時のステータスバー項目の背景                      |
-| `statusBarItem.offlineForeground` | ワークベンチがオフライン時のアイテムの文字色                                 | ネットワーク未接続時のステータスバー項目のテキスト                    |
-| `statusBarItem.offlineHoverForeground` | オフライン時、ホバーしたアイテムの文字色                                   | ネットワーク未接続時のステータスバー項目にホバーしたときのテキスト            |
-| `statusBarItem.offlineHoverBackground` | オフライン時、ホバーしたアイテムの背景色                                   | ネットワーク未接続時のステータスバー項目にホバーしたときの背景              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">標準時のステータスバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステータスバー全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステータスバーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステータスバーに表示されるテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステータスバーとエディターを区切る境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステータスバー上部の境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.debuggingBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のステータスバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プログラムをデバッグ実行中のステータスバー背景（通常オレンジ系）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.debuggingForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のステータスバーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ実行中のステータスバーのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.debuggingBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のステータスバーとエディターを区切る境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ実行中のステータスバーとエディターを区切る境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.noFolderForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォルダーを開いていないときのステータスバーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォルダー未オープン時のステータスバーのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.noFolderBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォルダーを開いていないときのステータスバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォルダー未オープン時のステータスバー背景（通常紫系）</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.noFolderBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォルダーを開いていないときのステータスバーとエディターを区切る境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォルダー未オープン時のステータスバーとエディターを区切る境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クリック時のステータスバーアイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステータスバーの項目をクリックして押し込んでいるときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.hoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のステータスバーアイテムの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステータスバーの項目にホバーしたときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のステータスバーアイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステータスバーの項目にホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.prominentForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">強調アイテムの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の Live Server を使ってローカルサーバーを起動したときにステータスバーの右側に表示される「Port: 5500（停止ボタン）」の強調表示項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.prominentBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">強調アイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の Live Server を使ってローカルサーバーを起動したときにステータスバーの右側に表示される「Port: 5500（停止ボタン）」の強調表示項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.prominentHoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時の強調アイテムの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の Live Server を使ってローカルサーバーを起動したときにステータスバーの右側に表示される「Port: 5500（停止ボタン）」の強調表示項目にホバーしたときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.prominentHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時の強調アイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の Live Server を使ってローカルサーバーを起動したときにステータスバーの右側に表示される「Port: 5500（停止ボタン）」の強調表示項目にホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.remoteBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リモートインジケーターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「リモート接続中」を示す左下のアイコン部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.remoteForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リモートインジケーターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「リモート接続中」を示す左下のアイコン部分のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.remoteHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のリモートインジケーターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「リモート接続中」を示す左下のアイコン部分にホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.remoteHoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のリモートインジケーターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「リモート接続中」を示す左下のアイコン部分にホバーしたときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.errorBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーアイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー状態を示すステータスバーの項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.errorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラーアイテムの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー状態を示すステータスバーの項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.errorHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のエラーアイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー状態のステータスバーの項目にホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.errorHoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のエラーアイテムの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー状態のステータスバーの項目にホバーしたときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.warningBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告アイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告状態を示すステータスバーの項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.warningForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告アイテムの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告状態を示すステータスバーの項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.warningHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時の警告アイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告状態のステータスバーの項目にホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.warningHoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時の警告アイテムの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告状態のステータスバーの項目にホバーしたときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.compactHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">2つのホバー情報を持つ項目にホバーしたときの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.focusBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーボード操作でフォーカス時のステータスバーアイテムの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレット(<code>Ctrl</code>+<code>Shift</code>+<code>P</code>)から「View: Focus Status Bar」を選択し、左右の矢印キー(←, →)で項目を移動したときに表示されるターゲットの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBar.focusBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーボード操作でフォーカス時のステータスバーの境界線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレット(<code>Ctrl</code>+<code>Shift</code>+<code>P</code>)から「View: Focus Status Bar」を選択し、ステータスバー自体にフォーカスしたときの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.offlineBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ワークベンチがオフライン時のアイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ネットワーク未接続時のステータスバー項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.offlineForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ワークベンチがオフライン時のアイテムの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ネットワーク未接続時のステータスバー項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.offlineHoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">オフライン時、ホバーしたアイテムの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ネットワーク未接続時のステータスバー項目にホバーしたときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>statusBarItem.offlineHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">オフライン時、ホバーしたアイテムの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ネットワーク未接続時のステータスバー項目にホバーしたときの背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1212,14 +3812,42 @@ AIなどが次の変更を提案する際に表示される。
 **Title Bar colors** は、ウィンドウ最上部に表示されるタイトルバーに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `titleBar.activeBackground` | ウィンドウがアクティブなときのタイトルバーの背景色                              | VSCodeウィンドウを操作しているときのタイトルバー背景                |
-| `titleBar.activeForeground` | ウィンドウがアクティブなときのタイトルバーの文字色                              | VSCodeウィンドウを操作しているときのタイトルバーのテキスト             |
-| `titleBar.inactiveBackground` | ウィンドウが非アクティブなときのタイトルバーの背景色                             | VSCodeウィンドウを操作していないときのタイトルバー背景               |
-| `titleBar.inactiveForeground` | ウィンドウが非アクティブなときのタイトルバーの文字色                             | VSCodeウィンドウを操作していないときのタイトルバーのテキスト            |
-| `titleBar.border`      | タイトルバーのボーダー色                                           | タイトルバー下部の境界線                                 |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>titleBar.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウィンドウがアクティブなときのタイトルバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">VSCodeウィンドウを操作しているときのタイトルバー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>titleBar.activeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウィンドウがアクティブなときのタイトルバーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">VSCodeウィンドウを操作しているときのタイトルバーのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>titleBar.inactiveBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウィンドウが非アクティブなときのタイトルバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">VSCodeウィンドウを操作していないときのタイトルバー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>titleBar.inactiveForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウィンドウが非アクティブなときのタイトルバーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">VSCodeウィンドウを操作していないときのタイトルバーのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>titleBar.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タイトルバーのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タイトルバー下部の境界線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1232,19 +3860,67 @@ AIなどが次の変更を提案する際に表示される。
 **Menu Bar colors** は、ウィンドウ最上部にあるメニューバーとそれを開いたときのメニュー項目に関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `menubar.selectionForeground` | メニューバーで選択中の項目の文字色                                      | 「ファイル」「編集」などのメニューバーの項目を選択したときのテキスト           |
-| `menubar.selectionBackground` | メニューバーで選択中の項目の背景色                                      | 「ファイル」「編集」などのメニューバーの項目を選択したときの背景             |
-| `menubar.selectionBorder` | メニューバーで選択中の項目のボーダー色                                    | 「ファイル」「編集」などのメニューバーの項目を選択したときの枠線             |
-| `menu.foreground`      | メニュー項目の文字色                                             | 「ファイル」をクリックして開いたドロップダウンメニューのテキスト             |
-| `menu.background`      | メニュー項目の背景色                                             | 開いたときのドロップダウンメニュー全体の背景                       |
-| `menu.selectionForeground` | メニュー内で選択中の項目の文字色                                       | ドロップダウンメニュー内でホバー・選択中の項目のテキスト                 |
-| `menu.selectionBackground` | メニュー内で選択中の項目の背景色                                       | ドロップダウンメニュー内でホバー・選択中の項目の背景                   |
-| `menu.selectionBorder` | メニュー内で選択中の項目のボーダー色                                     | ドロップダウンメニュー内でホバー・選択中の項目の枠線                   |
-| `menu.separatorBackground` | メニュー内の区切り線の色                                           | ドロップダウンメニュー内のセクションを分ける横線                     |
-| `menu.border`          | メニューのボーダー色                                             | 開いたときのドロップダウンメニュー全体の枠線                       |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menubar.selectionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニューバーで選択中の項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「ファイル」「編集」などのメニューバーの項目を選択したときのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menubar.selectionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニューバーで選択中の項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「ファイル」「編集」などのメニューバーの項目を選択したときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menubar.selectionBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニューバーで選択中の項目のボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「ファイル」「編集」などのメニューバーの項目を選択したときの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menu.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニュー項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「ファイル」をクリックして開いたドロップダウンメニューのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menu.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニュー項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">開いたときのドロップダウンメニュー全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menu.selectionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニュー内で選択中の項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンメニュー内でホバー・選択中の項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menu.selectionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニュー内で選択中の項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンメニュー内でホバー・選択中の項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menu.selectionBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニュー内で選択中の項目のボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンメニュー内でホバー・選択中の項目の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menu.separatorBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニュー内の区切り線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンメニュー内のセクションを分ける横線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>menu.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メニューのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">開いたときのドロップダウンメニュー全体の枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1257,18 +3933,62 @@ AIなどが次の変更を提案する際に表示される。
 **Command Center colors** は、タイトルバー中央のタイトルをクリックしたときに表示されるコマンドセンターに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `commandCenter.foreground` | コマンドセンターの文字色                                           | コマンドセンターのテキスト                                |
-| `commandCenter.activeForeground` | アクティブ時のコマンドセンターの文字色                                    | コマンドセンター内のクリック・選択した項目のテキスト                   |
-| `commandCenter.background` | コマンドセンターの背景色                                           | コマンドセンターの背景                                  |
-| `commandCenter.activeBackground` | アクティブ時のコマンドセンターの背景色                                    | コマンドセンター内のクリック・選択した項目の背景                     |
-| `commandCenter.border` | コマンドセンターのボーダー色                                         | コマンドセンターの枠線                                  |
-| `commandCenter.inactiveForeground` | ウィンドウが非アクティブなときのコマンドセンターの文字色                           | コマンドセンター内のクリック・選択していない項目のテキスト                |
-| `commandCenter.inactiveBorder` | ウィンドウが非アクティブなときのコマンドセンターのボーダー色                         | コマンドセンター内のクリック・選択していない項目の枠線                  |
-| `commandCenter.activeBorder` | アクティブ時のコマンドセンターのボーダー色                                  | コマンドセンター内のクリック・選択した項目の枠線                     |
-| `commandCenter.debuggingBackground` | デバッグ中のコマンドセンターの背景色                                     | プログラムをデバッグ実行中のコマンドセンターの背景                    |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commandCenter.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンターのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commandCenter.activeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時のコマンドセンターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンター内のクリック・選択した項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commandCenter.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンターの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commandCenter.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時のコマンドセンターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンター内のクリック・選択した項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commandCenter.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンターのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンターの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commandCenter.inactiveForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウィンドウが非アクティブなときのコマンドセンターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンター内のクリック・選択していない項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commandCenter.inactiveBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウィンドウが非アクティブなときのコマンドセンターのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンター内のクリック・選択していない項目の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commandCenter.activeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクティブ時のコマンドセンターのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドセンター内のクリック・選択した項目の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commandCenter.debuggingBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のコマンドセンターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プログラムをデバッグ実行中のコマンドセンターの背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1282,20 +4002,72 @@ AIなどが次の変更を提案する際に表示される。
 notificationCenter(通知センター)は、ヘッダー付きの通知のリストであり、notificationToast(通知トースト)は、ヘッダーがない単通知のポップアップを指す。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `notificationCenter.border` | 通知センターのボーダー色                                           | 通知センター全体を囲む枠線                                |
-| `notificationCenterHeader.foreground` | 通知センターのヘッダーの文字色                                        | 通知センター上部の「Notifications」などのテキスト              |
-| `notificationCenterHeader.background` | 通知センターのヘッダーの背景色                                        | 通知センター上部のヘッダー部分の背景                           |
-| `notificationToast.border` | 通知のボーダー色                                               | ヘッダーがない単通知のポップアップの枠線                         |
-| `notifications.foreground` | 通知の文字色                                                 | 通知に表示されるメッセージのテキスト                           |
-| `notifications.background` | 通知の背景色                                                 | 通知全体の背景                                      |
-| `notifications.border` | 通知センター内で他の通知と区切るボーダー色                                  | 通知センター内で複数の通知を区切る線                           |
-| `notificationLink.foreground` | 通知内のリンクの文字色                                            | 通知メッセージ内に含まれるリンクテキスト                         |
-| `notificationsErrorIcon.foreground` | 通知のエラーアイコンの色                                           | エラー通知に表示されるアイコン                              |
-| `notificationsWarningIcon.foreground` | 通知の警告アイコンの色                                            | 警告通知に表示されるアイコン                               |
-| `notificationsInfoIcon.foreground` | 通知の情報アイコンの色                                            | 情報通知に表示されるアイコン                               |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notificationCenter.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知センターのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知センター全体を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notificationCenterHeader.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知センターのヘッダーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知センター上部の「Notifications」などのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notificationCenterHeader.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知センターのヘッダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知センター上部のヘッダー部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notificationToast.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知のボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ヘッダーがない単通知のポップアップの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notifications.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知に表示されるメッセージのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notifications.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notifications.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知センター内で他の通知と区切るボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知センター内で複数の通知を区切る線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notificationLink.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知内のリンクの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知メッセージ内に含まれるリンクテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notificationsErrorIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知のエラーアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー通知に表示されるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notificationsWarningIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知の警告アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">警告通知に表示されるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notificationsInfoIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通知の情報アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">情報通知に表示されるアイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1308,12 +4080,32 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Banner colors** は、タイトルバーの下に表示され、ワークベンチの幅いっぱいに広がるバナーに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `banner.background`    | バナーの背景色                                                |                                              |
-| `banner.foreground`    | バナーの文字色                                                |                                              |
-| `banner.iconForeground` | バナーテキスト前のアイコンの色                                        |                                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>banner.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">バナーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>banner.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">バナーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>banner.iconForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">バナーテキスト前のアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1326,25 +4118,97 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Extensions colors** は、拡張機能ビューに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `extensionButton.prominentForeground` | 拡張機能ビューの強調ボタンの文字色                                      | 「インストール」や「再読み込み」ボタンのテキスト                     |
-| `extensionButton.prominentBackground` | 拡張機能ビューの強調ボタンの背景色                                      | 「インストール」や「再読み込み」ボタンの背景                       |
-| `extensionButton.prominentHoverBackground` | ホバー時の強調ボタンの背景色                                         | 「インストール」や「再読み込み」ボタンにホバーしたときの背景               |
-| `extensionButton.background` | 拡張機能アクションボタンの背景色                                       | 「無効にする」など通常のアクションボタンの背景                      |
-| `extensionButton.foreground` | 拡張機能アクションボタンの文字色                                       | 「無効にする」など通常のアクションボタンのテキスト                    |
-| `extensionButton.hoverBackground` | ホバー時の拡張機能アクションボタンの背景色                                  | 通常のアクションボタンにホバーしたときの背景                       |
-| `extensionButton.separator` | 拡張機能アクションボタンの区切り線の色                                    | 「無効にする」や「アンインストール」などのドロップダウン付きボタンの区切り線       |
-| `extensionButton.border` | 拡張機能アクションボタンのボーダー色                                     | 「無効にする」など通常のアクションボタンの枠線                      |
-| `extensionBadge.remoteBackground` | 拡張機能ビューのリモートバッジの背景色                                    | VSCodeをリモート接続モードで起動した状態で、拡張機能タブを開いたときに各拡張機能のタイトルの右横にある接続先の環境名が書かれたバッジの背景 |
-| `extensionBadge.remoteForeground` | 拡張機能ビューのリモートバッジの文字色                                    | VSCodeをリモート接続モードで起動した状態で、拡張機能タブを開いたときに各拡張機能のタイトルの右横にある接続先の環境名が書かれたバッジのテキスト |
-| `extensionIcon.starForeground` | 拡張機能の評価アイコンの色                                          | 拡張機能の星評価（★）アイコン                              |
-| `extensionIcon.verifiedForeground` | 拡張機能の認証済み発行者アイコンの色                                     | 公式認証(発行元)済みを示すチェックマークアイコン                    |
-| `extensionIcon.preReleaseForeground` | プレリリース版拡張機能のアイコンの色                                     | プレリリース版や推奨欄の左上にあるアイコン                        |
-| `extensionIcon.sponsorForeground` | スポンサー機能のアイコンの色                                         | スポンサーを募集している拡張機能のアイコン                        |
-| `extensionIcon.privateForeground` | プライベート拡張機能のアイコンの色                                      | 非公開の拡張機能を示すアイコン                              |
-| `mcpIcon.starForeground` | MCPのスター付きアイコンの色                                        | スター登録されたMCPサーバーを示すアイコン                       |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionButton.prominentForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能ビューの強調ボタンの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「インストール」や「再読み込み」ボタンのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionButton.prominentBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能ビューの強調ボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「インストール」や「再読み込み」ボタンの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionButton.prominentHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時の強調ボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「インストール」や「再読み込み」ボタンにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionButton.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能アクションボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「無効にする」など通常のアクションボタンの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionButton.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能アクションボタンの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「無効にする」など通常のアクションボタンのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionButton.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時の拡張機能アクションボタンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">通常のアクションボタンにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionButton.separator</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能アクションボタンの区切り線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「無効にする」や「アンインストール」などのドロップダウン付きボタンの区切り線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionButton.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能アクションボタンのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「無効にする」など通常のアクションボタンの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionBadge.remoteBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能ビューのリモートバッジの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">VSCodeをリモート接続モードで起動した状態で、拡張機能タブを開いたときに各拡張機能のタイトルの右横にある接続先の環境名が書かれたバッジの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionBadge.remoteForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能ビューのリモートバッジの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">VSCodeをリモート接続モードで起動した状態で、拡張機能タブを開いたときに各拡張機能のタイトルの右横にある接続先の環境名が書かれたバッジのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionIcon.starForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の評価アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の星評価（★）アイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionIcon.verifiedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">拡張機能の認証済み発行者アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">公式認証(発行元)済みを示すチェックマークアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionIcon.preReleaseForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プレリリース版拡張機能のアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プレリリース版や推奨欄の左上にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionIcon.sponsorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スポンサー機能のアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スポンサーを募集している拡張機能のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>extensionIcon.privateForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プライベート拡張機能のアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">非公開の拡張機能を示すアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>mcpIcon.starForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">MCPのスター付きアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スター登録されたMCPサーバーを示すアイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1357,17 +4221,57 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Quick picker colors** は、コマンドパレット(`Ctrl`+`Shift`+`P`)やカラーテーマ選択ウィンドウなどに使われるクイックピッカー（クイックオープン）UIに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `pickerGroup.border`   | クイックピッカーのグループ区切りボーダー色                                  | コマンドパレットでカテゴリ間を区切る線                          |
-| `pickerGroup.foreground` | クイックピッカーのグループラベルの文字色                                   | コマンドパレットのカテゴリ見出しのテキスト                        |
-| `quickInput.background` | クイック入力ウィジェットの背景色                                       | コマンドパレットやカラーテーマ選択ウィンドウの背景                    |
-| `quickInput.foreground` | クイック入力ウィジェットの文字色                                       | コマンドパレットやカラーテーマ選択ウィンドウのテキスト                  |
-| `quickInputList.focusBackground` | フォーカス中の項目の背景色                                          | コマンドパレットでカーソルが当たっている項目の背景                    |
-| `quickInputList.focusForeground` | フォーカス中の項目の文字色                                          | コマンドパレットでカーソルが当たっている項目のテキスト                  |
-| `quickInputList.focusIconForeground` | フォーカス中の項目のアイコン色                                        | コマンドパレットでカーソルが当たっている項目の右側のギアマークのアイコン、拡張機能の固有アイコン |
-| `quickInputTitle.background` | クイックピッカーのタイトルの背景色                                      |                                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>pickerGroup.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クイックピッカーのグループ区切りボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレットでカテゴリ間を区切る線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>pickerGroup.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クイックピッカーのグループラベルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレットのカテゴリ見出しのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>quickInput.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クイック入力ウィジェットの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレットやカラーテーマ選択ウィンドウの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>quickInput.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クイック入力ウィジェットの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレットやカラーテーマ選択ウィンドウのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>quickInputList.focusBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中の項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレットでカーソルが当たっている項目の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>quickInputList.focusForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中の項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレットでカーソルが当たっている項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>quickInputList.focusIconForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中の項目のアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレットでカーソルが当たっている項目の右側のギアマークのアイコン、拡張機能の固有アイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>quickInputTitle.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クイックピッカーのタイトルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1380,13 +4284,37 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Keybinding label colors** は、コマンドに関連付けられたキーボードショートカットを表示するラベルに関する色設定である。コマンドパレット、キーボードショートカットエディター、キーボードショートカット記録モーダル、拡張機能のマーケットプレイスページの機能紹介セクションなどで使われる。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `keybindingLabel.background` | キーバインドラベルの背景色                                          | コマンドパレットに表示される「Ctrl+Shift+P」などのキー表示の背景       |
-| `keybindingLabel.foreground` | キーバインドラベルの文字色                                          | コマンドパレットに表示される「Ctrl+Shift+P」などのキー表示のテキスト     |
-| `keybindingLabel.border` | キーバインドラベルのボーダー色                                        | キー表示を囲む枠線                                    |
-| `keybindingLabel.bottomBorder` | キーバインドラベルの下部ボーダー色                                      | キー表示の下端に表示される線                               |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>keybindingLabel.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーバインドラベルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレットに表示される「Ctrl+Shift+P」などのキー表示の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>keybindingLabel.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーバインドラベルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドパレットに表示される「Ctrl+Shift+P」などのキー表示のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>keybindingLabel.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーバインドラベルのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キー表示を囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>keybindingLabel.bottomBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーバインドラベルの下部ボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キー表示の下端に表示される線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1399,11 +4327,27 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Keyboard shortcut table colors** は、キーボードショートカットエディターのテーブルに関する色設定である。コマンドパレット（`Ctrl`+`Shift`+`P`）を開いて、「Preferences: Open Keyboard Shortcuts」と入力して実行することで表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `keybindingTable.headerBackground` | キーボードショートカットテーブルのヘッダーの背景色                              | 「コマンド」「キーバインド」などの見出し行の背景                     |
-| `keybindingTable.rowsBackground` | キーボードショートカットテーブルの交互行の背景色                               | 表の1行おきに付く背景色（縞模様）                            |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>keybindingTable.headerBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーボードショートカットテーブルのヘッダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「コマンド」「キーバインド」などの見出し行の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>keybindingTable.rowsBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーボードショートカットテーブルの交互行の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">表の1行おきに付く背景色（縞模様）</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1416,70 +4360,322 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Integrated Terminal colors** は、統合ターミナルに関する色設定である。`terminalSymbolIcon`が出現するターミナルの補完候補はsettings.json に `"terminal.integrated.suggest.enabled": true` を追加することで表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `terminal.background`  | 統合ターミナルのビューポートの背景色                                     | ターミナル全体の背景                                   |
-| `terminal.border`      | ターミナル内の分割ペインを区切るボーダー色（デフォルトは `panel.border`）           | ターミナルを分割表示したときの境界線                           |
-| `terminal.foreground`  | 統合ターミナルのデフォルト文字色                                       | ターミナルのデフォルトテキスト                              |
-| `terminal.ansiBlack`   | ターミナルのANSI「Black」カラー                                   | `black` カラーコードを使った出力テキスト                     |
-| `terminal.ansiBlue`    | ターミナルのANSI「Blue」カラー                                    | `blue` カラーコードを使った出力テキスト                      |
-| `terminal.ansiBrightBlack` | ターミナルのANSI「BrightBlack」カラー                             | `bright black` カラーコードを使った出力テキスト              |
-| `terminal.ansiBrightBlue` | ターミナルのANSI「BrightBlue」カラー                              | `bright blue` カラーコードを使った出力テキスト               |
-| `terminal.ansiBrightCyan` | ターミナルのANSI「BrightCyan」カラー                              | `bright cyan` カラーコードを使った出力テキスト               |
-| `terminal.ansiBrightGreen` | ターミナルのANSI「BrightGreen」カラー                             | `bright green` カラーコードを使った出力テキスト              |
-| `terminal.ansiBrightMagenta` | ターミナルのANSI「BrightMagenta」カラー                           | `bright magenta` カラーコードを使った出力テキスト            |
-| `terminal.ansiBrightRed` | ターミナルのANSI「BrightRed」カラー                               | `bright red` カラーコードを使った出力テキスト                |
-| `terminal.ansiBrightWhite` | ターミナルのANSI「BrightWhite」カラー                             | `bright white` カラーコードを使った出力テキスト              |
-| `terminal.ansiBrightYellow` | ターミナルのANSI「BrightYellow」カラー                            | `bright yellow` カラーコードを使った出力テキスト             |
-| `terminal.ansiCyan`    | ターミナルのANSI「Cyan」カラー                                    | `cyan` カラーコードを使った出力テキスト                      |
-| `terminal.ansiGreen`   | ターミナルのANSI「Green」カラー                                   | `green` カラーコードを使った出力テキスト                     |
-| `terminal.ansiMagenta` | ターミナルのANSI「Magenta」カラー                                 | `magenta` カラーコードを使った出力テキスト                   |
-| `terminal.ansiRed`     | ターミナルのANSI「Red」カラー                                     | `red` カラーコードを使った出力テキスト                       |
-| `terminal.ansiWhite`   | ターミナルのANSI「White」カラー                                   | `white` カラーコードを使った出力テキスト                     |
-| `terminal.ansiYellow`  | ターミナルのANSI「Yellow」カラー                                  | `yellow` カラーコードを使った出力テキスト                    |
-| `terminal.selectionBackground` | ターミナルの選択範囲の背景色                                         | ターミナル上でテキストを選択したときの背景                        |
-| `terminal.selectionForeground` | ターミナルの選択範囲の文字色（nullの場合は最小コントラスト比が適用される）                | ターミナル上で選択中のテキストの文字色                          |
-| `terminal.inactiveSelectionBackground` | フォーカスのないターミナルの選択範囲の背景色                                 | 現在操作していないターミナルでの選択中テキストの背景                   |
-| `terminal.findMatchBackground` | ターミナル内検索の現在のマッチ箇所の背景色（半透明）                             | ターミナル内の検索でマッチ箇所の背景                           |
-| `terminal.findMatchBorder` | ターミナル内検索の現在のマッチ箇所のボーダー色                                | ターミナル内の検索でマッチ箇所の枠線                           |
-| `terminal.findMatchHighlightBackground` | ターミナル内検索のその他のマッチ箇所の背景色（半透明）                            | ターミナル内検索で選択していないマッチ箇所の背景                     |
-| `terminal.findMatchHighlightBorder` | ターミナル内検索のその他のマッチ箇所のボーダー色                               | ターミナル内検索で選択していないマッチ箇所の枠線                     |
-| `terminal.hoverHighlightBackground` | ターミナル内のリンクにホバーしたときのハイライト色                              | ターミナルに出力されたURLなどにホバーしたときの背景                  |
-| `terminalCursor.background` | ターミナルカーソルの背景色（ブロックカーソルに重なる文字色の調整用）                     | ブロックカーソルが文字に重なったときの文字色                       |
-| `terminalCursor.foreground` | ターミナルカーソルの文字色                                          | ターミナル上の点滅するカーソル                              |
-| `terminal.dropBackground` | ターミナル上にドラッグしたときの背景色（半透明）                               | ファイルをターミナルにドラッグしているときの背景                     |
-| `terminal.tab.activeBorder` | パネル内のターミナルタブの側面のボーダー色（デフォルトは `tab.activeBorder`）       | エディターの下に表示されるパネル内で選択中のターミナルタブの枠線             |
-| `terminalCommandDecoration.defaultBackground` | ターミナルコマンド装飾のデフォルト背景色                                   | コマンド実行結果を示すターミナルの左側の丸いアイコンの標準背景              |
-| `terminalCommandDecoration.successBackground` | 成功したコマンドのターミナルコマンド装飾の背景色                               | 正常終了したコマンドを示すターミナルの行の左端の丸いアイコンの背景            |
-| `terminalCommandDecoration.errorBackground` | 失敗したコマンドのターミナルコマンド装飾の背景色                               | エラー終了したコマンドを示すターミナルの行の左端の丸いアイコンの背景           |
-| `terminalOverviewRuler.cursorForeground` | 概要ルーラーのカーソル色                                           | ターミナル右端のスクロールバーの下に重なっている概要ルーラー上のカーソル位置マーカー   |
-| `terminalOverviewRuler.findMatchForeground` | ターミナル内検索の概要ルーラーのマッチマーカー色                               | ターミナル右端のスクロールバーの下に重なっている概要ルーラー上の検索ワードと一致した箇所のマーカー |
-| `terminalStickyScroll.background` | ターミナルのスティッキースクロールオーバーレイの背景色                            | スクロール時にターミナルの上部に固定表示されるコマンド行の背景              |
-| `terminalStickyScroll.border` | ターミナルのスティッキースクロールオーバーレイのボーダー色                          | スクロール時にターミナルの上部に固定表示されるコマンド行の枠線              |
-| `terminalStickyScrollHover.background` | ホバー時のターミナルのスティッキースクロールオーバーレイの背景色                       | スクロール時にターミナルの上部に固定表示されるコマンド行にホバーしたときの背景      |
-| `terminal.initialHintForeground` | ターミナルの初期ヒントの文字色                                        | 新規ターミナルを開いたときに表示されるヒントテキスト(参考: [Consider defaulting terminal.integrated.initialHint to false](https://github.com/posit-dev/positron/issues/13227)) |
-| `terminalOverviewRuler.border` | 概要ルーラー左側のボーダー色                                         | ターミナル右端のスクロールバーの下に重なっている概要ルーラーの左の境界線         |
-| `terminalCommandGuide.foreground` | コマンドガイドの文字色（コマンドとその出力の左側にホバー時表示）                       | コマンド実行結果にホバーしたときに左に表示されるガイド線                 |
-| `terminalSymbolIcon.aliasForeground` | エイリアスアイコンの色（ターミナルサジェストウィジェットに表示）                       | ターミナルに `g` などエイリアスの一部を入力したときに表示される補完候補のアイコン  |
-| `terminalSymbolIcon.branchForeground` | ブランチアイコンの色（ターミナルサジェストウィジェットに表示）                        | ターミナルで `git checkout` の後に入力したときに表示されるブランチ名補完候補のアイコン |
-| `terminalSymbolIcon.commitForeground` | コミットアイコンの色（ターミナルサジェストウィジェットに表示）                        | ターミナルで `git show` の後に入力したときに表示されるコミット補完候補のアイコン |
-| `terminalSymbolIcon.flagForeground` | フラグアイコンの色（ターミナルサジェストウィジェットに表示）                         | ターミナルで `ls -` のように `-` を入力したときに表示されるフラグ補完候補のアイコン |
-| `terminalSymbolIcon.optionForeground` | オプションアイコンの色（ターミナルサジェストウィジェットに表示）                       | ターミナルで `--` のように長いオプション名を入力したときに表示される補完候補のアイコン |
-| `terminalSymbolIcon.optionValueForeground` | enumメンバーアイコンの色（ターミナルサジェストウィジェットに表示）                    | ターミナルでオプションの後にTabキーを押したときに表示される選択可能な値（例：`--color=` の後の `always`/`never`）の補完候補アイコン |
-| `terminalSymbolIcon.methodForeground` | メソッドアイコンの色（ターミナルサジェストウィジェットに表示）                        | npmスクリプトなどコマンド内のサブコマンドを入力したときに表示される補完候補のアイコン |
-| `terminalSymbolIcon.argumentForeground` | 引数アイコンの色（ターミナルサジェストウィジェットに表示）                          | コマンドの後にスペースを入力したときに表示される引数候補のアイコン            |
-| `terminalSymbolIcon.inlineSuggestionForeground` | インライン提案アイコンの色（ターミナルサジェストウィジェットに表示）                     | 過去に実行したコマンドの履歴から薄く表示されるインライン補完候補のアイコン        |
-| `terminalSymbolIcon.fileForeground` | ファイルアイコンの色（ターミナルサジェストウィジェットに表示）                        | `cat` などの後にファイル名を入力したときに表示される補完候補のアイコン       |
-| `terminalSymbolIcon.folderForeground` | フォルダーアイコンの色（ターミナルサジェストウィジェットに表示）                       | `cd` の後にフォルダー名を入力したときに表示される補完候補のアイコン         |
-| `terminalSymbolIcon.pullRequestDoneForeground` | 完了したプルリクエストアイコンの色（ターミナルサジェストウィジェットに表示）                 | GitHub CLI（`gh pr` など）でクローズ済みPR番号を入力したときに表示される補完候補のアイコン |
-| `terminalSymbolIcon.pullRequestForeground` | プルリクエストアイコンの色（ターミナルサジェストウィジェットに表示）                     | GitHub CLIでオープン中のPR番号を入力したときに表示される補完候補のアイコン  |
-| `terminalSymbolIcon.remoteForeground` | リモートアイコンの色（ターミナルサジェストウィジェットに表示）                        | `git push` の後にリモート名を入力したときに表示される補完候補のアイコン    |
-| `terminalSymbolIcon.stashForeground` | スタッシュアイコンの色（ターミナルサジェストウィジェットに表示）                       | `git stash apply` の後にスタッシュ名を入力したときに表示される補完候補のアイコン |
-| `terminalSymbolIcon.symbolText` | プレーンテキスト提案の文字色（ターミナルサジェストウィジェットに表示）                    | 種別の判別がつかない単純な文字列補完候補のアイコン色                   |
-| `terminalSymbolIcon.symbolicLinkFileForeground` | シンボリックリンクファイルアイコンの色（ターミナルサジェストウィジェットに表示）               | `cat` などの後にシンボリックリンクされたファイル名を入力したときに表示される補完候補のアイコン |
-| `terminalSymbolIcon.symbolicLinkFolderForeground` | シンボリックリンクフォルダーアイコンの色（ターミナルサジェストウィジェットに表示）              | `cd` の後にシンボリックリンクされたフォルダー名を入力したときに表示される補完候補のアイコン |
-| `terminalSymbolIcon.tagForeground` | タグアイコンの色（ターミナルサジェストウィジェットに表示）                          | `git checkout` の後にタグ名を入力したときに表示される補完候補のアイコン  |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">統合ターミナルのビューポートの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内の分割ペインを区切るボーダー色（デフォルトは <code>panel.border</code>）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルを分割表示したときの境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">統合ターミナルのデフォルト文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのデフォルトテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBlack</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「Black」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>black</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBlue</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「Blue」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>blue</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBrightBlack</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「BrightBlack」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>bright black</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBrightBlue</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「BrightBlue」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>bright blue</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBrightCyan</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「BrightCyan」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>bright cyan</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBrightGreen</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「BrightGreen」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>bright green</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBrightMagenta</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「BrightMagenta」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>bright magenta</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBrightRed</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「BrightRed」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>bright red</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBrightWhite</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「BrightWhite」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>bright white</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiBrightYellow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「BrightYellow」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>bright yellow</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiCyan</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「Cyan」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>cyan</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiGreen</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「Green」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>green</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiMagenta</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「Magenta」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>magenta</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiRed</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「Red」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>red</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiWhite</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「White」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>white</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.ansiYellow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのANSI「Yellow」カラー</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>yellow</code> カラーコードを使った出力テキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.selectionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルの選択範囲の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル上でテキストを選択したときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.selectionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルの選択範囲の文字色（nullの場合は最小コントラスト比が適用される）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル上で選択中のテキストの文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.inactiveSelectionBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカスのないターミナルの選択範囲の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在操作していないターミナルでの選択中テキストの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.findMatchBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内検索の現在のマッチ箇所の背景色（半透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内の検索でマッチ箇所の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.findMatchBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内検索の現在のマッチ箇所のボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内の検索でマッチ箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.findMatchHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内検索のその他のマッチ箇所の背景色（半透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内検索で選択していないマッチ箇所の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.findMatchHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内検索のその他のマッチ箇所のボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内検索で選択していないマッチ箇所の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.hoverHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内のリンクにホバーしたときのハイライト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルに出力されたURLなどにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalCursor.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルカーソルの背景色（ブロックカーソルに重なる文字色の調整用）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブロックカーソルが文字に重なったときの文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalCursor.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルカーソルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル上の点滅するカーソル</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.dropBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル上にドラッグしたときの背景色（半透明）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルをターミナルにドラッグしているときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.tab.activeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パネル内のターミナルタブの側面のボーダー色（デフォルトは <code>tab.activeBorder</code>）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの下に表示されるパネル内で選択中のターミナルタブの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalCommandDecoration.defaultBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルコマンド装飾のデフォルト背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンド実行結果を示すターミナルの左側の丸いアイコンの標準背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalCommandDecoration.successBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">成功したコマンドのターミナルコマンド装飾の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">正常終了したコマンドを示すターミナルの行の左端の丸いアイコンの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalCommandDecoration.errorBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">失敗したコマンドのターミナルコマンド装飾の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エラー終了したコマンドを示すターミナルの行の左端の丸いアイコンの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalOverviewRuler.cursorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">概要ルーラーのカーソル色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル右端のスクロールバーの下に重なっている概要ルーラー上のカーソル位置マーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalOverviewRuler.findMatchForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル内検索の概要ルーラーのマッチマーカー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル右端のスクロールバーの下に重なっている概要ルーラー上の検索ワードと一致した箇所のマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalStickyScroll.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのスティッキースクロールオーバーレイの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール時にターミナルの上部に固定表示されるコマンド行の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalStickyScroll.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルのスティッキースクロールオーバーレイのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール時にターミナルの上部に固定表示されるコマンド行の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalStickyScrollHover.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のターミナルのスティッキースクロールオーバーレイの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スクロール時にターミナルの上部に固定表示されるコマンド行にホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminal.initialHintForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルの初期ヒントの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">新規ターミナルを開いたときに表示されるヒントテキスト(参考: [Consider defaulting terminal.integrated.initialHint to false](https://github.com/posit-dev/positron/issues/13227))</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalOverviewRuler.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">概要ルーラー左側のボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナル右端のスクロールバーの下に重なっている概要ルーラーの左の境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalCommandGuide.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドガイドの文字色（コマンドとその出力の左側にホバー時表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンド実行結果にホバーしたときに左に表示されるガイド線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.aliasForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エイリアスアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルに <code>g</code> などエイリアスの一部を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.branchForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブランチアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルで <code>git checkout</code> の後に入力したときに表示されるブランチ名補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.commitForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミットアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルで <code>git show</code> の後に入力したときに表示されるコミット補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.flagForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フラグアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルで <code>ls -</code> のように <code>-</code> を入力したときに表示されるフラグ補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.optionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">オプションアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルで <code>--</code> のように長いオプション名を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.optionValueForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">enumメンバーアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ターミナルでオプションの後にTabキーを押したときに表示される選択可能な値（例：<code>--color=</code> の後の <code>always</code>/<code>never</code>）の補完候補アイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.methodForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メソッドアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">npmスクリプトなどコマンド内のサブコマンドを入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.argumentForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">引数アイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドの後にスペースを入力したときに表示される引数候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.inlineSuggestionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インライン提案アイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">過去に実行したコマンドの履歴から薄く表示されるインライン補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.fileForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>cat</code> などの後にファイル名を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.folderForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォルダーアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>cd</code> の後にフォルダー名を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.pullRequestDoneForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">完了したプルリクエストアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">GitHub CLI（<code>gh pr</code> など）でクローズ済みPR番号を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.pullRequestForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プルリクエストアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">GitHub CLIでオープン中のPR番号を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.remoteForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リモートアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>git push</code> の後にリモート名を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.stashForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スタッシュアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>git stash apply</code> の後にスタッシュ名を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.symbolText</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プレーンテキスト提案の文字色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">種別の判別がつかない単純な文字列補完候補のアイコン色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.symbolicLinkFileForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンボリックリンクファイルアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>cat</code> などの後にシンボリックリンクされたファイル名を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.symbolicLinkFolderForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンボリックリンクフォルダーアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>cd</code> の後にシンボリックリンクされたフォルダー名を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>terminalSymbolIcon.tagForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タグアイコンの色（ターミナルサジェストウィジェットに表示）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>git checkout</code> の後にタグ名を入力したときに表示される補完候補のアイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1494,27 +4690,107 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 参考: [VS Codeしか勝たん](https://qiita.com/Kuroi_Cc/items/7f4bc810538daf4d3c35)
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `debugToolBar.background` | デバッグツールバーの背景色                                          | デバッグツールバーのの背景                                |
-| `debugToolBar.border`  | デバッグツールバーのボーダー色                                        | デバッグツールバーの枠線                                 |
-| `editor.stackFrameHighlightBackground` | エディター内の最上位スタックフレームのハイライト背景色                            | デバッグ中にブレークポイントで現在一時停止（ブレーク）している、エディター内の実行中のコード行（スタックフレーム）の背景 |
-| `editor.focusedStackFrameHighlightBackground` | エディター内のフォーカス中スタックフレームのハイライト背景色                         | デバッグ中にブレークポイントで現在一時停止（ブレーク）している、エディター内で選択している実行中のコード行（スタックフレーム）の背景 |
-| `editor.inlineValuesForeground` | デバッグのインライン値表示の文字色                                      | デバッグ中にエディターのコード行末に表示される変数の値のテキスト             |
-| `editor.inlineValuesBackground` | デバッグのインライン値表示の背景色                                      | デバッグ中にエディターのコード行末に表示される変数の値の背景               |
-| `debugView.exceptionLabelForeground` | 例外で停止したときのコールスタックビューのラベルの文字色                           | デバッグ時で例外が発生したときにエディターのコード行間に表示されるラベルのテキスト(参考: [Ability to hide/show VSCode Exception area](https://github.com/microsoft/vscode/issues/88217)) |
-| `debugView.exceptionLabelBackground` | 例外で停止したときのコールスタックビューのラベルの背景色                           | デバッグ時で例外が発生したときにエディターのコード行間に表示されるラベルの背景(参考: [Ability to hide/show VSCode Exception area](https://github.com/microsoft/vscode/issues/88217)) |
-| `debugView.stateLabelForeground` | コールスタックの状態ラベルの文字色                                      | デバッグ中のサイドバーの下部にあるコールスタックビューに表示される「一時停止中」などの状態ラベルのテキスト |
-| `debugView.stateLabelBackground` | コールスタックビューの状態ラベルの背景色                                   | デバッグ中のサイドバーの下部にあるコールスタックビューに表示される「一時停止中」などの状態ラベルの背景 |
-| `debugView.valueChangedHighlight` | デバッグビューで値が変化したときのハイライト色                                | デバッグ中のサイドバーの下部にある変数ビューで前回と値が変わった変数のハイライト     |
-| `debugTokenExpression.name` | デバッグビューのトークン名の文字色                                      | デバッグ中のサイドバーの下部にある変数ビューやウォッチ式に表示される変数名のテキスト   |
-| `debugTokenExpression.value` | デバッグビューのトークン値の文字色                                      | デバッグ中のサイドバーの下部にある変数ビューやウォッチ式に表示される変数の値のテキスト  |
-| `debugTokenExpression.string` | デバッグビューの文字列値の文字色                                       | デバッグ中のサイドバーの下部にある変数ビューで文字列型の値のテキスト           |
-| `debugTokenExpression.boolean` | デバッグビューの真偽値の文字色                                        | デバッグ中のサイドバーの下部にある変数ビューで `true`/`false` 値のテキスト |
-| `debugTokenExpression.number` | デバッグビューの数値の文字色                                         | デバッグ中のサイドバーの下部にある変数ビューで数値型の値のテキスト            |
-| `debugTokenExpression.error` | デバッグビューの式エラーの文字色                                       | デバッグ中のサイドバーの下部にあるウォッチ式が評価できないときのエラーテキスト      |
-| `debugTokenExpression.type` | デバッグビューのトークン型の文字色                                      | デバッグ中のサイドバーの下部にある変数ビューやウォッチ式に表示される変数の型名のテキスト |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugToolBar.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーのの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugToolBar.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.stackFrameHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内の最上位スタックフレームのハイライト背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中にブレークポイントで現在一時停止（ブレーク）している、エディター内の実行中のコード行（スタックフレーム）の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.focusedStackFrameHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内のフォーカス中スタックフレームのハイライト背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中にブレークポイントで現在一時停止（ブレーク）している、エディター内で選択している実行中のコード行（スタックフレーム）の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.inlineValuesForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグのインライン値表示の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中にエディターのコード行末に表示される変数の値のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.inlineValuesBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグのインライン値表示の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中にエディターのコード行末に表示される変数の値の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugView.exceptionLabelForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">例外で停止したときのコールスタックビューのラベルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ時で例外が発生したときにエディターのコード行間に表示されるラベルのテキスト(参考: [Ability to hide/show VSCode Exception area](https://github.com/microsoft/vscode/issues/88217))</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugView.exceptionLabelBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">例外で停止したときのコールスタックビューのラベルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ時で例外が発生したときにエディターのコード行間に表示されるラベルの背景(参考: [Ability to hide/show VSCode Exception area](https://github.com/microsoft/vscode/issues/88217))</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugView.stateLabelForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コールスタックの状態ラベルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にあるコールスタックビューに表示される「一時停止中」などの状態ラベルのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugView.stateLabelBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コールスタックビューの状態ラベルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にあるコールスタックビューに表示される「一時停止中」などの状態ラベルの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugView.valueChangedHighlight</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグビューで値が変化したときのハイライト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にある変数ビューで前回と値が変わった変数のハイライト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugTokenExpression.name</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグビューのトークン名の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にある変数ビューやウォッチ式に表示される変数名のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugTokenExpression.value</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグビューのトークン値の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にある変数ビューやウォッチ式に表示される変数の値のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugTokenExpression.string</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグビューの文字列値の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にある変数ビューで文字列型の値のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugTokenExpression.boolean</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグビューの真偽値の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にある変数ビューで <code>true</code>/<code>false</code> 値のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugTokenExpression.number</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグビューの数値の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にある変数ビューで数値型の値のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugTokenExpression.error</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグビューの式エラーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にあるウォッチ式が評価できないときのエラーテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugTokenExpression.type</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグビューのトークン型の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のサイドバーの下部にある変数ビューやウォッチ式に表示される変数の型名のテキスト</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1530,41 +4806,177 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 参考: [VSCodeのPython拡張機能でテストカバレッジ表示機能が追加されました](https://dev.classmethod.jp/articles/python-vscode-test-coverage-view/)
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `testing.runAction`    | エディター内の「実行」アイコンの色                                      | エディター内のテストされる関数の行番号の左に表示される再生ボタンアイコン         |
-| `testing.iconErrored`  | テストエクスプローラーの「エラー」アイコンの色                                | サイドバーのテストエクスプローラーでエラーになったテスト項目の左にあるアイコン      |
-| `testing.iconFailed`   | テストエクスプローラーの「失敗」アイコンの色                                 | サイドバーのテストエクスプローラーで失敗したテスト項目の左にあるアイコン         |
-| `testing.iconPassed`   | テストエクスプローラーの「成功」アイコンの色                                 | サイドバーのテストエクスプローラーで成功したテスト項目の左にあるアイコン         |
-| `testing.iconQueued`   | テストエクスプローラーの「待機中」アイコンの色                                | サイドバーのテストエクスプローラーで実行待ちのテスト項目の左にあるアイコン        |
-| `testing.iconUnset`    | テストエクスプローラーの「未実行」アイコンの色                                | サイドバーのテストエクスプローラーでまだ実行されていないテスト項目の左にあるアイコン   |
-| `testing.iconSkipped`  | テストエクスプローラーの「スキップ」アイコンの色                               | サイドバーのテストエクスプローラーでスキップされたテスト項目の左にあるアイコン      |
-| `testing.iconErrored.retired` | 古くなった「エラー」アイコンの色                                       | サイドバーのテストエクスプローラーでコード変更後、再実行されていないエラー状態のテスト項目の左にあるアイコン |
-| `testing.iconFailed.retired` | 古くなった「失敗」アイコンの色                                        | サイドバーのテストエクスプローラーでコード変更後、再実行されていない失敗状態のテスト項目の左にあるアイコン |
-| `testing.iconPassed.retired` | 古くなった「成功」アイコンの色                                        | サイドバーのテストエクスプローラーでコード変更後、再実行されていない成功状態のテスト項目の左にあるアイコン |
-| `testing.iconQueued.retired` | 古くなった「待機中」アイコンの色                                       | サイドバーのテストエクスプローラーでコード変更後、再実行されていない待機状態のテスト項目の左にあるアイコン |
-| `testing.iconUnset.retired` | 古くなった「未実行」アイコンの色                                       | サイドバーのテストエクスプローラーでコード変更後、再実行されていない未実行のテスト項目の左にあるアイコン |
-| `testing.iconSkipped.retired` | 古くなった「スキップ」アイコンの色                                      | サイドバーのテストエクスプローラーでコード変更後、再実行されていないスキップ状態のテスト項目の左にあるアイコン |
-| `testing.peekBorder`   | ピークビューのボーダーと矢印の色                                       | テスト結果を表示するエディター内のピークビュー(`Alt` + `F12`で表示)の枠線・矢印 |
-| `testing.peekHeaderBackground` | ピークビューのボーダーと矢印の色                                       | テスト結果を表示するエディター内のピークビュー(`Alt` + `F12`で表示)のヘッダー背景 |
-| `testing.message.error.lineBackground` | インライン表示されるエラーメッセージ横のマージン色                              | エディター内のエラー部分の右に表示されるテストエラーメッセージの背景           |
-| `testing.message.info.decorationForeground` | インライン表示されるテスト情報メッセージの文字色                               | エディター内のエラー部分の右に表示されるテスト情報メッセージのテキスト          |
-| `testing.message.info.lineBackground` | インライン表示される情報メッセージ横のマージン色                               | エディター内のエラー部分の右に表示されるテスト情報メッセージの背景            |
-| `testing.messagePeekBorder` | ログメッセージをピーク表示する際のボーダーと矢印の色                             | テストログメッセージのエディター内のピークビューの枠線・矢印               |
-| `testing.messagePeekHeaderBackground` | ログメッセージをピーク表示する際のヘッダー背景色                               | テストログメッセージのエディター内のピークビューのヘッダー背景              |
-| `testing.coveredBackground` | カバレッジが取れたテキストの背景色                                      | 「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされたエディター内の行の背景 |
-| `testing.coveredBorder` | カバレッジが取れたテキストのボーダー色                                    | 「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされたエディター内の行の枠線 |
-| `testing.coveredGutterBackground` | カバレッジが取れた範囲のガター色                                       | 「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされたエディター内の行の左端マーカー |
-| `testing.uncoveredBranchBackground` | カバーされていない分岐に表示されるウィジェットの背景色                            | カバレッジが取れていない条件分岐を示すウィジェットの背景                 |
-| `testing.uncoveredBackground` | カバレッジが取れていないテキストの背景色                                   | 「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされていないエディター内の行の背景 |
-| `testing.uncoveredBorder` | カバレッジが取れていないテキストのボーダー色                                 | 「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされていないエディター内の行の枠線 |
-| `testing.uncoveredGutterBackground` | カバレッジが取れていない範囲のガター色                                    | 「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされていないエディター内の行の左端マーカー |
-| `testing.coverCountBadgeBackground` | 実行回数を示すバッジの背景色                                         | カバレッジレポートの実行回数バッジの背景                         |
-| `testing.coverCountBadgeForeground` | 実行回数を示すバッジの文字色                                         | カバレッジレポートの実行回数バッジのテキスト                       |
-| `testing.message.error.badgeBackground` | インライン表示されるテストエラーメッセージのバッジ背景色                           | テストエラーメッセージのバッジの背景                           |
-| `testing.message.error.badgeBorder` | インライン表示されるテストエラーメッセージのバッジボーダー色                         | テストエラーメッセージのバッジの枠線                           |
-| `testing.message.error.badgeForeground` | インライン表示されるテストエラーメッセージのバッジ文字色                           | テストエラーメッセージのバッジのテキスト                         |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.runAction</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内の「実行」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内のテストされる関数の行番号の左に表示される再生ボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconErrored</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストエクスプローラーの「エラー」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーでエラーになったテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconFailed</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストエクスプローラーの「失敗」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーで失敗したテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconPassed</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストエクスプローラーの「成功」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーで成功したテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconQueued</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストエクスプローラーの「待機中」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーで実行待ちのテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconUnset</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストエクスプローラーの「未実行」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーでまだ実行されていないテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconSkipped</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストエクスプローラーの「スキップ」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーでスキップされたテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconErrored.retired</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">古くなった「エラー」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーでコード変更後、再実行されていないエラー状態のテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconFailed.retired</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">古くなった「失敗」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーでコード変更後、再実行されていない失敗状態のテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconPassed.retired</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">古くなった「成功」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーでコード変更後、再実行されていない成功状態のテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconQueued.retired</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">古くなった「待機中」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーでコード変更後、再実行されていない待機状態のテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconUnset.retired</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">古くなった「未実行」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーでコード変更後、再実行されていない未実行のテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.iconSkipped.retired</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">古くなった「スキップ」アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのテストエクスプローラーでコード変更後、再実行されていないスキップ状態のテスト項目の左にあるアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.peekBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビューのボーダーと矢印の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テスト結果を表示するエディター内のピークビュー(<code>Alt</code> + <code>F12</code>で表示)の枠線・矢印</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.peekHeaderBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ピークビューのボーダーと矢印の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テスト結果を表示するエディター内のピークビュー(<code>Alt</code> + <code>F12</code>で表示)のヘッダー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.message.error.lineBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インライン表示されるエラーメッセージ横のマージン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内のエラー部分の右に表示されるテストエラーメッセージの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.message.info.decorationForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インライン表示されるテスト情報メッセージの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内のエラー部分の右に表示されるテスト情報メッセージのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.message.info.lineBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インライン表示される情報メッセージ横のマージン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター内のエラー部分の右に表示されるテスト情報メッセージの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.messagePeekBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ログメッセージをピーク表示する際のボーダーと矢印の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストログメッセージのエディター内のピークビューの枠線・矢印</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.messagePeekHeaderBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ログメッセージをピーク表示する際のヘッダー背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストログメッセージのエディター内のピークビューのヘッダー背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.coveredBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバレッジが取れたテキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされたエディター内の行の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.coveredBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバレッジが取れたテキストのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされたエディター内の行の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.coveredGutterBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバレッジが取れた範囲のガター色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされたエディター内の行の左端マーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.uncoveredBranchBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバーされていない分岐に表示されるウィジェットの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバレッジが取れていない条件分岐を示すウィジェットの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.uncoveredBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバレッジが取れていないテキストの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされていないエディター内の行の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.uncoveredBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバレッジが取れていないテキストのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされていないエディター内の行の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.uncoveredGutterBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバレッジが取れていない範囲のガター色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">「カバレッジ付きで実行（Run Test with Coverage）」を実行したとき、コードカバレッジでカバーされていないエディター内の行の左端マーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.coverCountBadgeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">実行回数を示すバッジの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバレッジレポートの実行回数バッジの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.coverCountBadgeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">実行回数を示すバッジの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">カバレッジレポートの実行回数バッジのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.message.error.badgeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インライン表示されるテストエラーメッセージのバッジ背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストエラーメッセージのバッジの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.message.error.badgeBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インライン表示されるテストエラーメッセージのバッジボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストエラーメッセージのバッジの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>testing.message.error.badgeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インライン表示されるテストエラーメッセージのバッジ文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テストエラーメッセージのバッジのテキスト</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1577,17 +4989,57 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Welcome page colors** は、VSCode起動時に表示されるウェルカムページに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `welcomePage.background` | ウェルカムページの背景色                                           | ウェルカムページ全体の背景                                |
-| `welcomePage.progress.background` | ウェルカムページのプログレスバーの文字色                                   | ウェルカムページに表示される進捗バーの前景部分                      |
-| `welcomePage.progress.foreground` | ウェルカムページのプログレスバーの背景色                                   | ウェルカムページに表示される進捗バーの背景部分                      |
-| `welcomePage.tileBackground` | ウェルカムページのタイルの背景色                                       | ウェルカムページに並ぶ各機能紹介タイルの背景                       |
-| `welcomePage.tileHoverBackground` | ウェルカムページのタイルのホバー時背景色                                   | 機能紹介タイルにホバーしたときの背景                           |
-| `welcomePage.tileBorder` | ウェルカムページのタイルのボーダー色                                     | 機能紹介タイルの枠線                                   |
-| `walkThrough.embeddedEditorBackground` | インタラクティブプレイグラウンドの埋め込みエディターの背景色                         | チュートリアル内に埋め込まれたコードエディターの背景                   |
-| `walkthrough.stepTitle.foreground` | ウォークスループ各ステップの見出しの文字色                                  | チュートリアルの各手順の見出しテキスト                          |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>welcomePage.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページ全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>welcomePage.progress.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのプログレスバーの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページに表示される進捗バーの前景部分</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>welcomePage.progress.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのプログレスバーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページに表示される進捗バーの背景部分</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>welcomePage.tileBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのタイルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページに並ぶ各機能紹介タイルの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>welcomePage.tileHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのタイルのホバー時背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">機能紹介タイルにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>welcomePage.tileBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウェルカムページのタイルのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">機能紹介タイルの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>walkThrough.embeddedEditorBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インタラクティブプレイグラウンドの埋め込みエディターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チュートリアル内に埋め込まれたコードエディターの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>walkthrough.stepTitle.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ウォークスループ各ステップの見出しの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チュートリアルの各手順の見出しテキスト</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1600,20 +5052,72 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Git colors** は、Git関連の装飾に関する色設定である。サイドバーのエクスプローラーやソース管理ビューに使用される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `gitDecoration.addedResourceForeground` | 追加されたGitリソースの色（ファイルラベルやSCMビューレットで使用）                   | サイドバーのエクスプローラーやソース管理ビューで新規追加されたファイル名の文字色     |
-| `gitDecoration.modifiedResourceForeground` | 変更されたGitリソースの色                                         | サイドバーのエクスプローラーやソース管理ビューで変更されたファイル名の文字色       |
-| `gitDecoration.deletedResourceForeground` | 削除されたGitリソースの色                                         | サイドバーのエクスプローラーやソース管理ビューで削除されたファイル名の文字色       |
-| `gitDecoration.renamedResourceForeground` | リネーム・コピーされたGitリソースの色                                   | サイドバーのエクスプローラーやソース管理ビューでリネームされたファイル名の文字色     |
-| `gitDecoration.stageModifiedResourceForeground` | ステージ済み変更の色                                             | ソース管理ビューでステージされた変更ファイル名の文字色                  |
-| `gitDecoration.stageDeletedResourceForeground` | ステージ済み削除の色                                             | ソース管理ビューでステージされた削除ファイル名の文字色                  |
-| `gitDecoration.untrackedResourceForeground` | 未追跡のGitリソースの色                                          | エクスプローラーやソース管理ビューで未追跡（Untracked）ファイル名の文字色    |
-| `gitDecoration.ignoredResourceForeground` | 無視されたGitリソースの色                                         | `.gitignore` で無視されているファイル名の文字色               |
-| `gitDecoration.conflictingResourceForeground` | コンフリクトしているGitリソースの色                                    | マージコンフリクトが発生しているファイル名の文字色                    |
-| `gitDecoration.submoduleResourceForeground` | サブモジュールリソースの色                                          | Gitサブモジュールのフォルダー名の文字色                        |
-| `git.blame.editorDecorationForeground` | blame表示のエディター装飾色                                       | エディター行末に表示されるGit blame情報（最終変更者など）のテキスト       |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.addedResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">追加されたGitリソースの色（ファイルラベルやSCMビューレットで使用）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーやソース管理ビューで新規追加されたファイル名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.modifiedResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更されたGitリソースの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーやソース管理ビューで変更されたファイル名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.deletedResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">削除されたGitリソースの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーやソース管理ビューで削除されたファイル名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.renamedResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">リネーム・コピーされたGitリソースの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーやソース管理ビューでリネームされたファイル名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.stageModifiedResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステージ済み変更の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ソース管理ビューでステージされた変更ファイル名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.stageDeletedResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ステージ済み削除の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ソース管理ビューでステージされた削除ファイル名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.untrackedResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未追跡のGitリソースの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エクスプローラーやソース管理ビューで未追跡（Untracked）ファイル名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.ignoredResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">無視されたGitリソースの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>.gitignore</code> で無視されているファイル名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.conflictingResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コンフリクトしているGitリソースの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">マージコンフリクトが発生しているファイル名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gitDecoration.submoduleResourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サブモジュールリソースの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Gitサブモジュールのフォルダー名の文字色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>git.blame.editorDecorationForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">blame表示のエディター装飾色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター行末に表示されるGit blame情報（最終変更者など）のテキスト</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1627,22 +5131,82 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 参考:
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `scmGraph.historyItemHoverLabelForeground` | 履歴項目ホバー時のラベルの文字色                                       | コミット履歴グラフでコミット項目にホバーしたときのポップアップのテキスト         |
-| `scmGraph.foreground1` | ソースコントロールグラフの色（1）                                      | コミット履歴グラフの1本目のブランチラインの色                      |
-| `scmGraph.foreground2` | ソースコントロールグラフの色（2）                                      | コミット履歴グラフの2本目のブランチラインの色                      |
-| `scmGraph.foreground3` | ソースコントロールグラフの色（3）                                      | コミット履歴グラフの3本目のブランチラインの色                      |
-| `scmGraph.foreground4` | ソースコントロールグラフの色（4）                                      | コミット履歴グラフの4本目のブランチラインの色                      |
-| `scmGraph.foreground5` | ソースコントロールグラフの色（5）                                      | コミット履歴グラフの5本目のブランチラインの色                      |
-| `scmGraph.historyItemHoverAdditionsForeground` | 履歴項目ホバー時の追加行数の文字色                                      | コミット履歴グラフでコミット項目にホバーしたときのポップアップに表示される「+N」のテキスト |
-| `scmGraph.historyItemHoverDeletionsForeground` | 履歴項目ホバー時の削除行数の文字色                                      | コミット履歴グラフでコミット項目にホバーしたときのポップアップに表示される「-N」のテキスト |
-| `scmGraph.historyItemRefColor` | 履歴項目の参照（ブランチ・タグ）の色                                     | コミット履歴グラフに表示されるブランチ名やタグ名のラベル色                |
-| `scmGraph.historyItemRemoteRefColor` | 履歴項目のリモート参照の色                                          | コミット履歴グラフに表示されるリモートブランチ名のラベル色                |
-| `scmGraph.historyItemBaseRefColor` | 履歴項目のベース参照の色                                           | コミット履歴グラフに表示されるベースブランチ名のラベル色                 |
-| `scmGraph.historyItemHoverDefaultLabelForeground` | 履歴項目ホバー時のデフォルトラベルの文字色                                  | コミット項目にホバーしたときのポップアップの標準テキスト色                |
-| `scmGraph.historyItemHoverDefaultLabelBackground` | 履歴項目ホバー時のデフォルトラベルの背景色                                  | コミット項目にホバーしたときのポップアップの標準背景色                  |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.historyItemHoverLabelForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">履歴項目ホバー時のラベルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフでコミット項目にホバーしたときのポップアップのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.foreground1</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ソースコントロールグラフの色（1）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフの1本目のブランチラインの色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.foreground2</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ソースコントロールグラフの色（2）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフの2本目のブランチラインの色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.foreground3</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ソースコントロールグラフの色（3）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフの3本目のブランチラインの色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.foreground4</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ソースコントロールグラフの色（4）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフの4本目のブランチラインの色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.foreground5</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ソースコントロールグラフの色（5）</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフの5本目のブランチラインの色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.historyItemHoverAdditionsForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">履歴項目ホバー時の追加行数の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフでコミット項目にホバーしたときのポップアップに表示される「+N」のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.historyItemHoverDeletionsForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">履歴項目ホバー時の削除行数の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフでコミット項目にホバーしたときのポップアップに表示される「-N」のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.historyItemRefColor</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">履歴項目の参照（ブランチ・タグ）の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフに表示されるブランチ名やタグ名のラベル色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.historyItemRemoteRefColor</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">履歴項目のリモート参照の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフに表示されるリモートブランチ名のラベル色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.historyItemBaseRefColor</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">履歴項目のベース参照の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット履歴グラフに表示されるベースブランチ名のラベル色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.historyItemHoverDefaultLabelForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">履歴項目ホバー時のデフォルトラベルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット項目にホバーしたときのポップアップの標準テキスト色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>scmGraph.historyItemHoverDefaultLabelBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">履歴項目ホバー時のデフォルトラベルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コミット項目にホバーしたときのポップアップの標準背景色</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1655,30 +5219,122 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Settings Editor colors** は、コマンドパレットで`Preferences: Open Settings (UI)` で開けるGUI設定エディターに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `settings.headerForeground` | セクション見出しまたはアクティブなタイトルの文字色                              | 設定画面の「エディター」などのセクション見出しのテキスト                 |
-| `settings.modifiedItemIndicator` | 変更された設定を示す線の色                                          | デフォルト値から変更した設定項目の左に表示される縦線                   |
-| `settings.dropdownBackground` | ドロップダウンの背景色                                            | 設定画面のドロップダウン選択欄の背景                           |
-| `settings.dropdownForeground` | ドロップダウンの文字色                                            | 設定画面のドロップダウン選択欄のテキスト                         |
-| `settings.dropdownBorder` | ドロップダウンのボーダー色                                          | 設定画面のドロップダウン選択欄の枠線                           |
-| `settings.dropdownListBorder` | ドロップダウンリストのボーダー色                                       | 設定画面のドロップダウンを開いたときの選択肢リストの枠線                 |
-| `settings.checkboxBackground` | チェックボックスの背景色                                           | 設定画面のチェックボックスの背景                             |
-| `settings.checkboxForeground` | チェックボックスの文字色                                           | 設定画面のチェックボックスのチェックマーク                        |
-| `settings.checkboxBorder` | チェックボックスのボーダー色                                         | 設定画面のチェックボックスの枠線                             |
-| `settings.rowHoverBackground` | ホバー時の設定行の背景色                                           | 設定項目の行にホバーしたときの背景                            |
-| `settings.textInputBackground` | テキスト入力ボックスの背景色                                         | 設定画面の文字列入力欄の背景                               |
-| `settings.textInputForeground` | テキスト入力ボックスの文字色                                         | 設定画面の文字列入力欄のテキスト                             |
-| `settings.textInputBorder` | テキスト入力ボックスのボーダー色                                       | 設定画面の文字列入力欄の枠線                               |
-| `settings.numberInputBackground` | 数値入力ボックスの背景色                                           | 設定画面の数値入力欄の背景                                |
-| `settings.numberInputForeground` | 数値入力ボックスの文字色                                           | 設定画面の数値入力欄のテキスト                              |
-| `settings.numberInputBorder` | 数値入力ボックスのボーダー色                                         | 設定画面の数値入力欄の枠線                                |
-| `settings.focusedRowBackground` | フォーカス中の設定行の背景色                                         | キーボード操作によって選択された設定項目の行の背景                    |
-| `settings.focusedRowBorder` | フォーカス中の設定行の上下ボーダー色                                     | キーボード操作によって選択された設定項目の行の上下の線                  |
-| `settings.headerBorder` | ヘッダーコンテナのボーダー色                                         | 設定画面上部のヘッダー部分の下の境界線                          |
-| `settings.sashBorder`  | 設定エディターの分割ビューのサッシュ（境界線）の色                              |                                              |
-| `settings.settingsHeaderHoverForeground` | セクション見出しまたはホバー中タイトルの文字色                                | 設定画面のセクション見出しにホバーしたときのテキスト色                  |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.headerForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セクション見出しまたはアクティブなタイトルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面の「エディター」などのセクション見出しのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.modifiedItemIndicator</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変更された設定を示す線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デフォルト値から変更した設定項目の左に表示される縦線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.dropdownBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面のドロップダウン選択欄の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.dropdownForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面のドロップダウン選択欄のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.dropdownBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面のドロップダウン選択欄の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.dropdownListBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ドロップダウンリストのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面のドロップダウンを開いたときの選択肢リストの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.checkboxBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チェックボックスの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面のチェックボックスの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.checkboxForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チェックボックスの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面のチェックボックスのチェックマーク</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.checkboxBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チェックボックスのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面のチェックボックスの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.rowHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時の設定行の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定項目の行にホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.textInputBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テキスト入力ボックスの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面の文字列入力欄の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.textInputForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テキスト入力ボックスの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面の文字列入力欄のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.textInputBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テキスト入力ボックスのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面の文字列入力欄の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.numberInputBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">数値入力ボックスの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面の数値入力欄の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.numberInputForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">数値入力ボックスの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面の数値入力欄のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.numberInputBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">数値入力ボックスのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面の数値入力欄の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.focusedRowBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中の設定行の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーボード操作によって選択された設定項目の行の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.focusedRowBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中の設定行の上下ボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーボード操作によって選択された設定項目の行の上下の線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.headerBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ヘッダーコンテナのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面上部のヘッダー部分の下の境界線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.sashBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定エディターの分割ビューのサッシュ（境界線）の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>settings.settingsHeaderHoverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セクション見出しまたはホバー中タイトルの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">設定画面のセクション見出しにホバーしたときのテキスト色</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1691,14 +5347,42 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Breadcrumbs colors** は、タブとエディタの間にあるどのファイルを開いているかを階層構造で示すブレッドクラムナビゲーションに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `breadcrumb.foreground` | ブレッドクラム項目の文字色                                          | エディター上部に表示されるファイルパスやシンボル階層のテキスト              |
-| `breadcrumb.background` | ブレッドクラム項目の背景色                                          | ブレッドクラム全体の背景                                 |
-| `breadcrumb.focusForeground` | フォーカス中のブレッドクラム項目の文字色                                   | ホバー・キーボード操作でフォーカスされたブレッドクラム項目のテキスト           |
-| `breadcrumb.activeSelectionForeground` | 選択中のブレッドクラム項目の文字色                                      | クリックして選択中のブレッドクラム項目のテキスト                     |
-| `breadcrumbPicker.background` | ブレッドクラム項目ピッカーの背景色                                      | ブレッドクラムをクリックして開くドロップダウンの背景                   |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>breadcrumb.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブレッドクラム項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター上部に表示されるファイルパスやシンボル階層のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>breadcrumb.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブレッドクラム項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブレッドクラム全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>breadcrumb.focusForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中のブレッドクラム項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー・キーボード操作でフォーカスされたブレッドクラム項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>breadcrumb.activeSelectionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のブレッドクラム項目の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クリックして選択中のブレッドクラム項目のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>breadcrumbPicker.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブレッドクラム項目ピッカーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブレッドクラムをクリックして開くドロップダウンの背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1711,13 +5395,37 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Snippets colors** は、入力補完リストに出てくる、スニペット（予め登録していたコード定型文）に関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `editor.snippetTabstopHighlightBackground` | スニペットのタブストップのハイライト背景色                                  | スニペット展開後、Tabキーで移動可能な途中の入力箇所（登録したスニペット内の`$1` や `$2` など）の背景 |
-| `editor.snippetTabstopHighlightBorder` | スニペットのタブストップのハイライトボーダー色                                | スニペット展開後、Tabキーで移動可能な途中の入力箇所（登録したスニペット内の`$1` や `$2` など）の枠線 |
-| `editor.snippetFinalTabstopHighlightBackground` | スニペットの最終タブストップのハイライト背景色                                | スニペット入力の最後にカーソルが移動する箇所の背景                    |
-| `editor.snippetFinalTabstopHighlightBorder` | スニペットの最終タブストップのハイライトボーダー色                              | スニペット入力の最後にカーソルが移動する箇所の枠線                    |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.snippetTabstopHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スニペットのタブストップのハイライト背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スニペット展開後、Tabキーで移動可能な途中の入力箇所（登録したスニペット内の<code>$1</code> や <code>$2</code> など）の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.snippetTabstopHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スニペットのタブストップのハイライトボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スニペット展開後、Tabキーで移動可能な途中の入力箇所（登録したスニペット内の<code>$1</code> や <code>$2</code> など）の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.snippetFinalTabstopHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スニペットの最終タブストップのハイライト背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スニペット入力の最後にカーソルが移動する箇所の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>editor.snippetFinalTabstopHighlightBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スニペットの最終タブストップのハイライトボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スニペット入力の最後にカーソルが移動する箇所の枠線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1730,42 +5438,182 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Symbol Icons colors** は、サイドバーのエクスプローラーの最下部にあるアウトラインビュー、ブレッドクラムナビゲーション、サジェストウィジェットに表示されるシンボルアイコンに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `symbolIcon.arrayForeground` | 配列シンボルのアイコン色                                           | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される配列変数のアイコン |
-| `symbolIcon.booleanForeground` | 真偽値シンボルのアイコン色                                          | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される真偽値変数のアイコン |
-| `symbolIcon.classForeground` | クラスシンボルのアイコン色                                          | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるクラスのアイコン |
-| `symbolIcon.colorForeground` | 色シンボルのアイコン色                                            | CSSファイルなどで色を表すシンボルのアイコン                      |
-| `symbolIcon.constantForeground` | 定数シンボルのアイコン色                                           | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される定数のアイコン  |
-| `symbolIcon.constructorForeground` | コンストラクタシンボルのアイコン色                                      | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるコンストラクタのアイコン |
-| `symbolIcon.enumeratorForeground` | 列挙型シンボルのアイコン色                                          | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるenum（列挙型）のアイコン |
-| `symbolIcon.enumeratorMemberForeground` | 列挙型メンバーシンボルのアイコン色                                      | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるenumメンバーのアイコン |
-| `symbolIcon.eventForeground` | イベントシンボルのアイコン色                                         | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるイベントのアイコン |
-| `symbolIcon.fieldForeground` | フィールドシンボルのアイコン色                                        | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるクラスのフィールドのアイコン |
-| `symbolIcon.fileForeground` | ファイルシンボルのアイコン色                                         | サジェストウィジェットに表示されるファイルのアイコン                   |
-| `symbolIcon.folderForeground` | フォルダーシンボルのアイコン色                                        | サジェストウィジェットに表示されるフォルダーのアイコン                  |
-| `symbolIcon.functionForeground` | 関数シンボルのアイコン色                                           | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される関数のアイコン  |
-| `symbolIcon.interfaceForeground` | インターフェースシンボルのアイコン色                                     | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるインターフェースのアイコン |
-| `symbolIcon.keyForeground` | キーシンボルのアイコン色                                           | JSONファイルなどのキーを表すシンボルのアイコン                    |
-| `symbolIcon.keywordForeground` | キーワードシンボルのアイコン色                                        | サジェストウィジェットに表示される言語キーワードのアイコン                |
-| `symbolIcon.methodForeground` | メソッドシンボルのアイコン色                                         | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるメソッドのアイコン |
-| `symbolIcon.moduleForeground` | モジュールシンボルのアイコン色                                        | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるモジュールのアイコン |
-| `symbolIcon.namespaceForeground` | 名前空間シンボルのアイコン色                                         | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される名前空間のアイコン |
-| `symbolIcon.nullForeground` | nullシンボルのアイコン色                                         | サジェストウィジェットに表示される `null` のアイコン               |
-| `symbolIcon.numberForeground` | 数値シンボルのアイコン色                                           | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される数値変数のアイコン |
-| `symbolIcon.objectForeground` | オブジェクトシンボルのアイコン色                                       | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるオブジェクト変数のアイコン |
-| `symbolIcon.operatorForeground` | 演算子シンボルのアイコン色                                          | サジェストウィジェットに表示される演算子のアイコン                    |
-| `symbolIcon.packageForeground` | パッケージシンボルのアイコン色                                        | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるパッケージのアイコン |
-| `symbolIcon.propertyForeground` | プロパティシンボルのアイコン色                                        | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるプロパティのアイコン |
-| `symbolIcon.referenceForeground` | 参照シンボルのアイコン色                                           | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される参照のアイコン  |
-| `symbolIcon.snippetForeground` | スニペットシンボルのアイコン色                                        | サジェストウィジェットに表示されるスニペットのアイコン                  |
-| `symbolIcon.stringForeground` | 文字列シンボルのアイコン色                                          | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される文字列変数のアイコン |
-| `symbolIcon.structForeground` | 構造体シンボルのアイコン色                                          | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される構造体のアイコン |
-| `symbolIcon.textForeground` | テキストシンボルのアイコン色                                         | サジェストウィジェットに表示されるテキストのアイコン                   |
-| `symbolIcon.typeParameterForeground` | 型パラメータシンボルのアイコン色                                       | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるジェネリック型パラメータのアイコン |
-| `symbolIcon.unitForeground` | 単位シンボルのアイコン色                                           | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される単位のアイコン  |
-| `symbolIcon.variableForeground` | 変数シンボルのアイコン色                                           | サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される変数のアイコン  |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.arrayForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">配列シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される配列変数のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.booleanForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">真偽値シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される真偽値変数のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.classForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クラスシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるクラスのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.colorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">色シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">CSSファイルなどで色を表すシンボルのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.constantForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">定数シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される定数のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.constructorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コンストラクタシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるコンストラクタのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.enumeratorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">列挙型シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるenum（列挙型）のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.enumeratorMemberForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">列挙型メンバーシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるenumメンバーのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.eventForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">イベントシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるイベントのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.fieldForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フィールドシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるクラスのフィールドのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.fileForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ファイルシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットに表示されるファイルのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.folderForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォルダーシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットに表示されるフォルダーのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.functionForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">関数シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される関数のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.interfaceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">インターフェースシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるインターフェースのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.keyForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">JSONファイルなどのキーを表すシンボルのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.keywordForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">キーワードシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットに表示される言語キーワードのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.methodForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">メソッドシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるメソッドのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.moduleForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">モジュールシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるモジュールのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.namespaceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">名前空間シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される名前空間のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.nullForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">nullシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットに表示される <code>null</code> のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.numberForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">数値シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される数値変数のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.objectForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">オブジェクトシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるオブジェクト変数のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.operatorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">演算子シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットに表示される演算子のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.packageForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">パッケージシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるパッケージのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.propertyForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">プロパティシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるプロパティのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.referenceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">参照シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される参照のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.snippetForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">スニペットシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットに表示されるスニペットのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.stringForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">文字列シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される文字列変数のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.structForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">構造体シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される構造体のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.textForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">テキストシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サジェストウィジェットに表示されるテキストのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.typeParameterForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">型パラメータシンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示されるジェネリック型パラメータのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.unitForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">単位シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される単位のアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>symbolIcon.variableForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">変数シンボルのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サイドバーのエクスプローラーの最下部にあるアウトラインビューに表示される変数のアイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1778,29 +5626,117 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Debug Icons colors** は、デバッグ関連のアイコンに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `debugIcon.breakpointForeground` | ブレークポイントのアイコン色                                         | エディター左端に設置したブレークポイントのアイコン                    |
-| `debugIcon.breakpointDisabledForeground` | 無効化されたブレークポイントのアイコン色                                   | 一時的に無効化したブレークポイントのアイコン                       |
-| `debugIcon.breakpointUnverifiedForeground` | 未検証のブレークポイントのアイコン色                                     | デバッガーがまだ確認していないブレークポイントのアイコン                 |
-| `debugIcon.breakpointCurrentStackframeForeground` | 現在のブレークポイントスタックフレームのアイコン色                              | デバッグ中に現在停止しているスタックフレームのアイコン                  |
-| `debugIcon.breakpointStackframeForeground` | 全てのブレークポイントスタックフレームのアイコン色                              | デバッグ中のコールスタック上にあるブレークポイントのアイコン               |
-| `debugIcon.startForeground` | デバッグツールバーの「開始」アイコン色                                    | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの再生ボタンアイコン   |
-| `debugIcon.pauseForeground` | デバッグツールバーの「一時停止」アイコン色                                  | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの一時停止ボタンアイコン |
-| `debugIcon.stopForeground` | デバッグツールバーの「停止」アイコン色                                    | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの停止ボタンアイコン   |
-| `debugIcon.disconnectForeground` | デバッグツールバーの「切断」アイコン色                                    | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの切断ボタンアイコン   |
-| `debugIcon.restartForeground` | デバッグツールバーの「再起動」アイコン色                                   | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの再起動ボタンアイコン  |
-| `debugIcon.stepOverForeground` | デバッグツールバーの「ステップオーバー」アイコン色                              | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの次の行に進むボタンアイコン |
-| `debugIcon.stepIntoForeground` | デバッグツールバーの「ステップイン」アイコン色                                | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの関数内部に入るボタンアイコン |
-| `debugIcon.stepOutForeground` | デバッグツールバーの「ステップアウト」アイコン色                               | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの関数から抜けるボタンアイコン |
-| `debugIcon.continueForeground` | デバッグツールバーの「続行」アイコン色                                    | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの次のブレークポイントまで実行するボタンアイコン |
-| `debugIcon.stepBackForeground` | デバッグツールバーの「ステップバック」アイコン色                               | `F5`でデバッグを実行したときに右上に現れるデバッグツールバーの1ステップ前に戻るボタンアイコン |
-| `debugConsole.infoForeground` | デバッグREPLコンソールの情報メッセージの文字色                              | `F5`でデバッグを実行したときにエディターの下のパネルのデバッグコンソールに表示される情報メッセージのテキスト |
-| `debugConsole.warningForeground` | デバッグREPLコンソールの警告メッセージの文字色                              | `F5`でデバッグを実行したときにエディターの下のパネルのデバッグコンソールに表示される警告メッセージのテキスト |
-| `debugConsole.errorForeground` | デバッグREPLコンソールのエラーメッセージの文字色                             | `F5`でデバッグを実行したときにエディターの下のパネルのデバッグコンソールに表示されるエラーメッセージのテキスト |
-| `debugConsole.sourceForeground` | デバッグREPLコンソールのソースファイル名の文字色                             | `F5`でデバッグを実行したときにエディターの下のパネルのデバッグコンソールに表示される出力元ファイル名のテキスト |
-| `debugConsoleInputIcon.foreground` | デバッグコンソール入力マーカーアイコンの色                                  | `F5`でデバッグを実行したときにエディターの下のパネルのデバッグコンソールの入力欄に表示される `>` のようなマーカーアイコン |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.breakpointForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ブレークポイントのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディター左端に設置したブレークポイントのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.breakpointDisabledForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">無効化されたブレークポイントのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">一時的に無効化したブレークポイントのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.breakpointUnverifiedForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未検証のブレークポイントのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッガーがまだ確認していないブレークポイントのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.breakpointCurrentStackframeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">現在のブレークポイントスタックフレームのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中に現在停止しているスタックフレームのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.breakpointStackframeForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">全てのブレークポイントスタックフレームのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグ中のコールスタック上にあるブレークポイントのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.startForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「開始」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの再生ボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.pauseForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「一時停止」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの一時停止ボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.stopForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「停止」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの停止ボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.disconnectForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「切断」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの切断ボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.restartForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「再起動」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの再起動ボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.stepOverForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「ステップオーバー」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの次の行に進むボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.stepIntoForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「ステップイン」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの関数内部に入るボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.stepOutForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「ステップアウト」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの関数から抜けるボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.continueForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「続行」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの次のブレークポイントまで実行するボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugIcon.stepBackForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグツールバーの「ステップバック」アイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときに右上に現れるデバッグツールバーの1ステップ前に戻るボタンアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugConsole.infoForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグREPLコンソールの情報メッセージの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときにエディターの下のパネルのデバッグコンソールに表示される情報メッセージのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugConsole.warningForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグREPLコンソールの警告メッセージの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときにエディターの下のパネルのデバッグコンソールに表示される警告メッセージのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugConsole.errorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグREPLコンソールのエラーメッセージの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときにエディターの下のパネルのデバッグコンソールに表示されるエラーメッセージのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugConsole.sourceForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグREPLコンソールのソースファイル名の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときにエディターの下のパネルのデバッグコンソールに表示される出力元ファイル名のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>debugConsoleInputIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">デバッグコンソール入力マーカーアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>F5</code>でデバッグを実行したときにエディターの下のパネルのデバッグコンソールの入力欄に表示される <code>></code> のようなマーカーアイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1813,33 +5749,137 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Notebook colors** は、Jupyter Notebookなどのノートブックエディターに関する色設定である。Notebookは、拡張機能から「Jupyter」をインストールし、ipynbファイルを作成することで表示される。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `notebook.editorBackground` | ノートブックの背景色                                             | ノートブックエディター全体の背景                             |
-| `notebook.cellBorderColor` | ノートブックセルのボーダー色                                         | 各セルを囲む枠線                                     |
-| `notebook.cellHoverBackground` | ホバー時のセルの背景色                                            | セルにホバーしたときの背景                                |
-| `notebook.cellInsertionIndicator` | セル挿入インジケーターの色                                          | セルとセルの間にマウスを置いたときに表示される挿入位置の線                |
-| `notebook.cellStatusBarItemHoverBackground` | ノートブックセルステータスバー項目のホバー時の背景色                             | セル下部のステータスバー項目にホバーしたときの背景                    |
-| `notebook.cellToolbarSeparator` | セル下部ツールバーの区切り線の色                                       | セル下部に表示されるアイコン群の間の区切り線                       |
-| `notebook.cellEditorBackground` | ノートブックセルエディターの背景色                                      | セル内のコード入力部分の背景                               |
-| `notebook.focusedCellBackground` | フォーカス中のセルの背景色                                          | 編集モードでフォーカスされているセルの背景                        |
-| `notebook.focusedCellBorder` | フォーカス中のセルのフォーカスインジケーターのボーダー色                           | フォーカスされているセルを示す枠線                            |
-| `notebook.focusedEditorBorder` | ノートブックセルエディターのボーダー色                                    | フォーカスされているセル内のコード入力部分の枠線                     |
-| `notebook.inactiveFocusedCellBorder` | 主フォーカスがエディター外にあるときのセルの上下ボーダー色                          |                                              |
-| `notebook.inactiveSelectedCellBorder` | 複数セルが選択されているときのセルのボーダー色                                | 複数のセルをまとめて選択しているときの各セルの枠線                    |
-| `notebook.outputContainerBackgroundColor` | ノートブック出力コンテナの背景色                                       | コード実行結果が表示される部分の背景                           |
-| `notebook.outputContainerBorderColor` | ノートブック出力コンテナのボーダー色                                     | コード実行結果が表示される部分の枠線                           |
-| `notebook.selectedCellBackground` | 選択中のセルの背景色                                             | コマンドモードで選択されているセルの背景                         |
-| `notebook.selectedCellBorder` | 選択中（フォーカスなし）のセルの上下ボーダー色                                | 選択されているがフォーカスはされていないセルの上下の線                  |
-| `notebook.symbolHighlightBackground` | ハイライトされたセルの背景色                                         | アウトラインなどから移動した先のセルのハイライト背景                   |
-| `notebookScrollbarSlider.activeBackground` | クリック時のノートブックスクロールバースライダーの背景色                           | ノートブックのスクロールバーにあるスライダーをクリックしたときの背景           |
-| `notebookScrollbarSlider.background` | ノートブックスクロールバースライダーの背景色                                 | ノートブックのスクロールバーにあるスライダーの背景                    |
-| `notebookScrollbarSlider.hoverBackground` | ホバー時のノートブックスクロールバースライダーの背景色                            | ノートブックのスクロールバーにあるスライダーにホバーしたときの背景            |
-| `notebookStatusErrorIcon.foreground` | セルステータスバーのエラーアイコンの色                                    | セル実行がエラーになったときのステータスバーのアイコン                  |
-| `notebookStatusRunningIcon.foreground` | セルステータスバーの実行中アイコンの色                                    | セルが実行中のときのステータスバーのアイコン                       |
-| `notebookStatusSuccessIcon.foreground` | セルステータスバーの成功アイコンの色                                     | セル実行が成功したときのステータスバーのアイコン                     |
-| `notebookEditorOverviewRuler.runningCellForeground` | 概要ルーラーの実行中セル装飾の色                                       | ノートブック右端のスクロールバーの下に重なっている、概要ルーラーで実行中セルを示すマーカー |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.editorBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックエディター全体の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.cellBorderColor</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックセルのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">各セルを囲む枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.cellHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のセルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セルにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.cellInsertionIndicator</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セル挿入インジケーターの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セルとセルの間にマウスを置いたときに表示される挿入位置の線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.cellStatusBarItemHoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックセルステータスバー項目のホバー時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セル下部のステータスバー項目にホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.cellToolbarSeparator</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セル下部ツールバーの区切り線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セル下部に表示されるアイコン群の間の区切り線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.cellEditorBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックセルエディターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セル内のコード入力部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.focusedCellBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中のセルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">編集モードでフォーカスされているセルの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.focusedCellBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカス中のセルのフォーカスインジケーターのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカスされているセルを示す枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.focusedEditorBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックセルエディターのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">フォーカスされているセル内のコード入力部分の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.inactiveFocusedCellBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">主フォーカスがエディター外にあるときのセルの上下ボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.inactiveSelectedCellBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数セルが選択されているときのセルのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">複数のセルをまとめて選択しているときの各セルの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.outputContainerBackgroundColor</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブック出力コンテナの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コード実行結果が表示される部分の背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.outputContainerBorderColor</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブック出力コンテナのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コード実行結果が表示される部分の枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.selectedCellBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のセルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コマンドモードで選択されているセルの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.selectedCellBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中（フォーカスなし）のセルの上下ボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択されているがフォーカスはされていないセルの上下の線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebook.symbolHighlightBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ハイライトされたセルの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アウトラインなどから移動した先のセルのハイライト背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebookScrollbarSlider.activeBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">クリック時のノートブックスクロールバースライダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックのスクロールバーにあるスライダーをクリックしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebookScrollbarSlider.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックスクロールバースライダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックのスクロールバーにあるスライダーの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebookScrollbarSlider.hoverBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ホバー時のノートブックスクロールバースライダーの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブックのスクロールバーにあるスライダーにホバーしたときの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebookStatusErrorIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セルステータスバーのエラーアイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セル実行がエラーになったときのステータスバーのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebookStatusRunningIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セルステータスバーの実行中アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セルが実行中のときのステータスバーのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebookStatusSuccessIcon.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セルステータスバーの成功アイコンの色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">セル実行が成功したときのステータスバーのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>notebookEditorOverviewRuler.runningCellForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">概要ルーラーの実行中セル装飾の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ノートブック右端のスクロールバーの下に重なっている、概要ルーラーで実行中セルを示すマーカー</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1852,20 +5892,72 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Chart colors** は、VSCode内のチャート表示に関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `charts.foreground`    | チャート内テキストのコントラスト色                                      | チャートに表示されるラベルや数値のテキスト                        |
-| `charts.lines`         | チャート内の線の色                                              | グラフの罫線やグリッド線                                 |
-| `charts.red`           | チャート内の赤色要素の色                                           | グラフ内で赤色に割り当てられたデータ系列                         |
-| `charts.blue`          | チャート内の青色要素の色                                           | グラフ内で青色に割り当てられたデータ系列                         |
-| `charts.yellow`        | チャート内の黄色要素の色                                           | グラフ内で黄色に割り当てられたデータ系列                         |
-| `charts.orange`        | チャート内の橙色要素の色                                           | グラフ内で橙色に割り当てられたデータ系列                         |
-| `charts.green`         | チャート内の緑色要素の色                                           | グラフ内で緑色に割り当てられたデータ系列                         |
-| `charts.purple`        | チャート内の紫色要素の色                                           | グラフ内で紫色に割り当てられたデータ系列                         |
-| `chart.line`           | チャートの線の色                                               | グラフの折れ線部分の色                                  |
-| `chart.axis`           | チャートの軸の色                                               | グラフのX軸・Y軸の線の色                                |
-| `chart.guide`          | チャートのガイド線の色                                            | グラフの目盛りを示す補助線                                |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>charts.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャート内テキストのコントラスト色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャートに表示されるラベルや数値のテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>charts.lines</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャート内の線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフの罫線やグリッド線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>charts.red</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャート内の赤色要素の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフ内で赤色に割り当てられたデータ系列</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>charts.blue</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャート内の青色要素の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフ内で青色に割り当てられたデータ系列</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>charts.yellow</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャート内の黄色要素の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフ内で黄色に割り当てられたデータ系列</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>charts.orange</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャート内の橙色要素の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフ内で橙色に割り当てられたデータ系列</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>charts.green</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャート内の緑色要素の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフ内で緑色に割り当てられたデータ系列</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>charts.purple</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャート内の紫色要素の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフ内で紫色に割り当てられたデータ系列</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chart.line</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャートの線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフの折れ線部分の色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chart.axis</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャートの軸の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフのX軸・Y軸の線の色</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>chart.guide</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">チャートのガイド線の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">グラフの目盛りを示す補助線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1878,10 +5970,22 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Ports colors** は、ポート転送機能に関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `ports.iconRunningProcessForeground` | 実行中プロセスが関連付けられたポートのアイコン色                               | エディターの下にあるパネルの「ポート」で実行中プロセスがあるポートのアイコン       |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>ports.iconRunningProcessForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">実行中プロセスが関連付けられたポートのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エディターの下にあるパネルの「ポート」で実行中プロセスがあるポートのアイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1894,11 +5998,27 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Comments View colors** は、コメントビューに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `commentsView.resolvedIcon` | 解決済みコメントのアイコン色                                         | コメントビューで解決済みとされたコメントのアイコン                    |
-| `commentsView.unresolvedIcon` | 未解決コメントのアイコン色                                          | コメントビューで未解決のコメントのアイコン                        |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commentsView.resolvedIcon</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">解決済みコメントのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コメントビューで解決済みとされたコメントのアイコン</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>commentsView.unresolvedIcon</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">未解決コメントのアイコン色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">コメントビューで未解決のコメントのアイコン</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1911,10 +6031,22 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Action Bar colors** は、アクションバーに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `actionBar.toggledBackground` | アクションバーでトグルされたアクション項目の背景色                              | オン/オフを切り替えるトグルボタンが有効時の背景                     |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>actionBar.toggledBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">アクションバーでトグルされたアクション項目の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">オン/オフを切り替えるトグルボタンが有効時の背景</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1927,10 +6059,22 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Simple Find Widget colors** は、エディタ上の通常の検索（Ctrl + F）ではなく、「出力（Output）パネル」や「デバッグコンソール（Debug Console）」の文字を検索するときのシンプル検索ウィジェットに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `simpleFindWidget.sashBorder` | サッシュ（境界線）のボーダー色                                        | シンプル検索ウィジェットのリサイズ用境界線                        |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>simpleFindWidget.sashBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">サッシュ（境界線）のボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">シンプル検索ウィジェットのリサイズ用境界線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1943,16 +6087,52 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Gauge colors** は、ゲージ表示に関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `gauge.background`     | ゲージの背景色                                                |                                              |
-| `gauge.foreground`     | ゲージの文字色                                                |                                              |
-| `gauge.border`         | ゲージのボーダー色                                              |                                              |
-| `gauge.warningBackground` | ゲージの警告時の背景色                                            |                                              |
-| `gauge.warningForeground` | ゲージの警告時の文字色                                            |                                              |
-| `gauge.errorBackground` | ゲージのエラー時の背景色                                           |                                              |
-| `gauge.errorForeground` | ゲージのエラー時の文字色                                           |                                              |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gauge.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゲージの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gauge.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゲージの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gauge.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゲージのボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gauge.warningBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゲージの警告時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gauge.warningForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゲージの警告時の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gauge.errorBackground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゲージのエラー時の背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>gauge.errorForeground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ゲージのエラー時の文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"></td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1965,14 +6145,42 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Markdown** は、Markdownのアラート（注釈ブロック）に関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `markdownAlert.note.foreground` | Markdownの「Note」アラートの文字色                                | mdファイル内に`> [!NOTE]` で書かれた注釈ブロックのプレビューのテキスト   |
-| `markdownAlert.tip.foreground` | Markdownの「Tip」アラートの文字色                                 | mdファイル内に`> [!TIP]` で書かれた注釈ブロックのプレビューのテキスト    |
-| `markdownAlert.important.foreground` | Markdownの「Important」アラートの文字色                           | mdファイル内に`> [!IMPORTANT]` で書かれた注釈ブロックのプレビューのテキスト |
-| `markdownAlert.warning.foreground` | Markdownの「Warning」アラートの文字色                             | mdファイル内に`> [!WARNING]` で書かれた注釈ブロックのプレビューのテキスト |
-| `markdownAlert.caution.foreground` | Markdownの「Caution」アラートの文字色                             | mdファイル内に`> [!CAUTION]` で書かれた注釈ブロックのプレビューのテキスト |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>markdownAlert.note.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Markdownの「Note」アラートの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">mdファイル内に<code>> [!NOTE]</code> で書かれた注釈ブロックのプレビューのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>markdownAlert.tip.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Markdownの「Tip」アラートの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">mdファイル内に<code>> [!TIP]</code> で書かれた注釈ブロックのプレビューのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>markdownAlert.important.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Markdownの「Important」アラートの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">mdファイル内に<code>> [!IMPORTANT]</code> で書かれた注釈ブロックのプレビューのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>markdownAlert.warning.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Markdownの「Warning」アラートの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">mdファイル内に<code>> [!WARNING]</code> で書かれた注釈ブロックのプレビューのテキスト</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>markdownAlert.caution.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Markdownの「Caution」アラートの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">mdファイル内に<code>> [!CAUTION]</code> で書かれた注釈ブロックのプレビューのテキスト</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
@@ -1985,14 +6193,42 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
 **Agent Session colors** は、AIエージェントセッションに関する色設定である。
 
 
-| key名                   | 役割                                                     | 適用要素の例                                       |
-| ---------------------- | ------------------------------------------------------ | -------------------------------------------- |
-| `agentSessionReadIndicator.foreground` | エージェントセッションの既読インジケーターの文字色                              | AIエージェントとのセッション一覧で既読を示すマーカー                  |
-| `agentSessionSelectedBadge.border` | 選択中のエージェントセッション項目のバッジボーダー色                             | 選択中のセッション項目に表示されるバッジの枠線                      |
-| `agentSessionSelectedUnfocusedBadge.border` | ビューが非フォーカス時の選択中エージェントセッション項目のバッジボーダー色                  | 操作していないビューで選択中のセッション項目のバッジの枠線                |
-| `agentStatusIndicator.background` | タイトルバーのエージェントステータスインジケーターの背景色                          | タイトルバーに表示されるAIエージェントの状態を示すアイコンの背景            |
-| `aiCustomizationManagement.sashBorder` | Chat Customization Managementエディターの分割ビューのサッシュ（境界線）の色   | AIカスタマイズ管理画面の2分割表示の境界線                       |
-
+<table style="width: 100%; border-collapse: collapse;">
+<thead>
+  <tr>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">key名</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">役割</th>
+    <th style="text-align: left; padding: 12px; border: 1px solid #ddd; background-color: #f6f8fa;">適用要素の例</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>agentSessionReadIndicator.foreground</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">エージェントセッションの既読インジケーターの文字色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AIエージェントとのセッション一覧で既読を示すマーカー</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>agentSessionSelectedBadge.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のエージェントセッション項目のバッジボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">選択中のセッション項目に表示されるバッジの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>agentSessionSelectedUnfocusedBadge.border</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">ビューが非フォーカス時の選択中エージェントセッション項目のバッジボーダー色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">操作していないビューで選択中のセッション項目のバッジの枠線</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>agentStatusIndicator.background</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タイトルバーのエージェントステータスインジケーターの背景色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">タイトルバーに表示されるAIエージェントの状態を示すアイコンの背景</td>
+  </tr>
+  <tr>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;"><code>aiCustomizationManagement.sashBorder</code></td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">Chat Customization Managementエディターの分割ビューのサッシュ（境界線）の色</td>
+    <td style="text-align: left; padding: 12px; border: 1px solid #ddd;">AIカスタマイズ管理画面の2分割表示の境界線</td>
+  </tr>
+</tbody>
+</table>
 
 ---
 
