@@ -1,6 +1,4 @@
-<details>
-<summary><b>Debug colors(デバッグカラー)</b></summary><br>
-
+## Debug colors(デバッグカラー)
 
 **Debug colors** は、デバッグ機能に関する色設定である。`Ctrl`+`Shift`+`D`で「実行とデバッグ」をクリックすることでサイドバーがデバッグツールバーとなる。
 変数ビューやウォッチ式はデバッグ時のサイドバーの下部に表示される。
@@ -8,6 +6,11 @@
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -108,9 +111,7 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)

@@ -1,11 +1,14 @@
-<details>
-<summary><b>Contrast colors(コントラスト色)</b></summary><br>
-
+## Contrast colors(コントラスト色)
 
 **Contrast colors** は、VSCode のハイコントラストテーマ専用の設定で、UI 全体の要素に追加のボーダー（枠線）を付けることで、近視やディスプレイの発色が悪い環境での作業をサポートする。
 `"type": "hc-black"`の時のみ適用され、通常のテーマでは基本的に使用されない。
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -28,5 +31,4 @@
 </table>
 ---
 
-
-</details>
+[もどる](../README.md)

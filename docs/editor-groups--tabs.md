@@ -1,12 +1,15 @@
-<details>
-<summary><b>Editor Groups & Tabs(エディターグループとタブ)</b></summary><br>
-
+## Editor Groups & Tabs(エディターグループとタブ)
 
 **Editor Group** はタブ群とエディタを格納する領域で、通常は1つだが画面分割により複数存在できる。
 **Tab** はエディタ上に開かれたファイルを表す横並びの見出しで、エディタの上部に位置している。1つの Editor Group 内に複数の Tab を開いて切り替えることができる。
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -227,9 +230,7 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)

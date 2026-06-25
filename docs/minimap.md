@@ -1,11 +1,14 @@
-<details>
-<summary><b>Minimap(ミニマップ)</b></summary><br>
-
+## Minimap(ミニマップ)
 
 **Minimap** は、エディタの右側に位置する現在のファイルのズームアウトしたものを表示する機能に関する色設定である。コマンドパレット（`Ctrl`+`Shift`+`P`）を開いて、「Toggle Minimap」と入力して実行することで表示される。
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -96,9 +99,7 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)

@@ -1,11 +1,14 @@
-<details>
-<summary><b>Base colors(ベースカラー)</b></summary><br>
-
+## Base colors(ベースカラー)
 
 **Base colors** は、VSCode UI 全体に共通して使われるデフォルトの色設定である。各コンポーネントが独自の色を持たない場合のフォールバックとして機能する。
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -66,9 +69,7 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)

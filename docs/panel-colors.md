@@ -1,10 +1,13 @@
-<details>
-<summary><b>Panel colors(パネルカラー)</b></summary><br>
-
+## Panel colors(パネルカラー)
 
 **Panel colors** は、エディター領域の下に表示されるパネルに関する色設定である。問題、出力、デバッグコンソール、ターミナル、ポートなどを含む欄。
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -115,9 +118,7 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)

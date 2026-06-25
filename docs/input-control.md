@@ -1,11 +1,14 @@
-<details>
-<summary><b>Input control(インプットコントロール)</b></summary><br>
-
+## Input control(インプットコントロール)
 
 **Input control** は、検索ビューや Find/Replace ダイアログなどの入力フィールドに関する色設定である。
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -101,9 +104,7 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)

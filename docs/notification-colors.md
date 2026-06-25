@@ -1,12 +1,15 @@
-<details>
-<summary><b>Notification colors(通知カラー)</b></summary><br>
-
+## Notification colors(通知カラー)
 
 **Notification colors** は、ワークベンチ右下から表示される通知に関する色設定である。
 notificationCenter(通知センター)は、ヘッダー付きの通知のリストであり、notificationToast(通知トースト)は、ヘッダーがない単通知のポップアップを指す。
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -72,9 +75,7 @@ notificationCenter(通知センター)は、ヘッダー付きの通知のリス
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)

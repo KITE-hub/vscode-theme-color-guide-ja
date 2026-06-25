@@ -1,7 +1,5 @@
 # vscode-theme-color-guide-ja
 
-VSCode のテーマカラー設定の完全なリファレンスです。
-
 - [Contrast colors(コントラスト色)](./docs/contrast-colors.md)
 - [Base colors(ベースカラー)](./docs/base-colors.md)
 - [Window border(ウィンドウボーダー)](./docs/window-border.md)

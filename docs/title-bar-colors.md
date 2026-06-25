@@ -1,11 +1,14 @@
-<details>
-<summary><b>Title Bar colors(タイトルバーカラー)</b></summary><br>
-
+## Title Bar colors(タイトルバーカラー)
 
 **Title Bar colors** は、ウィンドウ最上部に表示されるタイトルバーに関する色設定である。
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -41,9 +44,7 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)

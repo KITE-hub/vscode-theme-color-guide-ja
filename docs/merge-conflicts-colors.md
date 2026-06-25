@@ -1,6 +1,4 @@
-<details>
-<summary><b>Merge conflicts colors(マージコンフリクトカラー)</b></summary><br>
-
+## Merge conflicts colors(マージコンフリクトカラー)
 
 **Merge conflicts colors** は、エディター内に特殊な差分範囲（マージコンフリクト）があるときに表示される装飾に関する色設定である。
 
@@ -8,6 +6,11 @@
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -78,7 +81,6 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ### マージエディター（3-wayマージ）
 
@@ -91,6 +93,11 @@
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -166,9 +173,7 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)

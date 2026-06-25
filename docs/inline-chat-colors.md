@@ -1,12 +1,15 @@
-<details>
-<summary><b>Inline Chat colors(インラインチャットカラー)</b></summary><br>
-
+## Inline Chat colors(インラインチャットカラー)
 
 **Inline Chat colors** は、エディター内に表示されるインラインチャットウィジェットに関する色設定である。
 (参考: [Inline chat](https://code.visualstudio.com/docs/chat/inline-chat))
 
 
 <table style="table-layout: fixed; width: 100%; border-collapse: collapse;">
+<colgroup>
+  <col style="width: 25%">
+  <col style="width: 35%">
+  <col style="width: 40%">
+</colgroup>
 <thead>
   <tr>
     <th style="padding: 12px; border: 1px solid #666; text-align: left;">key名</th>
@@ -67,9 +70,7 @@
   </tr>
 </tbody>
 </table>
-</div>
 
 ---
 
-
-</details>
+[もどる](../README.md)
